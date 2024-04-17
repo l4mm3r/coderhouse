@@ -1,0 +1,253 @@
+/*RESETEAMOS LOS PADDINGS Y MARGENES*/
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins';
+}
+
+/*ESTILOS GLOBALES de TEXTO*/
+
+h1 {
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 120%;
+}
+h2 {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 120%;
+}
+h3 {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 120%;
+}
+h4 {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 130%;
+}
+h5 {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 140%;
+}
+h6 {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 140%;
+}
+
+p.body-xl{
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 160%;
+}
+p.body-l{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+p.body-m{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 150%;
+}
+p.body-s{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 150%;
+}
+p.body-xs{
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+p.bold-m {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+p.bold-s{
+    font-size: 14px;
+    font-weight: 600;
+}
+
+/*COLORES GLOBALES para TEXTO*/
+
+.natural-900{
+    color: #1A202C;
+}
+.natural-700{
+    color: #4A5468;
+}
+.natural-600{
+    color: #717D96;
+}
+.natural-500{
+    color: #A0ABC0;
+}
+.natural-400{
+    color: #CBD2E0;
+}
+
+/* ESTILOS img */
+.hero-container img {
+    max-width: 100%;
+}
+
+
+/* ESTILOS NAVBAR */
+.logo {
+    max-width: 200px;
+    margin: 8px;
+}
+
+nav li {
+    list-style: none;
+    padding: 8px;
+    display: inline;
+    margin-left: 16px;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+li a {
+    text-decoration: none;
+    color: #000;
+}
+
+.selectIdioma {
+    margin: 16px;
+    padding: 4px;
+}
+
+/* ESTILOS HERO SECTION */
+
+
+.heroimg{
+    width: 90%
+}
+
+
+.conocenos {
+    color: #2600ff;
+    font-size: 16px;
+}
+
+
+.serviciosImg {
+    max-width: 500px;
+    margin: 24px;
+}
+
+
+.experiencia-container img{
+    width: 600px;
+    height: 600px;
+}
+
+.estadisticas-container img{
+    width: 1000px;
+    height: 500px;
+}
+
+.foto-clientes{
+    width: 500px;
+    height: 500px;
+}
+
+
+/*ESTILOS pagina NOSOTROS*/
+.historia-info-1 img{
+    width: 738px;
+    height: 416px;
+}
+
+.historia-info-2 img{
+    width: 630px;
+    height: 309px;
+}
+
+.modelo-organizacion-container img{
+    width: 1062px;
+    height: 416px;
+}
+
+.direccion-container img{
+    width: 305px;
+    height: 282px;
+}
+
+.socios img{
+    width: 100%;
+    height: 282px;
+}
+
+/*ESTILOS pagina SERVICIOS*/
+.ventajas-container .instalaciones-1{
+    width: 844px;
+    height: 309px;
+}
+.ventajas-container .instalaciones-2{
+    width: 413px;
+    height: 309px;
+}
+.ventajas-container .instalaciones-3{
+    width: 413px;
+    height: 309px;
+}
+.ventajas-container .instalaciones-4{
+    width: 630px;
+    height: 309px;
+}
+
+.vecinal-container img {
+    width: 492px;
+    height: 387px;
+}
+
+
+/*ESTILOS pagina ADUANA*/
+
+.despachantes-arg-container img {
+    width: 409px;
+    height: 327px;
+}
+
+.despachantes-br-container img {
+    width: 409px;
+    height: 327px;
+}
+
+
+
+/*ESTILOS pagina TURISMO*/
+.peaje-container img{
+    width: 100%;
+    max-height: 435px;
+}
+
+.tarjeta-hospedaje img{
+    width: 602px;
+    height: 396px;
+}
+
+.tarjeta-casascambio img{
+    width: 522px;
+    height: 327px;
+}
+
+/*ESTILOS pagina TURISMO*/
+.formulario-container img{
+    width: 603px;
+    height: 573px;
+}
+
+/*ESTILOS footer*/
+.footer-container {
+    background-color: #dadada;
+    padding: 48px;
+}
