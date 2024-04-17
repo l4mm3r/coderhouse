@@ -100,9 +100,11 @@ p.bold-s{
 
 
 /* ESTILOS NAVBAR */
+
 .logo {
     max-width: 200px;
-    margin: 8px;
+    margin-top: 8px;
+    margin-left: 16px;
 }
 
 nav li {
@@ -125,8 +127,17 @@ li a {
 }
 
 /* ESTILOS HERO SECTION */
+.hero-container{
+    margin-left: 26px;
+}
 
+.hero-container h1{
+    margin-bottom: 35px;
+}
 
+.hero-info p{
+    margin-top: 35px;
+}
 .heroimg{
     width: 90%
 }
@@ -137,16 +148,31 @@ li a {
     font-size: 16px;
 }
 
-
+.servicios-container {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding: 20px;
+}
 .serviciosImg {
     max-width: 500px;
     margin: 24px;
 }
 
+.experiencia-container{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding: 20px;
+}
 
 .experiencia-container img{
     width: 600px;
     height: 600px;
+}
+
+.estadisticas-container{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding: 20px;
 }
 
 .estadisticas-container img{
@@ -154,13 +180,24 @@ li a {
     height: 500px;
 }
 
+.clientes-container{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding: 20px;
+}
 .foto-clientes{
-    width: 500px;
-    height: 500px;
+    width: 414px;
+    height: 381px;
 }
 
 
 /*ESTILOS pagina NOSOTROS*/
+.historia-container{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding: 20px;
+}
+
 .historia-info-1 img{
     width: 738px;
     height: 416px;
@@ -171,14 +208,55 @@ li a {
     height: 309px;
 }
 
+.modelo-organizacion-container{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding: 20px;
+}
 .modelo-organizacion-container img{
     width: 1062px;
     height: 416px;
 }
 
+.direccion-container{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding: 20px;
+}
 .direccion-container img{
     width: 305px;
     height: 282px;
+}
+
+.mision-container{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding: 20px;
+}
+.vision-container{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding: 20px;
+}
+.valores-container{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding: 20px;
+}
+
+.info-nosotros-container{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding: 20px;
+}
+.recursos-container{
+    margin-bottom: 20px;
+}
+
+.socios {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding: 20px;
 }
 
 .socios img{
@@ -187,6 +265,20 @@ li a {
 }
 
 /*ESTILOS pagina SERVICIOS*/
+.ventajas-container{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding: 20px;
+}
+
+.ventajas-container h4{
+    padding-bottom: 20px;
+}
+
+.ventajas-container p.bold-m{
+    margin-top: 36px;
+    margin-bottom: 16px;
+}
 .ventajas-container .instalaciones-1{
     width: 844px;
     height: 309px;
@@ -204,6 +296,40 @@ li a {
     height: 309px;
 }
 
+.organismos-container{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding: 20px;
+}
+.organismos-container ul{
+    margin-bottom: 20px;
+}
+
+.organismos-container p.body-l{
+    margin-bottom: 20px;
+    margin-top: 8px;
+}
+.organismos-arg-container li, .organismos-br-container li{
+    list-style: none;
+}
+
+.organismos-container p.bold-s{
+    margin-top: 30px;
+}
+
+.vecinal-container{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding: 20px;
+}
+
+.infotvf-container h2{
+    margin-bottom: 8px;
+}
+
+.infotvf-container p.body-l{
+    margin-bottom: 20px;
+}
 .vecinal-container img {
     width: 492px;
     height: 387px;
@@ -211,12 +337,31 @@ li a {
 
 
 /*ESTILOS pagina ADUANA*/
+.info-aduana-container{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding: 20px;
+}
 
+.info-aduana-container p{
+    margin-bottom: 20px;
+}
+
+.despachantes-arg-container{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding: 20px;
+}
 .despachantes-arg-container img {
     width: 409px;
     height: 327px;
 }
 
+.despachantes-br-container{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding: 20px;
+}
 .despachantes-br-container img {
     width: 409px;
     height: 327px;
@@ -225,6 +370,40 @@ li a {
 
 
 /*ESTILOS pagina TURISMO*/
+.info-leyes-container{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding: 20px;
+}
+
+.requisitos-container {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding: 20px;
+    display: inline-block;
+    text-align: center;
+    width: 90%;
+}
+
+.requisitos-container p{
+    margin-bottom: 20px;
+    margin-top: 8px;
+    
+}
+
+.requisitos-container img{
+    width: 100%;
+    max-height: 435px;
+}
+
+.peaje-container{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding: 20px;
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+}
 .peaje-container img{
     width: 100%;
     max-height: 435px;
@@ -233,14 +412,33 @@ li a {
 .tarjeta-hospedaje img{
     width: 602px;
     height: 396px;
+    margin-bottom: 30px;
+}
+
+.casacambio-container{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding: 20px;
+}
+
+
+.casacambio-container h2{
+    margin-bottom: 20px;
 }
 
 .tarjeta-casascambio img{
     width: 522px;
     height: 327px;
+    margin-top: 20px;
 }
 
-/*ESTILOS pagina TURISMO*/
+/*ESTILOS pagina CONTACTO*/
+.formulario-container{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding: 20px;
+    width: 90%;
+}
 .formulario-container img{
     width: 603px;
     height: 573px;
