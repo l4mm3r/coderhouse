@@ -100,18 +100,17 @@ p.bold-s{
 
 
 /* ESTILOS NAVBAR */
-
-.logo {
-    max-width: 200px;
-    margin-top: 8px;
-    margin-left: 16px;
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px 80px;
 }
 
 nav li {
     list-style: none;
-    padding: 8px;
-    display: inline;
-    margin-left: 16px;
+    padding:  20px;
+    display: inline-block;
     font-size: 16px;
     font-weight: 700;
 }
@@ -121,31 +120,51 @@ li a {
     color: #000;
 }
 
+.logo {
+    width: 155px;
+    height: auto;
+    margin-top: 8px;
+    margin-left: 16px;
+}
+
 .selectIdioma {
-    margin: 16px;
     padding: 4px;
 }
 
 /* ESTILOS HERO SECTION */
-.hero-container{
-    margin-left: 26px;
+main {
+    display: flex;
 }
 
-.hero-container h1{
-    margin-bottom: 35px;
+.hero-container {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
 }
 
-.hero-info p{
-    margin-top: 35px;
+.hero-info {
+    display: flex;
+    flex-direction: column;
+    margin-left: 80px;
+    max-width: 661px;
+    justify-content: center;
 }
+
+.hero-info p {
+    display: flex;
+}
+
 .heroimg{
-    width: 90%
-}
+    width: 719px;
+    height: 645px;
+    display: flex;
 
+}
 
 .conocenos {
     color: #2600ff;
     font-size: 16px;
+    display: flex;
 }
 
 .servicios-container {
