@@ -38,42 +38,48 @@ h6 {
   line-height: 140%;
 }
 
-p.body-xl {
+.body-xl {
   font-size: 22px;
   font-weight: 400;
   line-height: 160%;
 }
-p.body-l {
+.body-l {
   font-size: 18px;
   font-weight: 400;
   line-height: 150%;
 }
 
-p.body-m {
+.body-m {
   font-size: 16px;
   font-weight: 400;
   line-height: 150%;
 }
-p.body-s {
+.body-s {
   font-size: 14px;
   font-weight: 400;
   line-height: 150%;
 }
-p.body-xs {
+.body-xs {
   font-size: 12px;
   font-weight: 400;
   line-height: 150%;
 }
 
-p.bold-m {
+.bold-m {
   font-size: 16px;
   font-weight: 600;
 }
 
-p.bold-s {
+.bold-s {
   font-size: 14px;
   font-weight: 600;
 }
+
+.bold-xs{
+  font: 12px;
+  font-weight: 600;
+}
+
 
 /*COLORES GLOBALES para TEXTO*/
 
@@ -451,6 +457,46 @@ section .hero-info h1 {
   }
 }
 
+/*estilos Footer*/
+.footer-container{
+  display: flex;
+  justify-content: space-evenly;
+  margin:  auto;
+  padding: 20px;
+  width: 100%;
+}
+
+.footer-container ul{
+  text-align:  center;
+}
+
+.footer-container h6{
+  padding-bottom: 8px;
+}
+
+.footer-container ul li{
+  list-style: none;
+  padding: 4px 0px;
+}
+
+.final-line{
+  display: flex;
+  justify-content: center;
+  padding: 40px;
+  width: 90%;
+  margin: auto;
+}
+
+.final-line span{
+  margin: 0px 40px;
+}
+
+.final-line img{
+  width: 120px;
+  height: auto;
+}
+
+
 /*ESTILOS pagina NOSOTROS*/
 .historia-container {
   margin-top: 40px;
@@ -700,8 +746,3 @@ section .hero-info h1 {
   height: 573px;
 }
 
-/*ESTILOS footer*/
-.footer-container {
-  background-color: #dadada;
-  padding: 48px;
-}
