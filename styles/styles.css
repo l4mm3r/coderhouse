@@ -155,11 +155,9 @@ li a:hover:after {
   padding-top: 4px;
 }
 
-.selectIdioma {
-  padding: 4px;
-}
-
 form select {
+  padding: 4px;
+  cursor: pointer;
   border: none;
 }
 
