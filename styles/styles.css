@@ -5,6 +5,9 @@
   font-family: "Poppins";
 }
 
+body {
+  overflow-x: hidden;
+}
 /*ESTILOS GLOBALES de TEXTO*/
 
 h1 {
@@ -112,7 +115,6 @@ h6 {
   position: fixed;
   z-index: 100;
   width: 100%;
-  overflow: hidden;
   background-color: white;
 }
 
@@ -263,7 +265,7 @@ section .hero-info h1 {
 
 /*ESTILOS pagina EXPERIENCIA*/
 .experiencia-container {
-  margin-top: 250px;
+  margin-top: 25vh;
   display: flex;
 }
 
@@ -284,32 +286,33 @@ section .hero-info h1 {
 
 .experiencia-container img {
   order: 1;
-  width: 40%;
+  width: 100%;
   height: 50vh;
   object-fit: cover;
   border-radius: 0px 15px 15px 0px;
   box-shadow: 0 20px 30px rgba(0, 0, 0, 0.1);
 }
 
-/*ESTILOS pagina ESTADISTICAS*/
+/*ESTILOS ESTADISTICAS*/
 .estadisticas-container {
-  margin-top: 250px;
-  width: 100%;
-  display: inline-block;
-  text-align: center;
+  margin-top: 25vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
 }
 
 .estadisticas-container img {
-  width: 100%;
   height: 50vh;
+  width: 100%;
   margin-top: 16px;
   object-fit: cover;
   box-shadow: 0 20px 30px rgba(0, 0, 0, 0.1);
 }
 
-/*ESTILOS pagina CLIENTES*/
+/*ESTILOS CLIENTES*/
 .clientes-container {
-  margin-top: 250px;
+  margin-top: 25vh;
   width: 100%;
   height: 90vh;
 }
