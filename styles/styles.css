@@ -1,482 +1,498 @@
 /*RESETEAMOS LOS PADDINGS Y MARGENES*/
-*{
-    margin: 0;
-    padding: 0;
-    font-family: 'Poppins';
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins";
 }
 
 /*ESTILOS GLOBALES de TEXTO*/
 
 h1 {
-    font-size: 56px;
-    font-weight: 700;
-    line-height: 120%;
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 120%;
 }
 h2 {
-    font-size: 48px;
-    font-weight: 700;
-    line-height: 120%;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 120%;
 }
 h3 {
-    font-size: 40px;
-    font-weight: 700;
-    line-height: 120%;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 120%;
 }
 h4 {
-    font-size: 32px;
-    font-weight: 700;
-    line-height: 130%;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 130%;
 }
 h5 {
-    font-size: 24px;
-    font-weight: 700;
-    line-height: 140%;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 140%;
 }
 h6 {
-    font-size: 20px;
-    font-weight: 700;
-    line-height: 140%;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 140%;
 }
 
-p.body-xl{
-    font-size: 22px;
-    font-weight: 400;
-    line-height: 160%;
+p.body-xl {
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 160%;
 }
-p.body-l{
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 150%;
+p.body-l {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 150%;
 }
 
-p.body-m{
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 150%;
+p.body-m {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 150%;
 }
-p.body-s{
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 150%;
+p.body-s {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 150%;
 }
-p.body-xs{
-    font-size: 12px;
-    font-weight: 400;
-    line-height: 150%;
+p.body-xs {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 150%;
 }
 
 p.bold-m {
-    font-size: 16px;
-    font-weight: 600;
+  font-size: 16px;
+  font-weight: 600;
 }
 
-p.bold-s{
-    font-size: 14px;
-    font-weight: 600;
+p.bold-s {
+  font-size: 14px;
+  font-weight: 600;
 }
 
 /*COLORES GLOBALES para TEXTO*/
 
-.natural-900{
-    color: #1A202C;
+.natural-900 {
+  color: #1a202c;
 }
-.natural-700{
-    color: #4A5468;
+.natural-700 {
+  color: #4a5468;
 }
-.natural-600{
-    color: #717D96;
+.natural-600 {
+  color: #717d96;
 }
-.natural-500{
-    color: #A0ABC0;
+.natural-500 {
+  color: #a0abc0;
 }
-.natural-400{
-    color: #CBD2E0;
+.natural-400 {
+  color: #cbd2e0;
 }
 
 /* ESTILOS img */
 .hero-container img {
-    max-width: 100%;
+  max-width: 100%;
 }
-
 
 /* ESTILOS NAVBAR */
-.navbar-container{
-    width: 100%;
+.navbar-container {
+  width: 100%;
 }
 
-.navbar{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    height: 50px;
-    position:fixed;
-    width: 100%;
-    overflow: hidden;
-    background-color: white;
+.navbar {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 50px;
+  position: fixed;
+  width: 100%;
+  overflow: hidden;
+  background-color: white;
 }
 
 nav li {
-    list-style: none;
-    display: inline-block;
-    font-size: 16px;
-    font-weight: 700;
-    padding: 15px;
+  list-style: none;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 15px;
 }
 
 li a {
-    text-decoration: none;
-    color: #000;
+  text-decoration: none;
+  color: #000;
+  position: relative;
+}
+li a:hover{
+  color: #1a202c;
+}
+
+li a:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: ".";
+  color: transparent;
+  background: #1a202c;
+  height: 1px;
+}
+
+li a:hover:after {
+  width: 100%;
+  transition: all 0.5s;
 }
 
 .logo {
-    width: 120px;
-    height: auto;
-    padding-top: 4px;
+  width: 120px;
+  height: auto;
+  padding-top: 4px;
 }
 
 .selectIdioma {
-    padding: 4px;
+  padding: 4px;
 }
 
 form select {
-    border: none;
+  border: none;
 }
 
 /* ESTILOS HERO SECTION */
 main {
-    display: flex;
+  display: flex;
 }
 
 .hero-container {
-    display: flex;
-    width: 90%;
-    margin: 90px auto;
+  display: flex;
+  width: 90%;
+  margin: 90px auto;
 }
 
 .hero-info {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-.heroimg{
-    width: 719px;
-    height: 645px;
-    border-radius: 15px;
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
+.heroimg {
+  width: 719px;
+  height: 645px;
+  border-radius: 15px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
 }
 
-section p{
-    width: 90%;
-    padding-top: 10px;
-    padding-bottom: 30px;
+section p {
+  width: 90%;
+  padding-top: 10px;
+  padding-bottom: 30px;
 }
 
 .conocenos {
-    color: #2600ff;
-    font-size: 16px;
-    display: flex;
+  color: #2600ff;
+  font-size: 16px;
+  display: flex;
 }
 
 /*estilos SERVICIOS>*/
 .servicios-container {
-    margin-top: 40px;
-    margin-bottom: 40px;
-    padding: 20px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  padding: 20px;
 }
 .serviciosImg {
-    max-width: 500px;
-    margin: 24px;
+  max-width: 500px;
+  margin: 24px;
 }
 
-.experiencia-container{
-    margin-top: 40px;
-    margin-bottom: 40px;
-    padding: 20px;
+.experiencia-container {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  padding: 20px;
 }
 
-.experiencia-container img{
-    width: 600px;
-    height: 600px;
+.experiencia-container img {
+  width: 600px;
+  height: 600px;
 }
 
-.estadisticas-container{
-    margin-top: 40px;
-    margin-bottom: 40px;
-    padding: 20px;
+.estadisticas-container {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  padding: 20px;
 }
 
-.estadisticas-container img{
-    width: 1000px;
-    height: 500px;
+.estadisticas-container img {
+  width: 1000px;
+  height: 500px;
 }
 
-.clientes-container{
-    margin-top: 40px;
-    margin-bottom: 40px;
-    padding: 20px;
+.clientes-container {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  padding: 20px;
 }
-.foto-clientes{
-    width: 414px;
-    height: 381px;
+.foto-clientes {
+  width: 414px;
+  height: 381px;
 }
-
 
 /*ESTILOS pagina NOSOTROS*/
-.historia-container{
-    margin-top: 40px;
-    margin-bottom: 40px;
-    padding: 20px;
+.historia-container {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  padding: 20px;
 }
 
-.historia-info-1 img{
-    width: 738px;
-    height: 416px;
+.historia-info-1 img {
+  width: 738px;
+  height: 416px;
 }
 
-.historia-info-2 img{
-    width: 630px;
-    height: 309px;
+.historia-info-2 img {
+  width: 630px;
+  height: 309px;
 }
 
-.modelo-organizacion-container{
-    margin-top: 40px;
-    margin-bottom: 40px;
-    padding: 20px;
+.modelo-organizacion-container {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  padding: 20px;
 }
-.modelo-organizacion-container img{
-    width: 1062px;
-    height: 416px;
-}
-
-.direccion-container{
-    margin-top: 40px;
-    margin-bottom: 40px;
-    padding: 20px;
-}
-.direccion-container img{
-    width: 305px;
-    height: 282px;
+.modelo-organizacion-container img {
+  width: 1062px;
+  height: 416px;
 }
 
-.mision-container{
-    margin-top: 40px;
-    margin-bottom: 40px;
-    padding: 20px;
+.direccion-container {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  padding: 20px;
 }
-.vision-container{
-    margin-top: 40px;
-    margin-bottom: 40px;
-    padding: 20px;
-}
-.valores-container{
-    margin-top: 40px;
-    margin-bottom: 40px;
-    padding: 20px;
+.direccion-container img {
+  width: 305px;
+  height: 282px;
 }
 
-.info-nosotros-container{
-    margin-top: 40px;
-    margin-bottom: 40px;
-    padding: 20px;
+.mision-container {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  padding: 20px;
 }
-.recursos-container{
-    margin-bottom: 20px;
+.vision-container {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  padding: 20px;
+}
+.valores-container {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  padding: 20px;
+}
+
+.info-nosotros-container {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  padding: 20px;
+}
+.recursos-container {
+  margin-bottom: 20px;
 }
 
 .socios {
-    margin-top: 40px;
-    margin-bottom: 40px;
-    padding: 20px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  padding: 20px;
 }
 
-.socios img{
-    width: 100%;
-    height: 282px;
+.socios img {
+  width: 100%;
+  height: 282px;
 }
 
 /*ESTILOS pagina SERVICIOS*/
-.ventajas-container{
-    margin-top: 40px;
-    margin-bottom: 40px;
-    padding: 20px;
+.ventajas-container {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  padding: 20px;
 }
 
-.ventajas-container h4{
-    padding-bottom: 20px;
+.ventajas-container h4 {
+  padding-bottom: 20px;
 }
 
-.ventajas-container p.bold-m{
-    margin-top: 36px;
-    margin-bottom: 16px;
+.ventajas-container p.bold-m {
+  margin-top: 36px;
+  margin-bottom: 16px;
 }
-.ventajas-container .instalaciones-1{
-    width: 844px;
-    height: 309px;
+.ventajas-container .instalaciones-1 {
+  width: 844px;
+  height: 309px;
 }
-.ventajas-container .instalaciones-2{
-    width: 413px;
-    height: 309px;
+.ventajas-container .instalaciones-2 {
+  width: 413px;
+  height: 309px;
 }
-.ventajas-container .instalaciones-3{
-    width: 413px;
-    height: 309px;
+.ventajas-container .instalaciones-3 {
+  width: 413px;
+  height: 309px;
 }
-.ventajas-container .instalaciones-4{
-    width: 630px;
-    height: 309px;
-}
-
-.organismos-container{
-    margin-top: 40px;
-    margin-bottom: 40px;
-    padding: 20px;
-}
-.organismos-container ul{
-    margin-bottom: 20px;
+.ventajas-container .instalaciones-4 {
+  width: 630px;
+  height: 309px;
 }
 
-.organismos-container p.body-l{
-    margin-bottom: 20px;
-    margin-top: 8px;
+.organismos-container {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  padding: 20px;
 }
-.organismos-arg-container li, .organismos-br-container li{
-    list-style: none;
-}
-
-.organismos-container p.bold-s{
-    margin-top: 30px;
+.organismos-container ul {
+  margin-bottom: 20px;
 }
 
-.vecinal-container{
-    margin-top: 40px;
-    margin-bottom: 40px;
-    padding: 20px;
+.organismos-container p.body-l {
+  margin-bottom: 20px;
+  margin-top: 8px;
+}
+.organismos-arg-container li,
+.organismos-br-container li {
+  list-style: none;
 }
 
-.infotvf-container h2{
-    margin-bottom: 8px;
+.organismos-container p.bold-s {
+  margin-top: 30px;
 }
 
-.infotvf-container p.body-l{
-    margin-bottom: 20px;
+.vecinal-container {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  padding: 20px;
+}
+
+.infotvf-container h2 {
+  margin-bottom: 8px;
+}
+
+.infotvf-container p.body-l {
+  margin-bottom: 20px;
 }
 .vecinal-container img {
-    width: 492px;
-    height: 387px;
+  width: 492px;
+  height: 387px;
 }
-
 
 /*ESTILOS pagina ADUANA*/
-.info-aduana-container{
-    margin-top: 40px;
-    margin-bottom: 40px;
-    padding: 20px;
+.info-aduana-container {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  padding: 20px;
 }
 
-.info-aduana-container p{
-    margin-bottom: 20px;
+.info-aduana-container p {
+  margin-bottom: 20px;
 }
 
-.despachantes-arg-container{
-    margin-top: 40px;
-    margin-bottom: 40px;
-    padding: 20px;
+.despachantes-arg-container {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  padding: 20px;
 }
 .despachantes-arg-container img {
-    width: 409px;
-    height: 327px;
+  width: 409px;
+  height: 327px;
 }
 
-.despachantes-br-container{
-    margin-top: 40px;
-    margin-bottom: 40px;
-    padding: 20px;
+.despachantes-br-container {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  padding: 20px;
 }
 .despachantes-br-container img {
-    width: 409px;
-    height: 327px;
+  width: 409px;
+  height: 327px;
 }
 
-
-
 /*ESTILOS pagina TURISMO*/
-.info-leyes-container{
-    margin-top: 40px;
-    margin-bottom: 40px;
-    padding: 20px;
+.info-leyes-container {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  padding: 20px;
 }
 
 .requisitos-container {
-    margin-top: 40px;
-    margin-bottom: 40px;
-    padding: 20px;
-    display: inline-block;
-    text-align: center;
-    width: 90%;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  padding: 20px;
+  display: inline-block;
+  text-align: center;
+  width: 90%;
 }
 
-.requisitos-container p{
-    margin-bottom: 20px;
-    margin-top: 8px;
-    
+.requisitos-container p {
+  margin-bottom: 20px;
+  margin-top: 8px;
 }
 
-.requisitos-container img{
-    width: 100%;
-    max-height: 435px;
+.requisitos-container img {
+  width: 100%;
+  max-height: 435px;
 }
 
-.peaje-container{
-    margin-top: 40px;
-    margin-bottom: 40px;
-    padding: 20px;
-    display: inline-block;
-    text-align: center;
-    width: 100%;
+.peaje-container {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  padding: 20px;
+  display: inline-block;
+  text-align: center;
+  width: 100%;
 }
-.peaje-container img{
-    width: 100%;
-    max-height: 435px;
-}
-
-.tarjeta-hospedaje img{
-    width: 602px;
-    height: 396px;
-    margin-bottom: 30px;
+.peaje-container img {
+  width: 100%;
+  max-height: 435px;
 }
 
-.casacambio-container{
-    margin-top: 40px;
-    margin-bottom: 40px;
-    padding: 20px;
+.tarjeta-hospedaje img {
+  width: 602px;
+  height: 396px;
+  margin-bottom: 30px;
 }
 
-
-.casacambio-container h2{
-    margin-bottom: 20px;
+.casacambio-container {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  padding: 20px;
 }
 
-.tarjeta-casascambio img{
-    width: 522px;
-    height: 327px;
-    margin-top: 20px;
+.casacambio-container h2 {
+  margin-bottom: 20px;
+}
+
+.tarjeta-casascambio img {
+  width: 522px;
+  height: 327px;
+  margin-top: 20px;
 }
 
 /*ESTILOS pagina CONTACTO*/
-.formulario-container{
-    margin-top: 40px;
-    margin-bottom: 40px;
-    padding: 20px;
-    width: 90%;
+.formulario-container {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  padding: 20px;
+  width: 90%;
 }
-.formulario-container img{
-    width: 603px;
-    height: 573px;
+.formulario-container img {
+  width: 603px;
+  height: 573px;
 }
 
 /*ESTILOS footer*/
 .footer-container {
-    background-color: #dadada;
-    padding: 48px;
+  background-color: #dadada;
+  padding: 48px;
 }
