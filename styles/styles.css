@@ -105,7 +105,6 @@ p.bold-s{
 }
 
 .navbar{
-    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.05);
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -150,27 +149,27 @@ main {
 
 .hero-container {
     display: flex;
-    width: 100%;
-    justify-content: space-between;
+    width: 90%;
+    margin: 90px auto;
 }
 
 .hero-info {
     display: flex;
     flex-direction: column;
-    margin-left: 80px;
-    max-width: 661px;
     justify-content: center;
-}
-
-.hero-info p {
-    display: flex;
 }
 
 .heroimg{
     width: 719px;
     height: 645px;
-    display: flex;
+    border-radius: 15px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
+}
 
+section p{
+    width: 90%;
+    padding-top: 10px;
+    padding-bottom: 30px;
 }
 
 .conocenos {
@@ -179,6 +178,7 @@ main {
     display: flex;
 }
 
+/*estilos SERVICIOS>*/
 .servicios-container {
     margin-top: 40px;
     margin-bottom: 40px;
