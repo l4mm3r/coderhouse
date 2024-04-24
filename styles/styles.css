@@ -139,6 +139,10 @@ li a {
     padding: 4px;
 }
 
+form select {
+    border: none;
+}
+
 /* ESTILOS HERO SECTION */
 main {
     display: flex;
