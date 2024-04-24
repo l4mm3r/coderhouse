@@ -99,11 +99,6 @@ h6 {
   color: #cbd2e0;
 }
 
-/* ESTILOS img */
-.hero-container img {
-  max-width: 100%;
-}
-
 /* ESTILOS NAVBAR */
 .navbar-container {
   width: 100%;
@@ -166,6 +161,7 @@ form select {
   padding: 4px;
   cursor: pointer;
   border: none;
+  background: transparent;
 }
 
 /* ESTILOS HERO SECTION */
