@@ -259,21 +259,37 @@ section .hero-info h1 {
 }
 
 
-
-
-
 /*ESTILOS pagina EXPERIENCIA*/
 .experiencia-container {
-  margin-top: 40px;
-  margin-bottom: 40px;
-  padding: 20px;
+  margin-top: 250px;
+  display: flex;
+}
+
+.experiencia-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 100px;
+  width: 100%;
+  order: 2;
+}
+
+.experiencia-info p{
+  width: 70%;
+  padding-top: 16px;
+  padding-bottom: 30px;
 }
 
 .experiencia-container img {
-  width: 600px;
-  height: 600px;
+  order: 1;
+  width: 40%;
+  height: 50vh;
+  object-fit: cover;
+  border-radius: 0px 15px 15px 0px;
+  box-shadow: 0 20px 30px rgba(0,0,0,.1);
 }
 
+/*ESTILOS pagina ESTADISTICAS*/
 .estadisticas-container {
   margin-top: 40px;
   margin-bottom: 40px;
