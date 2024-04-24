@@ -390,7 +390,7 @@ section .hero-info h1 {
 }
 .slider__contents {
   height: 100%;
-  padding: 16px 32px;
+  padding: 26px 32px;
   text-align: center;
   display: -webkit-box;
   display: -webkit-flex;
