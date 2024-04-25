@@ -101,71 +101,29 @@ h6 {
 .natural-400 {
   color: #cbd2e0;
 }
-
+/*-----------------------------------------------------------*/
 /* ESTILOS NAVBAR */
-.navbar-container {
-  width: 100%;
+.offcanvas-body ul li a{
+
 }
 
-.navbar {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  height: 50px;
-  position: fixed;
-  z-index: 100;
-  width: 100%;
-  background-color: white;
+
+
+
+
+@media(max-width:990px){
+  .sidebar{
+    background-color: rgba(255, 255, 255, 0.837);
+    backdrop-filter: blur(10px);
+  }
 }
 
-nav li {
-  list-style: none;
-  display: inline-block;
+.form-select{
+  width: 65px;
   font-size: 16px;
-  font-weight: 700;
-  padding: 15px;
-}
-
-li a {
-  text-decoration: none;
-  color: #000;
-  position: relative;
-}
-li a:hover {
-  color: #1a202c;
-}
-
-li a:after {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin: auto;
-  width: 0%;
-  content: ".";
-  color: transparent;
-  background: #1a202c;
-  height: 1px;
-}
-
-li a:hover:after {
-  width: 100%;
-  transition: all 0.5s;
-}
-
-.logo {
-  width: 120px;
-  height: auto;
-  padding-top: 4px;
-}
-
-form select {
-  padding: 4px;
-  cursor: pointer;
   border: none;
-  background: transparent;
+  background-color: transparent;
 }
-
 /* ESTILOS HERO SECTION */
 main {
   display: flex;
