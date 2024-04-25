@@ -113,12 +113,20 @@ h6 {
 
 @media (max-width: 990px) {
     .form-select{
-      padding-top: 20px;
+      margin-top: 20px;
+      font-size: 18px;
+      width: 80px;
   }
 }
 
 @media(max-width:990px){
-  .offcanvas-body .dropdown-toggle {
+  .offcanvas-body .navbar-nav a{
+    font-size: 26px;
+  }
+}
+
+@media(max-width:990px){
+  .offcanvas-body .dropdown a {
   padding-left: 9px;
   }
 }
