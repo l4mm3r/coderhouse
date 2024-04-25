@@ -322,7 +322,7 @@ section .hero-info h1 {
 }
 
 .slider-clientes {
-  height: 45vh;
+  height: 600px;
   position: relative;
   overflow: hidden;
   display: -webkit-box;
