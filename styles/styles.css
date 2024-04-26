@@ -323,9 +323,15 @@ h6 {
   }
   .experiencia-container img{
     border-radius: 0px;
+    width: 60%;
+    align-self: flex-start;
+    height: 300px;
+    border-radius: 0px 15px 15px 0px;
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.1); ;
   }
   .experiencia-info{
     padding: 40px;
+    padding-bottom: 0px;
     text-align: end;
     width: 80%;
   }
@@ -341,9 +347,11 @@ h6 {
 @media(max-width:576px){
   .experiencia-container img{
     height: 250px;
+    width: 100%;
   }
   .experiencia-info {
     width: 100%;
+    padding-bottom: 40px;
   }
   .experiencia-info h3{
       font-size: 24px;
