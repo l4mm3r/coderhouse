@@ -263,11 +263,15 @@ h6 {
 }
 
 @media(max-width:576px){
+  .servicios-info h3{
+    font-size: 24px;
+  }
   .servicios-info p{
     font-size: 16px;
   }
   .servicios-info .btn{
     width: 130px;
+    font-size: 12px;
   }
   .box-container{
     flex-direction: column;
@@ -341,6 +345,15 @@ h6 {
   .experiencia-info {
     width: 100%;
   }
+  .experiencia-info h3{
+      font-size: 24px;
+  }
+  .experiencia-info p{
+    font-size: 16px;
+}
+.experiencia-info .btn{
+  font-size: 12px;
+}
 }
 
 /*ESTILOS ESTADISTICAS*/
