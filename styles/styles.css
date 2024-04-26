@@ -111,31 +111,32 @@ h6 {
   background-color: transparent;
 }
 
-@media (max-width: 990px) {
+.sidebar .offcanvas-header button{
+  padding-right: 80px;
+}
+
+@media (max-width: 1024px) {
     .form-select{
       margin-top: 20px;
       font-size: 18px;
       width: 80px;
   }
-}
-
-@media(max-width:990px){
   .offcanvas-body .navbar-nav a{
     font-size: 26px;
   }
-}
-
-@media(max-width:990px){
   .offcanvas-body .dropdown a {
-  padding-left: 9px;
-  }
-}
-
-@media(max-width:990px){
+    padding-left: 9px;
+    }
   .sidebar{
     background-color: rgba(255, 255, 255, 0.837);
     backdrop-filter: blur(10px);
   }
+}
+
+@media(max-width:576px){
+  .sidebar .offcanvas-header button {
+  padding-right: 40px;
+}
 }
 
 
