@@ -296,6 +296,10 @@ h6 {
   padding-bottom: 30px;
 }
 
+.experiencia-info .btn {
+  width: 120px;
+}
+
 .experiencia-container img {
   order: 1;
   width: 100%;
@@ -303,6 +307,37 @@ h6 {
   object-fit: cover;
   border-radius: 0px 15px 15px 0px;
   box-shadow: 0 20px 30px rgba(0, 0, 0, 0.1);
+}
+
+@media(max-width:1024px) {
+  .experiencia-container{
+    flex-direction: column-reverse;
+    align-items: flex-end;
+  }
+  .experiencia-container img{
+    border-radius: 0px;
+  }
+  .experiencia-info{
+    padding: 40px;
+    text-align: end;
+    width: 80%;
+  }
+  .experiencia-info p{
+    width: 100%;
+  }
+  .experiencia-info .btn {
+    width: 110px;
+    align-self: flex-end;
+  }
+}
+
+@media(max-width:576px){
+  .experiencia-container img{
+    height: 250px;
+  }
+  .experiencia-info {
+    width: 100%;
+  }
 }
 
 /*ESTILOS ESTADISTICAS*/
