@@ -151,9 +151,11 @@ h6 {
 @media(max-width:990px) { 
   .hero-container{
     margin: 120px auto;
+    text-align: end;
   }
   .hero-container .btn{
     margin-bottom: 20px;
+    align-self: flex-end;
   }
 }
 
