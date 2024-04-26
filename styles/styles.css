@@ -373,6 +373,15 @@ h6 {
   box-shadow: 0 20px 30px rgba(0, 0, 0, 0.1);
 }
 
+@media (max-width:576px){
+  .estadisticas-container h3{
+    font-size: 24px;
+  }
+  .estadisticas-container img{
+    height: 250px;
+  }
+}
+
 /*ESTILOS CLIENTES*/
 .clientes-container {
   margin-top: 25vh;
@@ -519,6 +528,21 @@ h6 {
   }
 }
 
+@media(max-width:576px){
+  .clientes-container h3{
+    font-size: 24px;
+  }
+  .slider-clientes{
+    height: 500px;
+  }
+  .slider__contents img {
+    width: 300px;
+    height: 200px;
+  }
+}
+
+
+
 /*estilos Footer*/
 .footer-container{
   display: flex;
@@ -526,10 +550,15 @@ h6 {
   margin:  auto;
   padding: 20px;
   width: 100%;
+  background-color: #cbd2e0;
 }
 
+.footer-container a{
+  text-decoration: none;
+}
 .footer-container ul{
   text-align:  center;
+  padding-left: 0px;
 }
 
 .footer-container h6{
@@ -541,12 +570,34 @@ h6 {
   padding: 4px 0px;
 }
 
+@media (max-width:1024px){
+  .footer-container ul{
+    padding-left: 0px;
+  }
+  .footer-container li {
+    display: none;
+  }
+  .footer-container a{
+    text-decoration: none;
+  }
+}
+
+@media (max-width:576px){
+  .footer-container{
+    display: inline-block;
+  }
+  .footer-container li {
+    display: none;
+  }
+}
+
 .final-line{
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   padding: 40px;
-  width: 90%;
+  width: 100%;
   margin: auto;
+  background-color: #cbd2e0;
 }
 
 .final-line span{
@@ -556,6 +607,22 @@ h6 {
 .final-line img{
   width: 120px;
   height: auto;
+}
+
+@media (max-width:1024px){
+  .final-line {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  .final-line .mid-item{
+    order:5 ;
+  }
+}
+
+@media (max-width:576px){
+  .final-line img{
+    width: 80px;
 }
 
 
@@ -631,6 +698,8 @@ h6 {
   width: 100%;
   height: 282px;
 }
+
+
 
 /*ESTILOS pagina SERVICIOS*/
 .ventajas-container {
@@ -803,8 +872,9 @@ h6 {
   padding: 20px;
   width: 90%;
 }
+
 .formulario-container img {
   width: 603px;
   height: 573px;
 }
-
+}
