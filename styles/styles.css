@@ -266,6 +266,13 @@ h6 {
   .servicios-info .btn{
     width: 130px;
   }
+  .box-container{
+    flex-direction: column;
+    padding: 20px;
+  }
+  .box-container .box{
+    margin-bottom: 20px;
+  }
 }
 
 /*ESTILOS pagina EXPERIENCIA*/
