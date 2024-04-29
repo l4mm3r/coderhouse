@@ -701,18 +701,23 @@ h6 {
 }
 
 .modelo-organizacion-container img {
-  width: 1062px;
+  width: 1000px;
+  height: 754px;
 }
 
 @media (max-width:1024px){
   .modelo-organizacion-container img{
-    width: 100%;
+    scale: 0.75;
   }
 }
 
 @media (max-width:576px){
   .modelo-organizacion-container{
     padding: 0px;
+  }
+  .modelo-organizacion-container img{
+    scale: 0.35;
+
   }
   .modelo-organizacion-container h2 {
     font-size: 24px;
