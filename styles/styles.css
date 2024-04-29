@@ -702,7 +702,29 @@ h6 {
 
 .modelo-organizacion-container img {
   width: 1062px;
-  height: 416px;
+}
+
+@media (max-width:1024px){
+  .modelo-organizacion-container img{
+    width: 100%;
+  }
+}
+
+@media (max-width:576px){
+  .modelo-organizacion-container{
+    padding: 0px;
+  }
+  .modelo-organizacion-container h2 {
+    font-size: 24px;
+  }
+  .modelo-organizacion-container h4 {
+    font-size: 20px;
+  }
+  .modelo-organizacion-container p {
+    font-size: 14px;
+    width: 80%;
+    margin: auto;;
+  }
 }
 
 .foto-director {
