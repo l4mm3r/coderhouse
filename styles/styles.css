@@ -750,6 +750,7 @@ h6 {
   .direccion-container img {
     margin-bottom: 10px;
 }
+}
 
 @media (max-width:576px){
   .filosofia-container{
@@ -954,5 +955,4 @@ h6 {
 .formulario-container img {
   width: 603px;
   height: 573px;
-}
 }
