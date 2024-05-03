@@ -854,26 +854,35 @@ h6 {
   }
 }
 
-.organismos-container {
-  margin-top: 40px;
-  margin-bottom: 40px;
-  padding: 20px;
-}
-.organismos-container ul {
-  margin-bottom: 20px;
-}
-
-.organismos-container p.body-l {
-  margin-bottom: 20px;
-  margin-top: 8px;
-}
 .organismos-arg-container li,
 .organismos-br-container li {
   list-style: none;
 }
 
-.organismos-container p.bold-s {
-  margin-top: 30px;
+@media (max-width:1024px){
+  .listas-organismos {
+    flex-direction: column;
+  }
+}
+
+@media (max-width:576px){
+  .organismos-container{
+    margin: 0 auto;
+  }
+  .organismos-container h2{
+    font-size: 24px;
+  }
+  .organismos-container p{
+    font-size: 14px;
+  }
+  .organismos-container ul li{
+    font-size: 14px;
+  }
+  
+}
+
+.horarios p {
+  margin-bottom: 0px;
 }
 
 .vecinal-container {
