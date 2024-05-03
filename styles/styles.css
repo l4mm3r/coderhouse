@@ -782,34 +782,76 @@ h6 {
 
 /*ESTILOS pagina SERVICIOS*/
 .ventajas-container {
-  margin-top: 40px;
-  margin-bottom: 40px;
-  padding: 20px;
+  margin-top: 10vh;
+}
+.ventajas-info{
+  margin: 0px 80px;
 }
 
-.ventajas-container h4 {
-  padding-bottom: 20px;
+@media (max-width:576px){
+  .ventajas-info {
+    width: 90%;
+    margin: auto
+  }
+  .ventajas-info h2 {
+    font-size: 24px;
+  }
+  .ventajas-info h4 {
+    font-size: 20px;
+  }
+  .ventajas-info p {
+    font-size: 14px;
+  }
 }
 
-.ventajas-container p.bold-m {
-  margin-top: 36px;
-  margin-bottom: 16px;
+.ventajas-img{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px
 }
 .ventajas-container .instalaciones-1 {
   width: 844px;
   height: 309px;
+  object-fit: cover;
 }
 .ventajas-container .instalaciones-2 {
   width: 413px;
   height: 309px;
+  object-fit: cover;
 }
 .ventajas-container .instalaciones-3 {
   width: 413px;
   height: 309px;
+  object-fit: cover;
 }
 .ventajas-container .instalaciones-4 {
   width: 630px;
   height: 309px;
+  object-fit: cover;
+}
+@media (max-width:1024px){
+  .ventajas-container .instalaciones-1,
+  .ventajas-container .instalaciones-4 {
+    width: 80%;
+  }
+  .ventajas-container .instalaciones-2{
+    width: 350px;
+    height: auto;
+  }
+  .ventajas-container .instalaciones-3{
+    width: 350px;
+    height: auto;
+  }
+}
+
+@media (max-width:576px){
+  .ventajas-container .instalaciones-1,
+  .ventajas-container .instalaciones-2, 
+  .ventajas-container .instalaciones-3,
+  .ventajas-container .instalaciones-4 {
+    width: 100%;
+  }
 }
 
 .organismos-container {
