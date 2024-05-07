@@ -923,13 +923,7 @@ h6 {
 
 /*ESTILOS pagina ADUANA*/
 .info-aduana-container {
-  margin-top: 40px;
-  margin-bottom: 40px;
-  padding: 20px;
-}
-
-.info-aduana-container p {
-  margin-bottom: 20px;
+  margin-top: 15vh;
 }
 
 .despachantes-arg-container {

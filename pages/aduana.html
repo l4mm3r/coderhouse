@@ -6,43 +6,89 @@
         <title>Aduana</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
         <link rel="stylesheet" href="../styles/styles.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     </head>
 <body>
-    <header class="navBar-container">
-        <nav class="navBar">
-            <div class="logo">
-                <a href="../index.html"><img src="../assets/logopng.png" alt="logo de mercovia" class="logo"></a>
+    <header class="overflow-hidden">
+        <nav class="navbar navbar-expand-lg bg-white fixed-top">
+            <div class="container">
+                <!--logo-->
+                <a class="navbar-brand" href="index.html"><img src="../assets/fotos/Home/logopng.png" width="120px" alt="logo de la empresa"></a>
+                <!--toggle btn-->
+                <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!--sidebar-->
+                <div class="sidebar offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                    <!--sidebar header-->
+                    <div class="offcanvas-header text-black">
+                        <button type="button" class="btn-close shadow-none" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <!--sidebar body-->
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-center align-items-start flex-grow-1 pe-3">
+                            <li class="nav-item mx-2">
+                                <a class="nav-link active bold-m natural-900" aria-current="page" href="#">Home</a>
+                            </li>
+
+                            <li class="nav-item mx-2">
+                                <a class="nav-link bold-m natural-600" href="pages/nosotros.html">Nosotros</a>
+                            </li>
+
+                            <li class="nav-item mx-2">
+                                <a class="nav-link bold-m natural-600" href="pages/servicios.html">Servicios</a>
+                            </li>
+
+                            <li class="nav-item mx-2">
+                                <a class="nav-link bold-m natural-600" href="pages/aduana.html">Aduana</a>
+                            </li>
+
+                            <li class="nav-item mx-2">
+                                <a class="nav-link bold-m natural-600" href="pages/turismo.html">Turismo</a>
+                            </li>
+
+                            <li class="nav-item mx-2">
+                                <a class="nav-link bold-m natural-600" href="pages/contacto.html">Contacto</a>
+                            </li>
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link bold-m natural-600 " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    WebMail
+                                </a>
+                                    <ul class="dropdown-menu dropdown-menu-end">
+                                        <li><a class="dropdown-item" href="#">Clientes</a></li>
+                                        <li><a class="dropdown-item" href="#">Empleados</a></li>
+                                    </ul>
+                            </li>
+                        </ul>
+                        <div class="d-flex">
+                            <select class="form-select d-flex" aria-label="Default select example">
+                                <option selected>ES</option>
+                                <option value="1">PT</option>
+                                <option value="2">EN</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <ul>
-                <li><a href="../pages/nosotros.html">Nosotros</a></li>
-                <li><a href="../pages/servicios.html">Servicios</a></li>
-                <li><a href="../pages/aduana.html">Aduana</a></li>
-                <li><a href="../pages/turismo.html">Turismo</a></li>
-                <li><a href="../pages/contacto.html">Contacto</a></li>
-                <li><a href="#">WebMail</a></li>
-            </ul>
-            <form>
-                <select name="idioma" class="selectIdioma"> 
-                    <option value="portugues">PT</option> 
-                    <option value="espanol">ES</option> 
-                </select>
-            </form>
         </nav>
     </header>
 
-    <section class="info-aduana-container">
-        <div class="proceso-simultaneo-container">
+    <section class="info-aduana-container row">
+        <div class="proceso-simultaneo-container col-lg-8 col-md-10 mx-auto text-end">
             <h2>Proceso Simultaneo</h2>
-            <p class="body-l">Egestas eros et vestibulum pharetra duis. Et consectetur mollis tincidunt ut. At tristique et sagittis eget sed faucibus mauris ut egestas. Sit nunc condimentum aliquet amet duis nisl tellus. Et consectetur eu nullam suspendisse. Scelerisque mauris elementum quam augue libero volutpat. Egestas faucibus orci elit nibh porttitor hac ut. Purus suspendisse et nunc turpis.</p>
+            <p class="body-l">El centro Unificado de Frontera implantó con la autorización y colaboración de la Aduana Argentina y la Receita Federal de Brasil el Proceso Simultaneo de Exportación e Importación, el cual es opcional para el usuario y no es obligatorio. Esto es una gran ventaja operativa ya que permite una mayor agilidad en las liberaciones de cargas, ya que en estos casos no es necesario esperar por la finalización de la exportación para dar inicio al proceso de importación en el otro país. </p>
         </div>
 
-        <div class="ingreso-inmediato-container">
+        <div class="ingreso-inmediato-container col-lg-8 col-md-10 mx-auto pt-5">
             <h2>Ingreso inmediato</h2>
-            <p class="body-l">Egestas eros et vestibulum pharetra duis. Et consectetur mollis tincidunt ut. At tristique et sagittis eget sed faucibus mauris ut egestas. Sit nunc condimentum aliquet amet duis nisl tellus. Et consectetur eu nullam suspendisse. Scelerisque mauris elementum quam augue libero volutpat. Egestas faucibus orci elit nibh porttitor hac ut. Purus suspendisse et nunc turpis.</p>
+            <p class="body-l">La capacidad física significa que no hay colas ni demoras para ingresar, el boleto se libera las 24 horas todos los días del año.
+            La estructura está planificada en forma de línea de montaje de producción, evitando el desplazamiento y circulación de camiones.</p>
         </div>
     </section>
 
@@ -98,42 +144,49 @@
             <!---FOOTER-->
     <footer class="footer-container">
                 <ul class="nosotros-footer">
-                    <p>Nosotros</p>
-                    <li class="list-item-footer"><a href="#">Nuestra historia</a></li>
-                    <li class="list-item-footer"><a href="#">Filosfia coorporativa</a></li>
-                    <li class="list-item-footer"><a href="#">Certificaciones</a></li>
-                    <li class="list-item-footer"><a href="#">Socios</a></li>
+                    <a href="" class="natural-900"><h6>Nosotros</h6></a>
+                    <li class="list-item-footer bold-xs"><a href="#" class="natural-600">Nuestra historia</a></li>
+                    <li class="list-item-footer bold-xs"><a href="#" class="natural-600">Filosfia coorporativa</a></li>
+                    <li class="list-item-footer bold-xs"><a href="#" class="natural-600">Certificaciones</a></li>
+                    <li class="list-item-footer bold-xs"><a href="#" class="natural-600">Socios</a></li>
                 </ul>
                 <ul class="servicios-footer">
-                    <p>Servicios</p>
-                    <li class="list-item-footer"><a href="#">Ventajas del CUF</a></li>
-                    <li class="list-item-footer"><a href="#">Organismos</a></li>
-                    <li class="list-item-footer"><a href="#">T.V.F.</a></li>
+                    <a href="" class="natural-900"><h6>Servicios</h6></a>
+                    <li class="list-item-footer bold-xs"><a href="#" class="natural-600">Ventajas del CUF</a></li>
+                    <li class="list-item-footer bold-xs"><a href="#" class="natural-600">Organismos</a></li>
+                    <li class="list-item-footer bold-xs"><a href="#" class="natural-600">T.V.F.</a></li>
                 </ul>
                 <ul class="nosotros-footer">
-                    <p>Aduana</p>
-                    <li class="list-item-footer"><a href="#">Información</a></li>
-                    <li class="list-item-footer"><a href="#">Filosfia coorporativa</a></li>
-                    <li class="list-item-footer"><a href="#">Certificaciones</a></li>
-                    <li class="list-item-footer"><a href="#">Socios</a></li>
+                    <a href="" class="natural-900"><h6>Aduana</h6></a>
+                    <li class="list-item-footer bold-xs"><a href="#" class="natural-600">Información</a></li>
+                    <li class="list-item-footer bold-xs"><a href="#" class="natural-600">Filosfia coorporativa</a></li>
+                    <li class="list-item-footer bold-xs"><a href="#" class="natural-600">Certificaciones</a></li>
+                    <li class="list-item-footer bold-xs"><a href="#" class="natural-600">Socios</a></li>
                 </ul>
                 <ul class="nosotros-footer">
-                    <p>Turismo</p>
-                    <li class="list-item-footer"><a href="#">Información y leyes</a></li>
-                    <li class="list-item-footer"><a href="#">Casas de cambio</a></li>
-                    <li class="list-item-footer"><a href="#">Hospedajes</a></li>
-                    <li class="list-item-footer"><a href="#">Peaje</a></li>
+                    <a href="" class="natural-900"><h6>Turismo</h6></a>
+                    <li class="list-item-footer bold-xs"><a href="#" class="natural-600">Información y leyes</a></li>
+                    <li class="list-item-footer bold-xs"><a href="#" class="natural-600">Casas de cambio</a></li>
+                    <li class="list-item-footer bold-xs"><a href="#" class="natural-600">Hospedajes</a></li>
+                    <li class="list-item-footer bold-xs"><a href="#" class="natural-600">Peaje</a></li>
                 </ul>
                 <ul class="nosotros-footer">
-                    <p>Contacto</p>
-                    <li class="list-item-footer"><a href="#">Trabaje con nosotros</a></li>
+                    <a href="" class="natural-900"><h6>Contacto</h6></a>
+                    <li class="list-item-footer"><a href="#" class="natural-600">Trabaje con nosotros</a></li>
                 </ul>
                 <ul class="nosotros-footer">
-                    <p>WebMail</p>
-                    <li class="list-item-footer"><a href="#">Acceso clientes</a></li>
-                    <li class="list-item-footer"><a href="#">Acceso empleados</a></li>
+                    <a href="" class="natural-900"><h6>WebMail</h6></a>
+                    <li class="list-item-footer"><a href="#" class="natural-600">Acceso clientes</a></li>
+                    <li class="list-item-footer"><a href="#" class="natural-600">Acceso empleados</a></li>
                 </ul>
-                <p class="copyright">Mercovia S.A. © 2024</p>
     </footer>
+    <div class="final-line">
+        <span class="body-xs natural-600" >BR 285 Km 551 - Sala 83</span>
+        <span class="body-xs natural-600" >São Borja - Brasil / Santo Tomé - Argentina</span>
+        <span class="mid-item"><a href="./index.html" class="mid-item"><img src="assets/fotos/Home/logopng.png"  alt=""></a></span>
+        <span class="body-xs natural-600" >BR: (55) 3431-2207 / (55) 3431-2307</span>
+        <span class="body-xs natural-600" >AR: (54) 03756 490100</span>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
