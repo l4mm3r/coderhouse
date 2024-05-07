@@ -559,10 +559,11 @@ h6 {
 
 
 /*estilos Footer*/
-.footer-container{
+.footer-list{
   display: flex;
   justify-content: space-evenly;
   margin:  auto;
+  margin-top: 100px;
   padding: 20px;
   width: 100%;
   background-color: #cbd2e0;
@@ -598,10 +599,10 @@ h6 {
 }
 
 @media (max-width:576px){
-  .footer-container{
+  .footer-list{
     display: inline-block;
   }
-  .footer-container li {
+  .footer-list li {
     display: none;
   }
 }
