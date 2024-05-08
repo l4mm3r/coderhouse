@@ -38,7 +38,7 @@
                             </li>
 
                             <li class="nav-item mx-2">
-                                <a class="nav-link bold-m natural-600 active"href="nosotros.html">Nosotros</a>
+                                <a class="nav-link bold-m natural-600"href="nosotros.html">Nosotros</a>
                             </li>
 
                             <li class="nav-item mx-2">
@@ -54,7 +54,7 @@
                             </li>
 
                             <li class="nav-item mx-2">
-                                <a class="nav-link bold-m natural-600" href="contacto.html">Contacto</a>
+                                <a class="nav-link bold-m natural-600 active" href="contacto.html">Contacto</a>
                             </li>
 
                             <li class="nav-item dropdown">
@@ -81,26 +81,22 @@
     </header>
 
     <section class="formulario-container">
-        <form class="contacto-form">
-            <label for="nombre">Nombre</label>
-            <input type="text"  name="nombre" required placeholder="Escriba su nombre">
-
-            <label for="email">Email</label>
-            <input type="email"  name="email" required placeholder="Escriba su email">
-
-            <label for="asunto">Asunto</label>
-            <input type="text"  name="asunto" required placeholder="Escriba el asunto">
-
-            <label for="asunto">Agregar CV</label>
-            <input type="file"  name="archivo">
-
-            <label for="mensaje">Mensaje</label>
-            <textarea name="mensaje" required placeholder="Escriba su mensaje"></textarea>
-
-            <input type="submit" value="Enviar">
+        <form action="https://api.web3forms.com/submit" method="POST" class="contacto-form">
+            <div class="contacto-title">
+                <h2>Contactanos</h2>
+                <hr>
+            </div>
+            <input type="hidden" name="access_key" value="26bced72-f3e1-458d-a8a9-d1c586cd0618">
+            <input type="text"  name="nombre" required placeholder="Escriba su nombre" class="contacto-inputs">
+            <input type="email" name="email" required placeholder="Escriba su email" class="contacto-inputs">
+            <input type="text" name="asunto" required placeholder="Escriba el asunto" class="contacto-inputs">
+            <input type="file" name="archivo" class="contacto-inputs">
+            <textarea name="mensaje" required placeholder="Escriba su mensaje" class="contacto-inputs"></textarea>
+            <button type="submit"> Enviar <img src="../assets/fotos/contacto/arrow_icon.png" alt="imagen de una flecha"></button>
         </form>
-
-        <img src="../assets/fotos/contacto/mail.jpg" alt="imagen de la aplicacion de correos en un celular">
+        <div class="contacto-img">
+            <img src="../assets/fotos/contacto/mail.jpg" alt="imagen de la aplicacion de correos en un celular">
+        </div>
     </section>
 
     <footer class="footer-container">
