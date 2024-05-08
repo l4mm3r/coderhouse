@@ -1085,8 +1085,6 @@ h6 {
   object-fit: cover;
 }
 
-/**/
-
 .hospedajes-container {
   width: 100%;
   height: 100vh;
@@ -1116,12 +1114,14 @@ h6 {
   justify-content: flex-end;
   transition: .6s cubic-bezier(.28, -0.03,0,.99);
   box-shadow: 0px 10px 30px -5px rgba(0,0,0,0.8);
+  border: none;
 }
 
 .card > .row {
   color: white;
   display: flex;
   flex-wrap: nowrap;
+  background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(0,212,255,0) 100%);
 }
 
 .card > .row .icon{
@@ -1149,12 +1149,12 @@ h6 {
 }
 
 .description p{
-  color: #b0b0ba;
-  padding-top: 5px;
+  color: #fff;
 }
 
 .description h4 {
   text-transform: uppercase;
+  margin-bottom: 0;
 }
 
 .info-hospedajes input {
@@ -1185,24 +1185,6 @@ input:checked + label .description{
 .card[for="c4"] {
   background-image: url('/assets/fotos/Turismo/hotel4.jpeg');
 } 
-
-/**/
-
-.casacambio-container {
-  margin-top: 40px;
-  margin-bottom: 40px;
-  padding: 20px;
-}
-
-.casacambio-container h2 {
-  margin-bottom: 20px;
-}
-
-.tarjeta-casascambio img {
-  width: 522px;
-  height: 327px;
-  margin-top: 20px;
-}
 
 /*ESTILOS pagina CONTACTO*/
 .formulario-container {
