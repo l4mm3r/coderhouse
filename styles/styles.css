@@ -109,13 +109,18 @@ h6 {
 
 /*-----------------------------------------------------------*/
 /* ESTILOS NAVBAR */
-
+.bg-white {
+  --bs-bg-opacity: 0;
+  backdrop-filter: blur(10px);
+}
 .form-select{
   width: 65px;
   font-size: 16px;
   border: none;
   background-color: transparent;
 }
+/**/
+
 
 .sidebar .offcanvas-header button{
   padding-right: 80px;
@@ -314,13 +319,21 @@ h6 {
   width: 120px;
 }
 
-.experiencia-container img {
+.experiencia-container > img {
   order: 1;
   width: 100%;
   height: 50vh;
   object-fit: cover;
   border-radius: 0px 15px 15px 0px;
   box-shadow: 0 20px 30px rgba(0, 0, 0, 0.1);
+  scale: .8; opacity:0;
+  animation: fade-in linear forwards;
+  animation-timeline: view();
+  animation-range: 250px 500px;
+}
+
+@keyframes fade-in{
+  to {scale: 1; opacity: 1;}
 }
 
 @media(max-width:1024px) {
