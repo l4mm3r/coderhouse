@@ -154,7 +154,15 @@ h6 {
 /* ESTILOS HERO SECTION */
 .hero-container {
   margin: 200px auto;
+  animation: fade-out linear;
+  animation-timeline: view();
+  animation-range: exit -300px;
 }
+
+@keyframes fade-out{
+  to {opacity: 0;}
+}
+
 .heroimg {
   border-radius: 15px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
