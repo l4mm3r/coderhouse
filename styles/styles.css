@@ -1121,7 +1121,8 @@ h6 {
   color: white;
   display: flex;
   flex-wrap: nowrap;
-  background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(0,212,255,0) 100%);
+  background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(0,212,255,0) 70%);
+  padding-right: 10px;
 }
 
 .card > .row .icon{
@@ -1185,6 +1186,69 @@ input:checked + label .description{
 .card[for="c4"] {
   background-image: url('/assets/fotos/Turismo/hotel4.jpeg');
 } 
+
+@media (max-width:1024px){
+  .info-hospedajes{
+    flex-direction: column;
+    align-items: center;
+  }
+  .card {
+    width: 300px;
+    margin: 5px;
+  }
+  input:checked + label {
+    height: 600px;
+  }
+}
+
+@media (max-width:576px){
+  h2 {
+    font-size: 24px;
+  }
+  h4 {
+    font-size: 20px;
+  }
+  .leyes-container{
+    width: 80%;
+    margin: auto;
+    margin-top: 15vh;
+  }
+  .texto-leyes {
+    column-count: 1;
+  }
+  .texto-leyes p,
+  .info-requisitos p,
+  .peaje-container p{
+    font-size: 14px;
+  }
+  .info-requisitos,
+  .peaje-container{
+    width: 80%;
+  }
+
+  .peaje-container img{
+    width: 150%;
+  }
+  .card{
+    width: 100px;
+    margin: 5px;
+  }
+  .card .row .description {
+    width: 300px;
+  }
+  input:checked + label {
+    width: 300px;
+  }
+  
+  .casacambio-container {
+    width: 80%;
+    margin: auto;
+  }
+  .text-end {
+    text-align: center !important;
+  }
+}
+
 
 /*ESTILOS pagina CONTACTO*/
 .formulario-container{
@@ -1269,4 +1333,28 @@ input:checked + label .description{
   width: 500px;
   border-radius: 15px;
   box-shadow: 0 20px 30px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width:1024px){
+  .formulario-container .contacto-img img{
+    display: none;
+  }
+}
+@media (max-width:576px){
+  .contacto-form {
+    width: 80%;
+  }
+  .contacto-form input{
+    font-size: 14px;
+    margin: auto;
+    width: 300px;
+  }
+  .contacto-form textarea{
+    font-size: 14px;
+    margin: auto;
+    width: 300px;
+  }
+  .contacto-form button{
+    margin-left: 10px;
+  }
 }
