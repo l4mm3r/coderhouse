@@ -112,8 +112,8 @@ h6 {
   position: relative;
   padding: 10px;
   border-radius: 100vw;
-  background-color: transparent;
-  color: #fafafa;
+  background-color: blue;
+  color: white;
   border: solid 1px rgba(250, 250, 250, 0.3);
   overflow: hidden;
   cursor: pointer;
@@ -139,19 +139,20 @@ h6 {
   top: 0;
   width: 100%;
   height: 100%;
-  background-color: blue;
+  background-color: white;
   border-radius: 50%;
   transition: all 0.6s cubic-bezier(0.25, 1, 0.5, 1);
   transform: translateY(-100%);
 }
 .button-primary a{
   text-decoration: none;
-}
-.button-primary:hover a{
   color: white;
 }
+.button-primary:hover a{
+  color: blue;
+}
 .button-primary:hover {
-  border-color: blue;
+  border-color: white;
   transform: translateY(-4px);
 }
 .button-primary:hover .fill-container {
@@ -231,6 +232,7 @@ h6 {
   .hero-container .button-primary{
     margin-bottom: 20px;
     align-self: flex-end;
+    width: 120px;
   }
 }
 
@@ -254,7 +256,7 @@ h6 {
   .hero-container h1 {
     font-size: 32px;
   }
-  .hero-container .btn{
+  .hero-container .button-primary{
     width: 110px;
     font-size: 12px;
     align-self: center;
