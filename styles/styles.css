@@ -863,6 +863,13 @@ button:hover .circle {
 .modelo-organizacion-container img {
   width: 1000px;
   height: 754px;
+  object-fit: cover;
+  border-radius: 0px 15px 15px 0px;
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.1);
+  scale: .8; opacity:0;
+  animation: fade-in linear forwards;
+  animation-timeline: view();
+  animation-range: 250px 500px;
 }
 .modelo-organizacion-container span{
   color: hsl(0 0% 100% / 0.2);
@@ -897,7 +904,7 @@ button:hover .circle {
 
 @media (max-width:1024px){
   .modelo-organizacion-container img{
-    scale: 0.75;
+    scale: 0.75 !important;
   }
 }
 
@@ -906,8 +913,7 @@ button:hover .circle {
     padding: 0px;
   }
   .modelo-organizacion-container img{
-    scale: 0.35;
-
+    scale: 0.35 !important;
   }
   .modelo-organizacion-container h2 {
     font-size: 24px;
