@@ -1367,19 +1367,19 @@ input:checked + label .description{
 }
 
 .card[for="c1"] {
-  background-image: url('/assets/fotos/turismo/hotel1.jpg');
+  background-image: url('../assets/fotos/turismo/hotel1.jpg');
 }
 
 .card[for="c2"] {
-  background-image: url('/assets/fotos/turismo/hotel2.jpg');
+  background-image: url('../assets/fotos/turismo/hotel2.jpg');
 }
 
 .card[for="c3"] {
-  background-image: url('/assets/fotos/turismo/hotel3.jpg');
+  background-image: url('../assets/fotos/turismo/hotel3.jpg');
 }
 
 .card[for="c4"] {
-  background-image: url('/assets/fotos/turismo/hotel4.jpeg');
+  background-image: url('../assets/fotos/turismo/hotel4.jpeg');
 } 
 
 @media (max-width:1024px){
