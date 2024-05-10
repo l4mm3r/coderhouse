@@ -247,14 +247,17 @@ button:hover .circle {
 
 /*-----------------------------------------------------------*/
 /* ESTILOS NAVBAR */
+.dropdown-menu{
+  border: none;
+  background: transparent;
+}
+
 .form-select{
   width: 65px;
   font-size: 16px;
   border: none;
   background-color: transparent;
 }
-/**/
-
 
 .sidebar .offcanvas-header button{
   padding-right: 80px;
