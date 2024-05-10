@@ -1462,7 +1462,6 @@ input:checked + label .description{
 
 .contacto-title h2{
   font-weight: 600;
-  color: #a363aa;
   font-size: 40px;
   margin-bottom: 5px;
 }
@@ -1471,7 +1470,6 @@ input:checked + label .description{
   border: none;
   width: 120px;
   height: 5px;
-  background-color: #a363aa;
   border-radius: 10px;
   margin-bottom: 20px;
 }
@@ -1494,12 +1492,12 @@ input:checked + label .description{
 }
 
 .contacto-form input:focus {
-  border: 2px solid #ff994f;
+  border: 2px solid blue;
   transition: 0.2s;
 }
 
 .contacto-form textarea:focus {
-  border: 2px solid #ff994f;
+  border: 2px blue solid;
   transition: 0.2s;
 }
 
@@ -1516,7 +1514,7 @@ input:checked + label .description{
   border: none;
   gap: 10px;
   border-radius: 50px;
-  background: linear-gradient(270deg, #ff994f, #fa6d86);
+  background: blue;
   cursor: pointer;
 }
 
