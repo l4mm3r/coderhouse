@@ -287,8 +287,8 @@ button:hover .circle {
 }
 }
 
-
-/* ESTILOS HERO SECTION */
+/*-----------------------------------------------------------*/
+/* INDEX PAGE hero section */
 .hero-container {
   margin: 200px auto;
   animation: fade-out linear;
@@ -347,8 +347,8 @@ button:hover .circle {
   }
 }
 
-
-/*estilos SERVICIOS>*/
+/*-----------------------------------------------------------*/
+/*INDEX PAGE servicios section*/
 .servicios-container {
   display: flex;
   justify-content: center;
@@ -440,7 +440,8 @@ button:hover .circle {
   }
 }
 
-/*ESTILOS EXPERIENCIA*/
+/*-----------------------------------------------------------*/
+/*INDEX PAGE experiencia section*/
 .experiencia-container {
   margin-top: 25vh;
   display: flex;
@@ -530,7 +531,8 @@ button:hover .circle {
 }
 }
 
-/*ESTILOS ESTADISTICAS*/
+/*-----------------------------------------------------------*/
+/*INDEX PAGE estadisticas section*/
 .estadisticas-container {
   margin-top: 25vh;
   display: flex;
@@ -556,7 +558,8 @@ button:hover .circle {
   }
 }
 
-/*ESTILOS CLIENTES*/
+/*-----------------------------------------------------------*/
+/*INDEX PAGE clientes section*/
 .clientes-container {
   margin-top: 25vh;
   width: 100%;
@@ -716,8 +719,8 @@ button:hover .circle {
 }
 
 
-
-/*estilos Footer*/
+/*-----------------------------------------------------------*/
+/*FOOTER section*/
 .footer-list{
   display: flex;
   justify-content: space-evenly;
@@ -801,7 +804,9 @@ button:hover .circle {
 }
 }
 
-/*ESTILOS pagina NOSOTROS*/
+/*-----------------------------------------------------------*/
+/*NOSOTROS PAGE*/
+/* NOSOTROS PAGE historia section*/
 .historia-container{
   margin-top: 15vh;
 }
@@ -860,6 +865,8 @@ button:hover .circle {
   }
 }
 
+/*-----------------------------------------------------------*/
+/* NOSOTROS PAGE organizacion section*/
 .modelo-organizacion-container img {
   width: 1000px;
   height: 754px;
@@ -928,6 +935,8 @@ button:hover .circle {
   }
 }
 
+/*-----------------------------------------------------------*/
+/* NOSOTROS PAGE director section*/
 .foto-director {
   width: 305px;
   height: 282px;
@@ -964,6 +973,8 @@ button:hover .circle {
   }
 }
 
+/*-----------------------------------------------------------*/
+/* NOSOTROS PAGE socios section*/
 .socios {
   padding: 20px;
   margin-bottom: 250px;
@@ -975,29 +986,14 @@ button:hover .circle {
 }
 
 
-
-/*ESTILOS pagina SERVICIOS*/
+/*-----------------------------------------------------------*/
+/* SERVICIOS PAGE*/
+/* SERVICIOS PAGE ventajas section*/
 .ventajas-container {
   margin-top: 15vh;
 }
 .ventajas-info{
   margin: 0px 80px;
-}
-
-@media (max-width:576px){
-  .ventajas-info {
-    width: 90%;
-    margin: auto
-  }
-  .ventajas-info h2 {
-    font-size: 24px;
-  }
-  .ventajas-info h4 {
-    font-size: 20px;
-  }
-  .ventajas-info p {
-    font-size: 14px;
-  }
 }
 
 .ventajas-img{
@@ -1043,6 +1039,19 @@ button:hover .circle {
 }
 
 @media (max-width:576px){
+  .ventajas-info {
+    width: 90%;
+    margin: auto
+  }
+  .ventajas-info h2 {
+    font-size: 24px;
+  }
+  .ventajas-info h4 {
+    font-size: 20px;
+  }
+  .ventajas-info p {
+    font-size: 14px;
+  }
   .ventajas-container .instalaciones-1,
   .ventajas-container .instalaciones-2, 
   .ventajas-container .instalaciones-3,
@@ -1051,6 +1060,8 @@ button:hover .circle {
   }
 }
 
+/*-----------------------------------------------------------*/
+/* SERVICIOS PAGE organismos section*/
 .organismos-arg-container li,
 .organismos-br-container li {
   list-style: none;
@@ -1080,6 +1091,9 @@ button:hover .circle {
     font-size: 14px;
   }
 }
+
+/*-----------------------------------------------------------*/
+/* SERVICIOS PAGE transito vecinal section*/
 .vecinal-container {
   margin-bottom: 250px;
 }
@@ -1114,14 +1128,15 @@ button:hover .circle {
   }
 }
 
-
-
-
-/*ESTILOS pagina ADUANA*/
+/*-----------------------------------------------------------*/
+/*ADUANA PAGE*/
+/* ADUANA PAGE informacion section*/
 .info-aduana-container {
   margin-top: 15vh;
 }
 
+/*-----------------------------------------------------------*/
+/* ADUANA PAGE despachantes section*/
 .despachantes-container .despacantes-cards  img{
   display: block;
   max-width: 100%;
@@ -1263,9 +1278,9 @@ button:hover .circle {
   }
 }
 
-
-
-/*ESTILOS pagina TURISMO*/
+/*-----------------------------------------------------------*/
+/*TURISMO PAGE*/
+/* TURIMSO PAGE leyes section*/
 .leyes-container {
   margin-top: 15vh;
 }
@@ -1274,12 +1289,16 @@ button:hover .circle {
   column-count: 2;
 }
 
+/*-----------------------------------------------------------*/
+/* TURIMSO PAGE peaje section*/
 .peaje-container img {
   width: 120%;
   max-height: 435px;
   object-fit: cover;
 }
 
+/*-----------------------------------------------------------*/
+/* TURIMSO PAGE hospedajes section*/
 .hospedajes-container {
   width: 100%;
   height: 100vh;
@@ -1444,8 +1463,9 @@ input:checked + label .description{
   }
 }
 
-
-/*ESTILOS pagina CONTACTO*/
+/*-----------------------------------------------------------*/
+/*CONTACTO PAGE*/
+/* CONTACTO PAGE formulario section*/
 .formulario-container{
   height: 100vh;
   display: flex;
