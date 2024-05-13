@@ -6,13 +6,17 @@
         <title>Aduana</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!---Bootstrap LINK-->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <!---Css LINK-->
         <link rel="stylesheet" href="../styles/styles.css">
+        <!---Fonts LINK-->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     </head>
 <body>
+    <!---Navbar SECTION-->
     <header class="overflow-hidden">
         <nav class="navbar navbar-expand-lg bg-white fixed-top">
             <div class="container">
@@ -79,7 +83,8 @@
         </nav>
     </header>
 
-    <section class="info-aduana-container row">
+    <!---Informacion SECTION-->
+    <section class="info-aduana-container row" id="procesos-section">
         <div class="proceso-simultaneo-container col-lg-8 col-md-10 mx-auto text-end">
             <h2>Proceso Simultaneo</h2>
             <p class="body-l">El centro Unificado de Frontera implantó con la autorización y colaboración de la Aduana Argentina y la Receita Federal de Brasil el Proceso Simultaneo de Exportación e Importación, el cual es opcional para el usuario y no es obligatorio. Esto es una gran ventaja operativa ya que permite una mayor agilidad en las liberaciones de cargas, ya que en estos casos no es necesario esperar por la finalización de la exportación para dar inicio al proceso de importación en el otro país. </p>
@@ -92,7 +97,8 @@
         </div>
     </section>
 
-    <section class="despachantes-container">
+    <!---Despachantes SECTION-->
+    <section class="despachantes-container" id="despachantes-section"> 
         <span class="mt250"><h2>Despachantes aduaneros</h2></span>
         <div class="despachantes-cards mt-5">
             <article class="card__article">
@@ -127,54 +133,53 @@
         </div>
     </section>
 
-
-            <!---FOOTER-->
+    <!---FOOTER-->
     <footer class="footer-container">
-        <div class="footer-list">
-                <ul class="nosotros-footer">
-                    <a href="" class="natural-900"><h6>Nosotros</h6></a>
-                    <li class="list-item-footer bold-xs"><a href="#" class="natural-600">Nuestra historia</a></li>
-                    <li class="list-item-footer bold-xs"><a href="#" class="natural-600">Filosfia coorporativa</a></li>
-                    <li class="list-item-footer bold-xs"><a href="#" class="natural-600">Certificaciones</a></li>
-                    <li class="list-item-footer bold-xs"><a href="#" class="natural-600">Socios</a></li>
-                </ul>
-                <ul class="servicios-footer">
-                    <a href="" class="natural-900"><h6>Servicios</h6></a>
-                    <li class="list-item-footer bold-xs"><a href="#" class="natural-600">Ventajas del CUF</a></li>
-                    <li class="list-item-footer bold-xs"><a href="#" class="natural-600">Organismos</a></li>
-                    <li class="list-item-footer bold-xs"><a href="#" class="natural-600">T.V.F.</a></li>
-                </ul>
-                <ul class="nosotros-footer">
-                    <a href="" class="natural-900"><h6>Aduana</h6></a>
-                    <li class="list-item-footer bold-xs"><a href="#" class="natural-600">Información</a></li>
-                    <li class="list-item-footer bold-xs"><a href="#" class="natural-600">Filosfia coorporativa</a></li>
-                    <li class="list-item-footer bold-xs"><a href="#" class="natural-600">Certificaciones</a></li>
-                    <li class="list-item-footer bold-xs"><a href="#" class="natural-600">Socios</a></li>
-                </ul>
-                <ul class="nosotros-footer">
-                    <a href="" class="natural-900"><h6>Turismo</h6></a>
-                    <li class="list-item-footer bold-xs"><a href="#" class="natural-600">Información y leyes</a></li>
-                    <li class="list-item-footer bold-xs"><a href="#" class="natural-600">Casas de cambio</a></li>
-                    <li class="list-item-footer bold-xs"><a href="#" class="natural-600">Hospedajes</a></li>
-                    <li class="list-item-footer bold-xs"><a href="#" class="natural-600">Peaje</a></li>
-                </ul>
-                <ul class="nosotros-footer">
-                    <a href="" class="natural-900"><h6>Contacto</h6></a>
-                    <li class="list-item-footer"><a href="#" class="natural-600">Trabaje con nosotros</a></li>
-                </ul>
-                <ul class="nosotros-footer">
-                    <a href="" class="natural-900"><h6>WebMail</h6></a>
-                    <li class="list-item-footer"><a href="#" class="natural-600">Acceso clientes</a></li>
-                    <li class="list-item-footer"><a href="#" class="natural-600">Acceso empleados</a></li>
-                </ul>
-        </div>
-                <div class="final-line">
-                        <span class="body-xs natural-600" >BR 285 Km 551 - Sala 83</span>
-                        <span class="body-xs natural-600" >São Borja - Brasil / Santo Tomé - Argentina</span>
-                        <span class="mid-item"><a href="./index.html" class="mid-item"><img src="../assets/fotos/Home/logopng.png"  alt="logo de la empresa"></a></span>
-                        <span class="body-xs natural-600" >BR: (55) 3431-2207 / (55) 3431-2307</span>
-                        <span class="body-xs natural-600" >AR: (54) 03756 490100</span>
+                <div class="footer-list">
+                        <ul class="nosotros-footer">
+                            <a href="nosotros.html" class="natural-900"><h6>Nosotros</h6></a>
+                            <li class="list-item-footer bold-xs"><a href="nosotros.html" class="natural-600">Nuestra historia</a></li>
+                            <li class="list-item-footer bold-xs"><a href="nosotros.html#organizacion-section" class="natural-600">Organograma</a></li>
+                            <li class="list-item-footer bold-xs"><a href="nosotros.html#filosofia-section" class="natural-600">Filosfia coorporativa</a></li>
+                            <li class="list-item-footer bold-xs"><a href="nosotros.html#recursos-section" class="natural-600">Recursos Humanos y Política de Privacidad</a></li>
+                            <li class="list-item-footer bold-xs"><a href="nosotros.html#socios-section" class="natural-600">Socios</a></li>
+                        </ul>
+                        <ul class="servicios-footer">
+                            <a href="servicios.html" class="natural-900"><h6>Servicios</h6></a>
+                            <li class="list-item-footer bold-xs"><a href="servicios.html#ventajas-section" class="natural-600">Ventajas del CUF</a></li>
+                            <li class="list-item-footer bold-xs"><a href="servicios.html#organismos-section" class="natural-600">Organismos</a></li>
+                            <li class="list-item-footer bold-xs"><a href="servicios.html#vecinal-section" class="natural-600">T.V.F.</a></li>
+                        </ul>
+                        <ul class="aduana-footer">
+                            <a href="aduana.html" class="natural-900"><h6>Aduana</h6></a>
+                            <li class="list-item-footer bold-xs"><a href="aduana.html#procesos-section" class="natural-600">Información</a></li>
+                            <li class="list-item-footer bold-xs"><a href="aduana.html#despachantes-section" class="natural-600">Despachantes</a></li>
+                        </ul>
+                        <ul class="turismo-footer">
+                            <a href="" class="natural-900"><h6>Turismo</h6></a>
+                            <li class="list-item-footer bold-xs"><a href="turismo.html#leyes-section" class="natural-600">Información y leyes</a></li>
+                            <li class="list-item-footer bold-xs"><a href="turismo.html#requisitos-section" class="natural-600">Requisitos para cruzar</a></li>
+                            <li class="list-item-footer bold-xs"><a href="turismo.html#peaje-section" class="natural-600">Peaje</a></li>
+                            <li class="list-item-footer bold-xs"><a href="turismo.html#hospedajes-section" class="natural-600">Hospedajes</a></li>
+                            <li class="list-item-footer bold-xs"><a href="turismo.html#cambios-section" class="natural-600">Casas de cambio</a></li>
+                        </ul>
+                        <ul class="contacto-footer">
+                            <a href="contacto.html" class="natural-900"><h6>Contacto</h6></a>
+                            <li class="list-item-footer"><a href="contacto.html" class="natural-600">Trabaje con nosotros</a></li>
+                        </ul>
+                        <ul class="webmail-footer">
+                            <a href="../index.html" class="natural-900"><h6>WebMail</h6></a>
+                            <li class="list-item-footer"><a href="https://mercovia.propulsor.net.br/login" class="natural-600">Acceso clientes</a></li>
+                            <li class="list-item-footer"><a href="https://webmail.mercovia-sa.com/webmail/login/" class="natural-600">Acceso empleados</a></li>
+                        </ul>
                 </div>
+                        <div class="final-line">
+                                <span class="body-xs natural-600" >BR 285 Km 551 - Sala 83</span>
+                                <span class="body-xs natural-600" >São Borja - Brasil / Santo Tomé - Argentina</span>
+                                <span class="mid-item"><a href="../index.html" class="mid-item"><img src="/assets/fotos/Home/logopng.png"  alt="logo de la empresa"></a></span>
+                                <span class="body-xs natural-600" >BR: (55) 3431-2207 / (55) 3431-2307</span>
+                                <span class="body-xs natural-600" >AR: (54) 03756 490100</span>
+                        </div>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
