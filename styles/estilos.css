@@ -14,6 +14,10 @@ body {
   margin-top: 250px;
 }
 
+.active {
+  font-weight: 600;
+}
+
 h1 {
   font-size: 56px;
   font-weight: 700;
@@ -319,7 +323,7 @@ button.learn-more:hover .button-text a {
 }
 .heroimg {
   border-radius: 15px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
 .servicios-container {
@@ -335,7 +339,6 @@ button.learn-more:hover .button-text a {
   flex-direction: column;
   justify-content: center;
 }
-
 .servicios-info p {
   width: 90%;
   padding-top: 16px;
@@ -346,31 +349,26 @@ button.learn-more:hover .button-text a {
   display: flex;
   width: 60%;
   padding: 20px 0px 20px 20px;
-  box-sizing: border-box;
   height: 60vh;
 }
-
 .box-container .box {
   flex: 1;
   overflow: hidden;
   transition: 0.5s;
   margin: 0 2%;
-  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   line-height: 0;
   border-radius: 15px;
 }
-
 .box-container .box img {
   width: 200%;
   height: 100%;
   object-fit: cover;
   transition: 0.5s;
 }
-
 .box-container .box:hover {
   flex: 1 1 50%;
 }
-
 .box-container .box:hover img {
   width: 100%;
   height: 100%;
@@ -380,33 +378,13 @@ button.learn-more:hover .button-text a {
   margin-top: 25vh;
   display: flex;
 }
-
-.experiencia-info {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding-left: 100px;
-  width: 100%;
-  order: 2;
-}
-
-.experiencia-info p {
-  width: 70%;
-  padding-top: 16px;
-  padding-bottom: 30px;
-}
-
-.experiencia-info .btn {
-  width: 120px;
-}
-
-.experiencia-container > img {
+.experiencia-container img {
   order: 1;
   width: 100%;
   height: 50vh;
   object-fit: cover;
   border-radius: 0px 15px 15px 0px;
-  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   scale: 0.8;
   opacity: 0;
   animation: fade-in linear forwards;
@@ -420,8 +398,39 @@ button.learn-more:hover .button-text a {
     opacity: 1;
   }
 }
+.experiencia-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 100px;
+  width: 100%;
+  order: 2;
+}
+.experiencia-info p {
+  width: 70%;
+  padding-top: 16px;
+  padding-bottom: 30px;
+}
+.experiencia-info .btn {
+  width: 120px;
+}
+
+.experiencia-container > img {
+  order: 1;
+  width: 100%;
+  height: 50vh;
+  object-fit: cover;
+  border-radius: 0px 15px 15px 0px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  scale: 0.8;
+  opacity: 0;
+  animation: fade-in linear forwards;
+  animation-timeline: view();
+  animation-range: 250px 500px;
+}
+
 .estadisticas-container {
-  margin-top: 25vh;
+  margin-top: 250px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -436,11 +445,10 @@ button.learn-more:hover .button-text a {
 }
 
 .clientes-container {
-  margin-top: 25vh;
+  margin-top: 250px;
   width: 100%;
   height: 80vh;
 }
-
 .clientes-container h3 {
   text-align: center;
 }
@@ -543,7 +551,6 @@ button.learn-more:hover .button-text a {
   -ms-flex-pack: center;
   justify-content: center;
 }
-
 .slider__contents img {
   width: 500px;
   height: 300px;
@@ -1109,6 +1116,102 @@ input:checked + label .description {
 
 .sidebar .offcanvas-header button {
   padding-right: 80px;
+}
+
+.formulario-container {
+  height: 100vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.contacto-form {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 20px;
+}
+.contacto-form textarea {
+  height: 140px;
+  padding-top: 15px;
+  border-radius: 20px;
+}
+.contacto-form textarea:focus {
+  border: 2px blue solid;
+  transition: 0.2s;
+}
+.contacto-form input:focus {
+  border: 2px solid blue;
+  transition: 0.2s;
+}
+.contacto-form::placeholder {
+  color: rgba(169, 169, 169, 0.662745098);
+}
+.contacto-form button {
+  display: flex;
+  align-items: center;
+  padding: 15px 30px;
+  font-size: 16px;
+  color: #fff;
+  border: none;
+  gap: 10px;
+  border-radius: 50px;
+  background: blue;
+  cursor: pointer;
+}
+.contacto-form button img {
+  width: 15px;
+}
+
+.contacto-title h2 {
+  font-weight: 600;
+  font-size: 40px;
+  margin-bottom: 5px;
+}
+.contacto-title hr {
+  border: none;
+  width: 120px;
+  height: 5px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.contacto-inputs {
+  width: 400px;
+  height: 50px;
+  border: none;
+  outline: none;
+  padding-left: 25px;
+  font-weight: 500;
+  color: #666;
+  border-radius: 50px;
+}
+
+.contacto-form::placeholder {
+  color: rgba(169, 169, 169, 0.662745098);
+}
+
+.contacto-form button {
+  display: flex;
+  align-items: center;
+  padding: 15px 30px;
+  font-size: 16px;
+  color: #fff;
+  border: none;
+  gap: 10px;
+  border-radius: 50px;
+  background: blue;
+  cursor: pointer;
+}
+
+.contacto-form button img {
+  width: 15px;
+}
+
+.contacto-img img {
+  width: 500px;
+  border-radius: 15px;
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.1);
 }
 
 .footer-container ul {

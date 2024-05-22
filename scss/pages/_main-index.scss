@@ -12,15 +12,15 @@
 }
 
 .heroimg {
-  border-radius: 15px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: $border-radius;
+  box-shadow: $box-shadow;
 }
 
 //servicios section
 .servicios-container {
   display: flex;
   justify-content: center;
-  margin-top: 250px;
+  margin-top: $margin-top;
 }
 
 .servicios-info {
@@ -29,52 +29,65 @@
   width: 30%;
   flex-direction: column;
   justify-content: center;
-}
-
-.servicios-info p {
-  width: 90%;
-  padding-top: 16px;
-  padding-bottom: 30px;
+  p {
+    width: 90%;
+    padding-top: 16px;
+    padding-bottom: 30px;
+  }
 }
 
 .box-container {
   display: flex;
   width: 60%;
   padding: 20px 0px 20px 20px;
-  box-sizing: border-box;
   height: 60vh;
-}
-
-.box-container .box {
-  flex: 1;
-  overflow: hidden;
-  transition: 0.5s;
-  margin: 0 2%;
-  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.1);
-  line-height: 0;
-  border-radius: 15px;
-}
-
-.box-container .box img {
-  width: 200%;
-  height: 100%;
-  object-fit: cover;
-  transition: 0.5s;
-}
-
-.box-container .box:hover {
-  flex: 1 1 50%;
-}
-
-.box-container .box:hover img {
-  width: 100%;
-  height: 100%;
+  .box {
+    flex: 1;
+    overflow: hidden;
+    transition: 0.5s;
+    margin: 0 2%;
+    box-shadow: $box-shadow;
+    line-height: 0;
+    border-radius: $border-radius;
+    img {
+      width: 200%;
+      height: 100%;
+      object-fit: cover;
+      transition: 0.5s;
+    }
+    &:hover {
+      flex: 1 1 50%;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
 }
 
 //INDEX PAGE experiencia section
 .experiencia-container {
   margin-top: 25vh;
   display: flex;
+  img {
+    order: 1;
+    width: 100%;
+    height: 50vh;
+    object-fit: cover;
+    border-radius: 0px 15px 15px 0px;
+    box-shadow: $box-shadow;
+    scale: 0.8;
+    opacity: 0;
+    animation: fade-in linear forwards;
+    animation-timeline: view();
+    animation-range: 250px 500px;
+  }
+}
+@keyframes fade-in {
+  to {
+    scale: 1;
+    opacity: 1;
+  }
 }
 
 .experiencia-info {
@@ -84,16 +97,14 @@
   padding-left: 100px;
   width: 100%;
   order: 2;
-}
-
-.experiencia-info p {
-  width: 70%;
-  padding-top: 16px;
-  padding-bottom: 30px;
-}
-
-.experiencia-info .btn {
-  width: 120px;
+  p {
+    width: 70%;
+    padding-top: 16px;
+    padding-bottom: 30px;
+  }
+  .btn {
+    width: 120px;
+  }
 }
 
 .experiencia-container > img {
@@ -102,7 +113,7 @@
   height: 50vh;
   object-fit: cover;
   border-radius: 0px 15px 15px 0px;
-  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.1);
+  box-shadow: $box-shadow;
   scale: 0.8;
   opacity: 0;
   animation: fade-in linear forwards;
@@ -110,16 +121,9 @@
   animation-range: 250px 500px;
 }
 
-@keyframes fade-in {
-  to {
-    scale: 1;
-    opacity: 1;
-  }
-}
-
 //estadisticas section
 .estadisticas-container {
-  margin-top: 25vh;
+  margin-top: $margin-top;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -135,13 +139,12 @@
 
 //INDEX PAGE clientes section
 .clientes-container {
-  margin-top: 25vh;
+  margin-top: $margin-top;
   width: 100%;
   height: 80vh;
-}
-
-.clientes-container h3 {
-  text-align: center;
+  h3 {
+    text-align: center;
+  }
 }
 
 .slider-clientes {
@@ -234,13 +237,13 @@
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-}
-.slider__contents img {
-  width: 500px;
-  height: 300px;
-  object-fit: cover;
-  border-radius: 15px;
-  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.1);
+  img {
+    width: 500px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: $border-radius;
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.1);
+  }
 }
 .slider__image {
   font-size: 2.7rem;
