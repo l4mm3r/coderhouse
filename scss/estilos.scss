@@ -1,0 +1,33 @@
+@import "./utilities/reset";
+@import "./utilities/variables";
+@import "./utilities/mixin";
+@import "./utilities/extend";
+@import "./utilities/global";
+
+
+@import "./componentes/header";
+@import "./pages/main-index";
+@import "./componentes/footer";
+
+@import "./componentes/header";
+@import "./pages/nosotros-index";
+@import "./componentes/footer";
+
+@import "./componentes/header";
+@import "./pages/servicios-index";
+@import "./componentes/footer";
+
+@import "./componentes/header";
+@import "./pages/aduana-index";
+@import "./componentes/footer";
+
+@import "./componentes/header";
+@import "./pages/turismo-index";
+@import "./componentes/footer";
+
+@import "./componentes/header";
+@import "./pages/contacto-index";
+@import "./componentes/footer";
+
+
+@import "./utilities/media-querie";
