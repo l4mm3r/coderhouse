@@ -1,0 +1,511 @@
+//queries navbar
+@media (max-width: 1024px) {
+  .form-select {
+    margin-top: 20px;
+    font-size: 18px;
+    width: 80px;
+  }
+  .offcanvas-body .navbar-nav a {
+    font-size: 26px;
+  }
+  .offcanvas-body .dropdown a {
+    padding-left: 9px;
+  }
+  .sidebar {
+    background-color: rgba(255, 255, 255, 0.837);
+    backdrop-filter: blur(10px);
+  }
+}
+
+@media (max-width: 576px) {
+  .sidebar .offcanvas-header button {
+    padding-right: 40px;
+  }
+}
+
+//media hero section
+@media (max-width: 990px) {
+  .hero-container {
+    margin: 120px auto;
+    text-align: end;
+  }
+  .hero-container .button-primary {
+    margin-bottom: 20px;
+    align-self: flex-end;
+    width: 120px;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero-info {
+    text-align: center;
+    background: linear-gradient(
+        rgba(255, 255, 255, 1),
+        rgba(255, 255, 255, 0.5)
+      ),
+      url("/assets/fotos/Home/heroimg.jpg");
+    min-height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+  }
+  .hero-container {
+    margin-top: 60px;
+  }
+  .hero-container p {
+    font-size: 16px;
+  }
+  .hero-container h1 {
+    font-size: 32px;
+  }
+  .hero-container .button-primary {
+    width: 110px;
+    font-size: 12px;
+    align-self: center;
+  }
+  .hero-container img {
+    display: none;
+  }
+}
+
+//media services section
+@media (max-width: 1024px) {
+  .servicios-info {
+    width: 100%;
+    padding: 40px;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .box-container {
+    width: 100%;
+    margin-right: 20px;
+  }
+  .servicios-info .btn {
+    width: 140px;
+  }
+}
+
+@media (max-width: 576px) {
+  .servicios-info h3 {
+    font-size: 24px;
+  }
+  .servicios-info p {
+    font-size: 16px;
+  }
+  .servicios-info .btn {
+    width: 130px;
+    font-size: 12px;
+  }
+  .box-container {
+    flex-direction: column;
+    padding: 20px;
+  }
+  .box-container .box {
+    margin-bottom: 20px;
+  }
+}
+
+//media experiencia section
+@media (max-width: 1024px) {
+  .experiencia-container {
+    flex-direction: column-reverse;
+    align-items: flex-end;
+  }
+  .experiencia-container img {
+    border-radius: 0px;
+    width: 60%;
+    align-self: flex-start;
+    height: 300px;
+    border-radius: 0px 15px 15px 0px;
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.1);
+  }
+  .experiencia-info {
+    padding: 40px;
+    padding-bottom: 0px;
+    text-align: end;
+    width: 80%;
+  }
+  .experiencia-info p {
+    width: 100%;
+  }
+  .experiencia-info .btn {
+    width: 110px;
+    align-self: flex-end;
+  }
+}
+
+@media (max-width: 576px) {
+  .experiencia-container img {
+    height: 250px;
+    width: 100%;
+  }
+  .experiencia-info {
+    width: 100%;
+    padding-bottom: 40px;
+  }
+  .experiencia-info h3 {
+    font-size: 24px;
+  }
+  .experiencia-info p {
+    font-size: 16px;
+  }
+  .experiencia-info .btn {
+    font-size: 12px;
+  }
+}
+
+//media estadisticas section
+@media (max-width: 576px) {
+  .estadisticas-container h3 {
+    font-size: 24px;
+  }
+  .estadisticas-container img {
+    height: 250px;
+  }
+}
+
+//media clientes
+@media (max-width: 576px) {
+  .clientes-container h3 {
+    font-size: 24px;
+  }
+  .slider-clientes {
+    height: 500px;
+  }
+  .slider__contents img {
+    width: 300px;
+    height: 200px;
+  }
+}
+
+//media footer
+@media (max-width: 1024px) {
+  .footer-container ul {
+    padding-left: 0px;
+  }
+  .footer-container li {
+    display: none;
+  }
+  .footer-container a {
+    text-decoration: none;
+  }
+}
+
+@media (max-width: 576px) {
+  .footer-list {
+    display: inline-block;
+  }
+  .footer-list li {
+    display: none;
+  }
+}
+
+// media final line
+@media (max-width: 1024px) {
+  .final-line {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  .final-line .mid-item {
+    order: 5;
+  }
+}
+
+@media (max-width: 576px) {
+  .final-line img {
+    width: 80px;
+  }
+}
+
+//media historia page
+@media (max-width: 1024px) {
+  .historia-info-1 {
+    display: inline-flex;
+    padding: 0;
+  }
+  .balsa-img {
+    width: 90%;
+  }
+  .inauguracion-img {
+    display: none;
+  }
+}
+
+@media (max-width: 576px) {
+  .historia-container {
+    width: 80%;
+    margin: auto;
+  }
+  .historia-container h2 {
+    font-size: 24px;
+    width: 100%;
+    margin-top: 15vh;
+  }
+  .historia-container h4 {
+    font-size: 20px;
+  }
+  .historia-container p {
+    font-size: 14px;
+  }
+  .historia-info-2 {
+    width: 100%;
+    padding: 0px;
+  }
+}
+
+//media nosotros page
+@media (max-width: 1024px) {
+  .modelo-organizacion-container img {
+    scale: 0.75 !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .modelo-organizacion-container {
+    padding: 0px;
+  }
+  .modelo-organizacion-container img {
+    scale: 0.35 !important;
+  }
+  .modelo-organizacion-container h2 {
+    font-size: 24px;
+  }
+  .modelo-organizacion-container h4 {
+    font-size: 20px;
+  }
+  .modelo-organizacion-container p {
+    font-size: 14px;
+    width: 80%;
+    margin: auto;
+  }
+}
+
+//media director section
+@media (max-width: 1024px) {
+  .direccion-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .direccion-container img {
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 576px) {
+  .filosofia-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+  }
+  .info-nosotros-container {
+    flex-direction: column;
+    width: 90%;
+    justify-content: center;
+  }
+  .politica-container {
+    margin-top: 90px;
+  }
+}
+
+//media servicios page
+@media (max-width: 1024px) {
+  .ventajas-container .instalaciones-1,
+  .ventajas-container .instalaciones-4 {
+    width: 80%;
+    max-height: 300px;
+  }
+  .ventajas-container .instalaciones-2 {
+    width: 350px;
+    max-height: 300px;
+  }
+  .ventajas-container .instalaciones-3 {
+    width: 350px;
+    max-height: 300px;
+  }
+}
+
+@media (max-width: 576px) {
+  .ventajas-info {
+    width: 90%;
+    margin: auto;
+  }
+  .ventajas-info h2 {
+    font-size: 24px;
+  }
+  .ventajas-info h4 {
+    font-size: 20px;
+  }
+  .ventajas-info p {
+    font-size: 14px;
+  }
+  .ventajas-container .instalaciones-1,
+  .ventajas-container .instalaciones-2,
+  .ventajas-container .instalaciones-3,
+  .ventajas-container .instalaciones-4 {
+    width: 100%;
+  }
+}
+
+//organismos section
+@media (max-width: 1024px) {
+  .listas-organismos {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 576px) {
+  .organismos-container {
+    margin: 0 auto;
+  }
+  .organismos-container h2 {
+    font-size: 24px;
+  }
+  .organismos-container p {
+    font-size: 14px;
+  }
+  .organismos-container ul li {
+    font-size: 14px;
+  }
+}
+
+//media transito vecinal section
+@media (max-width: 1024px) {
+  .vecinal-container {
+    width: 90%;
+    margin: auto;
+    margin-bottom: 250px;
+  }
+  .vecinal-container img {
+    display: none !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .infotvf-container h2 {
+    font-size: 24px;
+  }
+  .infotvf-container p {
+    font-size: 14px;
+  }
+  .infotvf-container ul li {
+    font-size: 14px;
+  }
+}
+
+//aduana page
+@media (max-width: 1024px) {
+  .despachantes-cards {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 576px) {
+  .info-aduana-container {
+    width: 80%;
+    margin: auto;
+    margin-top: 15vh;
+  }
+  .info-aduana-container h2 {
+    font-size: 24px;
+  }
+  .info-aduana-container p {
+    font-size: 14px;
+  }
+  .despachantes-container span h2 {
+    font-size: 24px;
+  }
+}
+
+//media turismo page
+@media (max-width: 1024px) {
+  .info-hospedajes {
+    flex-direction: column;
+    align-items: center;
+  }
+  .card {
+    width: 300px;
+    margin: 5px;
+  }
+  input:checked + label {
+    height: 600px;
+  }
+}
+
+@media (max-width: 576px) {
+  h2 {
+    font-size: 24px;
+  }
+  h4 {
+    font-size: 20px;
+  }
+  .leyes-container {
+    width: 80%;
+    margin: auto;
+    margin-top: 15vh;
+  }
+  .texto-leyes {
+    column-count: 1;
+  }
+  .texto-leyes p,
+  .info-requisitos p,
+  .peaje-container p {
+    font-size: 14px;
+  }
+  .info-requisitos,
+  .peaje-container {
+    width: 80%;
+  }
+
+  .peaje-container img {
+    width: 150%;
+  }
+  .card {
+    width: 100px;
+    margin: 5px;
+  }
+  .card .row .description {
+    width: 300px;
+  }
+  input:checked + label {
+    width: 300px;
+  }
+
+  .casacambio-container {
+    width: 80%;
+    margin: auto;
+  }
+  .text-end {
+    text-align: center !important;
+  }
+}
+
+//media contacto page
+@media (max-width: 1024px) {
+  .formulario-container .contacto-img img {
+    display: none;
+  }
+}
+@media (max-width: 576px) {
+  .contacto-form {
+    width: 80%;
+  }
+  .contacto-form input {
+    font-size: 14px;
+    margin: auto;
+    width: 300px;
+  }
+  .contacto-form textarea {
+    font-size: 14px;
+    margin: auto;
+    width: 300px;
+  }
+  .contacto-form button {
+    margin-left: 10px;
+  }
+}

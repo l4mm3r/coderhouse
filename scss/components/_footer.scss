@@ -8,7 +8,7 @@
       a {
         text-decoration: none;
         h6 {
-          padding-bottom: 8px;
+          padding-bottom: 0px;
         }
       }
     }
@@ -22,16 +22,17 @@
   margin-top: 100px;
   padding: 20px;
   width: 100%;
-  background-color: #cbd2e0;
+  background-color: $natural-400;
 }
 
 .final-line {
   display: flex;
   justify-content: space-evenly;
   padding: 40px;
+  padding-top: 0px;
   width: 100%;
   margin: auto;
-  background-color: #cbd2e0;
+  background-color: $natural-400;
   span {
     margin: 0px 40px;
     img {

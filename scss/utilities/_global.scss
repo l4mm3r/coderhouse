@@ -43,6 +43,65 @@ h6 {
   font-weight: 700;
   line-height: 140%;
 }
+//clases para texto
+.body-xl {
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 160%;
+}
+.body-l {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+.body-m {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 150%;
+}
+.body-s {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 150%;
+}
+.body-xs {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+.bold-m {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.bold-s {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.bold-xs{
+  font-size: 12px;
+  font-weight: 600;
+}
+
+//colores para texto
+.natural-900 {
+  color: $natural-900;
+}
+.natural-700 {
+  color: $natural-700;
+}
+.natural-600 {
+  color: $natural-600;
+}
+.natural-500 {
+  color: $natural-500;
+}
+.natural-400 {
+  color:$natural-400;
+}
 
 //list style
 ul {
