@@ -5,29 +5,29 @@
 @import "./utilities/global";
 
 
-@import "./componentes/header";
+@import "./components/header";
 @import "./pages/main-index";
-@import "./componentes/footer";
+@import "./components/footer";
 
-@import "./componentes/header";
-@import "./pages/nosotros-index";
-@import "./componentes/footer";
+@import "./components/header";
+@import "./pages/main-nosotros";
+@import "./components/footer";
 
-@import "./componentes/header";
-@import "./pages/servicios-index";
-@import "./componentes/footer";
+@import "./components/header";
+@import "./pages/main-servicios";
+@import "./components/footer";
 
-@import "./componentes/header";
-@import "./pages/aduana-index";
-@import "./componentes/footer";
+@import "./components/header";
+@import "./pages/main-aduana";
+@import "./components/footer";
 
-@import "./componentes/header";
-@import "./pages/turismo-index";
-@import "./componentes/footer";
+@import "./components/header";
+@import "./pages/main-turismo";
+@import "./components/footer";
 
-@import "./componentes/header";
-@import "./pages/contacto-index";
-@import "./componentes/footer";
+@import "./components/header";
+@import "./pages/main-contacto";
+@import "./components/footer";
 
 
 @import "./utilities/media-querie";
