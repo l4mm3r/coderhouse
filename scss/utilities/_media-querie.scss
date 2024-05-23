@@ -73,6 +73,12 @@
     }
   }
 
+  .estadisticas-container {
+    img{
+      margin-top: -70px;
+    }
+  }
+
   //media footer section
   .footer-container {
     ul {
@@ -286,7 +292,7 @@
       font-size: $mqh3-font-size;
     }
     img {
-      height: 250px;
+      height: 300px;
     }
   }
 

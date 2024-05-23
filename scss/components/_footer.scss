@@ -1,4 +1,5 @@
 .footer-container {
+  background: $background;
   ul {
     text-align: center;
     padding-left: 0px;
@@ -22,7 +23,7 @@
   margin-top: 100px;
   padding: 20px;
   width: 100%;
-  background-color: $natural-400;
+
   span{
     a{
       text-decoration: none;
@@ -37,7 +38,6 @@
   padding-top: 0px;
   width: 100%;
   margin: auto;
-  background-color: $natural-400;
   span {
     margin: 0px 40px;
     img {
