@@ -74,7 +74,7 @@
   }
 
   .estadisticas-container {
-    img{
+    img {
       margin-top: -70px;
     }
   }
@@ -96,9 +96,15 @@
   .final-line {
     flex-direction: column;
     align-items: center;
-    padding: 20px;
+    padding: 0 40px 40px;
     .mid-item {
       order: 5;
+    }
+    span {
+      img {
+        margin-top: 10px;
+        width: 100px;
+      }
     }
   }
 
@@ -115,9 +121,11 @@
   }
 
   //media organizacion section
-  .modelo-organizacion-container img {
-    scale: 0.75 !important;
-  }
+  .modelo-organizacion-container {
+    img {
+      scale: 1 !important;
+    }
+  } 
 
   //media direccion section
   .direccion-container {
@@ -129,27 +137,27 @@
       margin-bottom: 10px;
     }
   }
-  
+
   //media filosofia section
-  .filosofia-container{
-    h4{
+  .filosofia-container {
+    h4 {
       font-size: $mqh2-font-size;
     }
-    p{
+    p {
       font-size: $mqp-font-size;
     }
   }
-  
+
   //media recursos humanos y privacidad section
-  .info-nosotros-container{
-    p{
+  .info-nosotros-container {
+    p {
       font-size: $mqp-font-size;
     }
   }
 
   //media socios section
-  .socios{
-    p{
+  .socios {
+    p {
       font-size: $mqp-font-size;
     }
   }
@@ -216,7 +224,6 @@
 ///////////////////////////////////////////////////////////////////////
 //media global 576px
 @media (max-width: 576px) {
-
   //media navbar
   .sidebar {
     .offcanvas-header {
@@ -334,8 +341,13 @@
   }
 
   //media finaline section
-  .final-line img {
-    width: 80px;
+  .final-line {
+    padding: 0 20px 20px;
+    span {
+      img {
+        width: 80px;
+      }
+    }
   }
 
   //media nosotros page
@@ -353,7 +365,7 @@
     p {
       font-size: $mqp-font-size;
     }
-    img{
+    img {
       object-fit: cover;
     }
   }
@@ -364,10 +376,6 @@
 
   //media organizacion section
   .modelo-organizacion-container {
-    padding: 0px;
-    img {
-      scale: 0.35 !important;
-    }
     h2 {
       font-size: $mqh2-font-size;
     }
@@ -381,19 +389,33 @@
     }
   }
 
+  //media direccion section
+  .direccion-container{
+    img {
+      scale: 0.75;
+    }
+  }
+
+
   //media filosofia section
   .filosofia-container {
     flex-direction: column;
     align-items: center;
     gap: 50px;
+    h4{
+      font-size: $mqh4-font-size;
+    }
+    p{
+      font-size: $mqp-font-size;
+    }
   }
 
-  //media recursos humanos section
+  //media recursos humanos section y politica
   .info-nosotros-container {
     flex-direction: column;
     width: 90%;
-    .recursos-container{
-      p{
+    .recursos-container {
+      p {
         text-align: right;
       }
     }
@@ -402,7 +424,13 @@
     }
   }
 
-  //media politica de privacidad section
+  //media socios section
+  .socios {
+    img {
+      max-height: 200px;
+    }
+  }
+
 
   //media servicios page
   .ventajas-info {

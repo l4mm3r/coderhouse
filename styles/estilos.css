@@ -98,11 +98,10 @@
 }
 
 .modelo-organizacion-container img {
-  width: 1000px;
-  height: 754px;
+  width: 90%;
+  height: auto;
   object-fit: cover;
   border-radius: 15px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   scale: 0.8;
   opacity: 0;
   animation: fade-in linear forwards;
@@ -1416,10 +1415,14 @@ input:checked + label .description {
   .final-line {
     flex-direction: column;
     align-items: center;
-    padding: 20px;
+    padding: 0 40px 40px;
   }
   .final-line .mid-item {
     order: 5;
+  }
+  .final-line span img {
+    margin-top: 10px;
+    width: 100px;
   }
   .historia-info-1 {
     display: inline-flex;
@@ -1432,7 +1435,7 @@ input:checked + label .description {
     display: none;
   }
   .modelo-organizacion-container img {
-    scale: 0.75 !important;
+    scale: 1 !important;
   }
   .direccion-container {
     flex-direction: column;
@@ -1585,7 +1588,10 @@ input:checked + label .description {
   .footer-list li {
     display: none;
   }
-  .final-line img {
+  .final-line {
+    padding: 0 20px 20px;
+  }
+  .final-line span img {
     width: 80px;
   }
   .historia-container {
@@ -1610,12 +1616,6 @@ input:checked + label .description {
     width: 100%;
     padding: 0px;
   }
-  .modelo-organizacion-container {
-    padding: 0px;
-  }
-  .modelo-organizacion-container img {
-    scale: 0.35 !important;
-  }
   .modelo-organizacion-container h2 {
     font-size: 24px;
   }
@@ -1627,10 +1627,19 @@ input:checked + label .description {
     width: 80%;
     margin: auto;
   }
+  .direccion-container img {
+    scale: 0.75;
+  }
   .filosofia-container {
     flex-direction: column;
     align-items: center;
     gap: 50px;
+  }
+  .filosofia-container h4 {
+    font-size: 20px;
+  }
+  .filosofia-container p {
+    font-size: 16px;
   }
   .info-nosotros-container {
     flex-direction: column;
@@ -1641,6 +1650,9 @@ input:checked + label .description {
   }
   .info-nosotros-container .politica-container {
     margin-top: 90px;
+  }
+  .socios img {
+    max-height: 200px;
   }
   .ventajas-info {
     margin: auto;
