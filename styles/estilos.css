@@ -1686,6 +1686,9 @@ input:checked + label .description {
   .organismos-container ul li {
     font-size: 16px;
   }
+  .organismos-container .horarios p {
+    font-size: 14px;
+  }
   .infotvf-container h2 {
     font-size: 24px;
   }
