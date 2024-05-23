@@ -1,14 +1,14 @@
 //history section
 .historia-container {
-  margin-top: 15vh;
+  margin-top: $margin-top;
 }
 
 .balsa-img {
   width: 738px;
   height: 416px;
-  object-fit: cover;
-  border-radius: 15px;
-  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.1);
+  object-fit: $object-fit;
+  border-radius: $border-radius;
+  box-shadow: $box-shadow;
 }
 
 .historia-info-2 {
@@ -17,34 +17,18 @@
 .inauguracion-img {
   width: 630px;
   height: 309px;
-  object-fit: cover;
-  border-radius: 15px;
-  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.1);
+  object-fit: $object-fit;
+  border-radius: $border-radius;
+  box-shadow: $box-shadow;
 }
 
 //organizacion section
 .modelo-organizacion-container {
   img {
-    width: 1000px;
-    height: 754px;
-    object-fit: cover;
-    border-radius: 0px 15px 15px 0px;
-    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.1);
-    scale: 0.8;
-    opacity: 0;
-    animation: fade-in linear forwards;
-    animation-timeline: view();
-    animation-range: 250px 500px;
+    @include orgImg;
   }
   span {
-    color: hsl(0 0% 100% / 0.2);
-    background-clip: text;
-    -webkit-background-clip: text;
-    background-repeat: no-repeat;
-    background-size: 0% 100%;
-    background-image: linear-gradient(90deg, rgb(41, 41, 41), blue);
-    animation: scroll-reveal linear forwards;
-    animation-timeline: view();
+    @include orgSpan;
   }
   h2 span {
     animation-range-start: cover 10vh;
@@ -70,9 +54,9 @@
 .foto-director {
   width: 305px;
   height: 282px;
-  object-fit: cover;
-  border-radius: 15px;
-  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.1);
+  object-fit: $object-fit;
+  border-radius: $border-radius;
+  box-shadow: $box-shadow;
 }
 
 //socios section

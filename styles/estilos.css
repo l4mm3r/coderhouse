@@ -394,15 +394,18 @@ button.learn-more:hover .button-text a {
 .servicios-container {
   display: flex;
   justify-content: center;
+  align-items: inherit;
+  flex-direction: inherit;
   margin-top: 250px;
 }
 
 .servicios-info {
   display: flex;
+  justify-content: center;
+  align-items: inherit;
+  flex-direction: column;
   padding: 20px;
   width: 30%;
-  flex-direction: column;
-  justify-content: center;
 }
 .servicios-info p {
   width: 90%;
@@ -440,7 +443,7 @@ button.learn-more:hover .button-text a {
 }
 
 .experiencia-container {
-  margin-top: 25vh;
+  margin-top: 250px;
   display: flex;
 }
 .experiencia-container img {
@@ -465,8 +468,9 @@ button.learn-more:hover .button-text a {
 }
 .experiencia-info {
   display: flex;
-  flex-direction: column;
   justify-content: center;
+  align-items: inherit;
+  flex-direction: column;
   padding-left: 100px;
   width: 100%;
   order: 2;
@@ -480,25 +484,12 @@ button.learn-more:hover .button-text a {
   width: 120px;
 }
 
-.experiencia-container > img {
-  order: 1;
-  width: 100%;
-  height: 50vh;
-  object-fit: cover;
-  border-radius: 0px 15px 15px 0px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-  scale: 0.8;
-  opacity: 0;
-  animation: fade-in linear forwards;
-  animation-timeline: view();
-  animation-range: 250px 500px;
-}
-
 .estadisticas-container {
   margin-top: 250px;
   display: flex;
-  flex-direction: column;
+  justify-content: inherit;
   align-items: center;
+  flex-direction: column;
 }
 
 .estadisticas-container img {
@@ -713,7 +704,7 @@ button.learn-more:hover .button-text a {
 }
 
 .historia-container {
-  margin-top: 15vh;
+  margin-top: 250px;
 }
 
 .balsa-img {
@@ -721,7 +712,7 @@ button.learn-more:hover .button-text a {
   height: 416px;
   object-fit: cover;
   border-radius: 15px;
-  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
 .historia-info-2 {
@@ -733,15 +724,15 @@ button.learn-more:hover .button-text a {
   height: 309px;
   object-fit: cover;
   border-radius: 15px;
-  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
 .modelo-organizacion-container img {
   width: 1000px;
   height: 754px;
   object-fit: cover;
-  border-radius: 0px 15px 15px 0px;
-  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   scale: 0.8;
   opacity: 0;
   animation: fade-in linear forwards;
@@ -781,7 +772,7 @@ button.learn-more:hover .button-text a {
   height: 282px;
   object-fit: cover;
   border-radius: 15px;
-  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
 .socios {
@@ -855,15 +846,17 @@ button.learn-more:hover .button-text a {
 }
 
 .ventajas-container {
-  margin-top: 15vh;
+  margin-top: 250px;
 }
 .ventajas-container .ventajas-info {
   margin: 0px 80px;
 }
 .ventajas-container .ventajas-img {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
+  align-items: inherit;
+  flex-direction: inherit;
+  flex-wrap: wrap;
   gap: 10px;
 }
 .ventajas-container .instalaciones-1 {
@@ -969,7 +962,7 @@ button.learn-more:hover .button-text a {
 }
 
 .info-aduana-container {
-  margin-top: 15vh;
+  margin-top: 250px;
 }
 
 .footer-container ul {
@@ -1034,7 +1027,7 @@ button.learn-more:hover .button-text a {
 }
 
 .leyes-container {
-  margin-top: 15vh;
+  margin-top: 250px;
 }
 
 .texto-leyes {
@@ -1051,9 +1044,10 @@ button.learn-more:hover .button-text a {
   width: 100%;
   height: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  display: flex;
 }
 
 .info-hospedajes {
@@ -1076,7 +1070,7 @@ input:checked + label .description {
 
 .card {
   width: 80px;
-  border-radius: 0.75rem;
+  border-radius: 15px;
   background-size: cover;
   cursor: pointer;
   overflow: hidden;
@@ -1097,7 +1091,7 @@ input:checked + label .description {
   padding-right: 10px;
 }
 .card .row .icon {
-  background: #223;
+  background: #4a5468;
   color: white;
   border-radius: 50%;
   width: 50px;
@@ -1119,7 +1113,7 @@ input:checked + label .description {
   transition: all 0.3s ease;
 }
 .card .row .description p {
-  color: #fff;
+  color: #cbd2e0;
 }
 .card .row .description h4 {
   text-transform: uppercase;
@@ -1212,14 +1206,16 @@ input:checked + label .description {
 
 .contacto-form {
   display: flex;
-  flex-direction: column;
+  justify-content: inherit;
   align-items: start;
+  flex-direction: column;
+  display: flex;
   gap: 20px;
 }
 .contacto-form textarea {
   height: 140px;
   padding-top: 15px;
-  border-radius: 20px;
+  border-radius: 15px;
 }
 .contacto-form textarea:focus {
   border: 2px blue solid;
@@ -1264,33 +1260,12 @@ input:checked + label .description {
 .contacto-inputs {
   width: 400px;
   height: 50px;
-  border: none;
+  border: 1px solid rgba(0, 0, 255, 0.479);
   outline: none;
   padding-left: 25px;
   font-weight: 500;
   color: #666;
   border-radius: 50px;
-}
-
-.contacto-form::placeholder {
-  color: rgba(169, 169, 169, 0.662745098);
-}
-
-.contacto-form button {
-  display: flex;
-  align-items: center;
-  padding: 15px 30px;
-  font-size: 16px;
-  color: #fff;
-  border: none;
-  gap: 10px;
-  border-radius: 50px;
-  background: blue;
-  cursor: pointer;
-}
-
-.contacto-form button img {
-  width: 15px;
 }
 
 .contacto-img img {
@@ -1490,12 +1465,21 @@ input:checked + label .description {
   }
 }
 @media (max-width: 576px) {
+  h2 {
+    font-size: 24px;
+  }
+  h3 {
+    font-size: 22px;
+  }
+  h4 {
+    font-size: 20px;
+  }
   .sidebar .offcanvas-header button {
     padding-right: 40px;
   }
   .hero-info {
     text-align: center;
-    background: linear-gradient(rgb(255, 255, 255), rgba(255, 255, 255, 0.5)), url("/assets/fotos/Home/heroimg.jpg");
+    background: linear-gradient(rgb(255, 255, 255), rgba(255, 255, 255, 0.5)), url("/coderhouse/assets/fotos/Home/heroimg.jpg");
     min-height: 100%;
     background-attachment: fixed;
     background-position: center;
@@ -1524,7 +1508,7 @@ input:checked + label .description {
     font-size: 16px;
   }
   .servicios-info h3 {
-    font-size: 24px;
+    font-size: 22px;
   }
   .servicios-info .btn {
     width: 130px;
@@ -1546,7 +1530,7 @@ input:checked + label .description {
     padding-bottom: 40px;
   }
   .experiencia-info h3 {
-    font-size: 24px;
+    font-size: 22px;
   }
   .experiencia-info p {
     font-size: 16px;
@@ -1555,13 +1539,13 @@ input:checked + label .description {
     font-size: 12px;
   }
   .estadisticas-container h3 {
-    font-size: 24px;
+    font-size: 22px;
   }
   .estadisticas-container img {
     height: 250px;
   }
   .clientes-container h3 {
-    font-size: 24px;
+    font-size: 22px;
   }
   .slider-clientes {
     height: 500px;
@@ -1592,7 +1576,10 @@ input:checked + label .description {
     font-size: 20px;
   }
   .historia-container p {
-    font-size: 14px;
+    font-size: 16px;
+  }
+  .historia-container img {
+    object-fit: cover;
   }
   .historia-info-2 {
     width: 100%;
@@ -1611,7 +1598,7 @@ input:checked + label .description {
     font-size: 20px;
   }
   .modelo-organizacion-container p {
-    font-size: 14px;
+    font-size: 16px;
     width: 80%;
     margin: auto;
   }
@@ -1638,7 +1625,7 @@ input:checked + label .description {
     font-size: 20px;
   }
   .ventajas-info p {
-    font-size: 14px;
+    font-size: 16px;
   }
   .ventajas-info,
   .ventajas-container .instalaciones-1,
@@ -1654,19 +1641,23 @@ input:checked + label .description {
     font-size: 24px;
   }
   .organismos-container p {
-    font-size: 14px;
+    font-size: 16px;
   }
   .organismos-container ul li {
-    font-size: 14px;
+    font-size: 16px;
   }
   .infotvf-container h2 {
     font-size: 24px;
   }
   .infotvf-container p {
-    font-size: 14px;
+    font-size: 16px;
+    align-self: center;
+  }
+  .infotvf-container ul {
+    padding-left: 0px;
   }
   .infotvf-container ul li {
-    font-size: 14px;
+    font-size: 16px;
   }
   .info-aduana-container {
     width: 80%;
@@ -1677,7 +1668,7 @@ input:checked + label .description {
     font-size: 24px;
   }
   .info-aduana-container p {
-    font-size: 14px;
+    font-size: 16px;
   }
   .info-aduana-container span h2 {
     font-size: 24px;
@@ -1687,6 +1678,9 @@ input:checked + label .description {
   }
   h4 {
     font-size: 20px;
+  }
+  p {
+    font-size: 16px;
   }
   .leyes-container {
     width: 80%;
@@ -1699,7 +1693,7 @@ input:checked + label .description {
   .texto-leyes p,
   .info-requisitos p,
   .peaje-container p {
-    font-size: 14px;
+    font-size: 16px;
   }
   .info-requisitos,
   .peaje-container {
@@ -1729,12 +1723,12 @@ input:checked + label .description {
     width: 80%;
   }
   .contacto-form input {
-    font-size: 14px;
+    font-size: 16px;
     margin: auto;
     width: 300px;
   }
   .contacto-form textarea {
-    font-size: 14px;
+    font-size: 16px;
     margin: auto;
     width: 300px;
   }

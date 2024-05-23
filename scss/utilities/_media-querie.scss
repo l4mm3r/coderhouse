@@ -186,6 +186,16 @@
 ///////////////////////////////////////////////////////////////////////
 //media global 576px
 @media (max-width: 576px) {
+  h2 {
+    font-size: 24px;
+  }
+  h3 {
+    font-size: 22px;
+  }
+  h4 {
+    font-size: 20px;
+  }
+
   //media navbar
   .sidebar {
     .offcanvas-header {
@@ -202,7 +212,7 @@
         rgba(255, 255, 255, 1),
         rgba(255, 255, 255, 0.5)
       ),
-      url("/assets/fotos/Home/heroimg.jpg");
+      url("/coderhouse/assets/fotos/Home/heroimg.jpg");
     min-height: 100%;
     background-attachment: fixed;
     background-position: center;
@@ -213,10 +223,10 @@
   .hero-container {
     margin-top: 60px;
     p {
-      font-size: 16px;
+      font-size: $mqp-font-size;
     }
     h1 {
-      font-size: 32px;
+      font-size: $mqh1-font-size;
     }
     .button-primary {
       width: 110px;
@@ -231,10 +241,10 @@
   //media experience section
   .servicios-info {
     p {
-      font-size: 16px;
+      font-size: $mqp-font-size;
     }
     h3 {
-      font-size: 24px;
+      font-size: $mqh3-font-size;
     }
     .btn {
       width: 130px;
@@ -260,10 +270,10 @@
     width: 100%;
     padding-bottom: 40px;
     h3 {
-      font-size: 24px;
+      font-size: $mqh3-font-size;
     }
     p {
-      font-size: 16px;
+      font-size: $mqp-font-size;
     }
     .btn {
       font-size: 12px;
@@ -273,7 +283,7 @@
   //media estadisticas section
   .estadisticas-container {
     h3 {
-      font-size: 24px;
+      font-size: $mqh3-font-size;
     }
     img {
       height: 250px;
@@ -281,8 +291,10 @@
   }
 
   //media clientes section
-  .clientes-container h3 {
-    font-size: 24px;
+  .clientes-container {
+    h3 {
+      font-size: $mqh3-font-size;
+    }
   }
   .slider-clientes {
     height: 500px;
@@ -310,15 +322,18 @@
     width: 80%;
     margin: auto;
     h2 {
-      font-size: 24px;
+      font-size: $mqh2-font-size;
       width: 100%;
       margin-top: 15vh;
     }
     h4 {
-      font-size: 20px;
+      font-size: $mqh4-font-size;
     }
     p {
-      font-size: 14px;
+      font-size: $mqp-font-size;
+    }
+    img{
+      object-fit: cover;
     }
   }
   .historia-info-2 {
@@ -333,13 +348,13 @@
       scale: 0.35 !important;
     }
     h2 {
-      font-size: 24px;
+      font-size: $mqh2-font-size;
     }
     h4 {
-      font-size: 20px;
+      font-size: $mqh4-font-size;
     }
     p {
-      font-size: 14px;
+      font-size: $mqp-font-size;
       width: 80%;
       margin: auto;
     }
@@ -368,13 +383,13 @@
   .ventajas-info {
     margin: auto;
     h2 {
-      font-size: 24px;
+      font-size: $mqh2-font-size;
     }
     h4 {
-      font-size: 20px;
+      font-size: $mqh4-font-size;
     }
     p {
-      font-size: 14px;
+      font-size: $mqp-font-size;
     }
   }
   .ventajas-info,
@@ -389,14 +404,14 @@
   .organismos-container {
     margin: 0 auto;
     h2 {
-      font-size: 24px;
+      font-size: $mqh2-font-size;
     }
     p {
-      font-size: 14px;
+      font-size: $mqp-font-size;
     }
     ul {
       li {
-        font-size: 14px;
+        font-size: $mqp-font-size;
       }
     }
   }
@@ -404,14 +419,16 @@
   //media transito vecinal section
   .infotvf-container {
     h2 {
-      font-size: 24px;
+      font-size: $mqh2-font-size;
     }
     p {
-      font-size: 14px;
+      font-size: $mqp-font-size;
+      align-self: center;
     }
     ul {
+      padding-left: 0px;
       li {
-        font-size: 14px;
+        font-size: $mqp-font-size;
       }
     }
   }
@@ -422,14 +439,14 @@
     margin: auto;
     margin-top: 15vh;
     h2 {
-      font-size: 24px;
+      font-size: $mqh2-font-size;
     }
     p {
-      font-size: 14px;
+      font-size: $mqp-font-size;
     }
     span {
       h2 {
-        font-size: 24px;
+        font-size: $mqh2-font-size;
       }
     }
   }
@@ -437,11 +454,14 @@
   //media turismo page
   h2 {
     //mover a global
-    font-size: 24px;
+    font-size: $mqh2-font-size;
   }
   h4 {
     //mover a global
-    font-size: 20px;
+    font-size: $mqh4-font-size;
+  }
+  p {
+    font-size: $mqp-font-size;
   }
   // media leyes page
   .leyes-container {
@@ -455,7 +475,7 @@
   .texto-leyes p,
   .info-requisitos p,
   .peaje-container p {
-    font-size: 14px;
+    font-size: $mqp-font-size;
   }
   .info-requisitos,
   .peaje-container {
@@ -488,12 +508,12 @@
   .contacto-form {
     width: 80%;
     input {
-      font-size: 14px;
+      font-size: $mqp-font-size;
       margin: auto;
       width: 300px;
     }
     textarea {
-      font-size: 14px;
+      font-size: $mqp-font-size;
       margin: auto;
       width: 300px;
     }

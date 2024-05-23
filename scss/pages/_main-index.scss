@@ -18,17 +18,14 @@
 
 //servicios section
 .servicios-container {
-  display: flex;
-  justify-content: center;
+  @include display(center, inherit, inherit);
   margin-top: $margin-top;
 }
 
 .servicios-info {
-  display: flex;
+  @include display(center, inherit, column);
   padding: 20px;
   width: 30%;
-  flex-direction: column;
-  justify-content: center;
   p {
     width: 90%;
     padding-top: 16px;
@@ -67,22 +64,13 @@
 
 //INDEX PAGE experiencia section
 .experiencia-container {
-  margin-top: 25vh;
+  margin-top: $margin-top;
   display: flex;
   img {
-    order: 1;
-    width: 100%;
-    height: 50vh;
-    object-fit: cover;
-    border-radius: 0px 15px 15px 0px;
-    box-shadow: $box-shadow;
-    scale: 0.8;
-    opacity: 0;
-    animation: fade-in linear forwards;
-    animation-timeline: view();
-    animation-range: 250px 500px;
+    @include expimg;
   }
 }
+
 @keyframes fade-in {
   to {
     scale: 1;
@@ -91,9 +79,7 @@
 }
 
 .experiencia-info {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  @include display(center, inherit, column);
   padding-left: 100px;
   width: 100%;
   order: 2;
@@ -107,26 +93,10 @@
   }
 }
 
-.experiencia-container > img {
-  order: 1;
-  width: 100%;
-  height: 50vh;
-  object-fit: cover;
-  border-radius: 0px 15px 15px 0px;
-  box-shadow: $box-shadow;
-  scale: 0.8;
-  opacity: 0;
-  animation: fade-in linear forwards;
-  animation-timeline: view();
-  animation-range: 250px 500px;
-}
-
 //estadisticas section
 .estadisticas-container {
   margin-top: $margin-top;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  @include display(inherit, center, column);
 }
 
 .estadisticas-container img {
@@ -148,40 +118,11 @@
 }
 
 .slider-clientes {
-  height: 600px;
-  position: relative;
-  overflow: hidden;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-flow: row nowrap;
-  -ms-flex-flow: row nowrap;
-  flex-flow: row nowrap;
-  -webkit-box-align: end;
-  -webkit-align-items: flex-end;
-  -ms-flex-align: end;
-  align-items: flex-end;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+  @include sliderClients;
 }
 
 .slider__nav {
-  width: 12px;
-  height: 12px;
-  margin: 2rem 12px;
-  border-radius: 50%;
-  z-index: 10;
-  outline: 6px solid #ccc;
-  outline-offset: -6px;
-  cursor: pointer;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
+  @include sliderNav;
 }
 .slider__nav:checked {
   -webkit-animation: check 0.4s linear forwards;
@@ -200,43 +141,10 @@
   left: -300%;
 }
 .slider__inner {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 400%;
-  -webkit-transition: left 0.4s;
-  transition: left 0.4s;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-flow: row nowrap;
-  -ms-flex-flow: row nowrap;
-  flex-flow: row nowrap;
+  @include sliderInner;
 }
 .slider__contents {
-  height: 100%;
-  padding: 26px 32px;
-  text-align: center;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-flex: 1;
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-  -webkit-flex-flow: column nowrap;
-  -ms-flex-flow: column nowrap;
-  flex-flow: column nowrap;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+@include sliderContents;
   img {
     width: 500px;
     height: 300px;

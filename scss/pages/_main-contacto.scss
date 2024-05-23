@@ -6,14 +6,13 @@
 }
 
 .contacto-form {
+  @include display(inherit, start, column);
   display: flex;
-  flex-direction: column;
-  align-items: start;
   gap: 20px;
   textarea {
     height: 140px;
     padding-top: 15px;
-    border-radius: 20px;
+    border-radius: $border-radius;
     &:focus {
       border: 2px blue solid;
       transition: 0.2s;
@@ -29,16 +28,7 @@
     color: #a9a9a9a9;
   }
   button {
-    display: flex;
-    align-items: center;
-    padding: 15px 30px;
-    font-size: 16px;
-    color: #fff;
-    border: none;
-    gap: 10px;
-    border-radius: 50px;
-    background: blue;
-    cursor: pointer;
+    @include formButton;
     img {
       width: 15px;
     }
@@ -61,41 +51,13 @@
 }
 
 .contacto-inputs {
-  width: 400px;
-  height: 50px;
-  border: none;
-  outline: none;
-  padding-left: 25px;
-  font-weight: 500;
-  color: #666;
-  border-radius: 50px;
-}
-
-.contacto-form::placeholder {
-  color: #a9a9a9a9;
-}
-
-.contacto-form button {
-  display: flex;
-  align-items: center;
-  padding: 15px 30px;
-  font-size: 16px;
-  color: #fff;
-  border: none;
-  gap: 10px;
-  border-radius: 50px;
-  background: blue;
-  cursor: pointer;
-}
-
-.contacto-form button img {
-  width: 15px;
+  @include formInputs
 }
 
 .contacto-img {
   img {
     width: 500px;
-    border-radius: 15px;
+    border-radius: $border-radius;
     box-shadow: 0 20px 30px rgba(0, 0, 0, 0.1);
   }
 }
