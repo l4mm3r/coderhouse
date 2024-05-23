@@ -973,8 +973,9 @@ button.learn-more:hover .button-text a {
   margin-bottom: 250px;
 }
 .vecinal-container img {
-  width: 492px;
+  width: auto;
   height: 387px;
+  filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.3));
 }
 .vecinal-container ul li {
   list-style: none;

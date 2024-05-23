@@ -48,7 +48,8 @@
   margin-bottom: $margin-top;
 
   img {
-    @include size(492px, 387px);
+    @include size(auto, 387px);
+    filter: drop-shadow($box-shadow);
   }
 
   ul {
