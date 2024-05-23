@@ -13,26 +13,22 @@
   }
 
   .instalaciones-1 {
-    width: 844px;
-    height: 309px;
+    @include size(844px, 309px);
     object-fit: $object-fit;
   }
 
   .instalaciones-2 {
-    width: 413px;
-    height: 309px;
+    @include size(413px, 309px);
     object-fit: $object-fit;
   }
 
   .instalaciones-3 {
-    width: 413px;
-    height: 309px;
+    @include size(413px, 309px);
     object-fit: $object-fit;
   }
 
   .instalaciones-4 {
-    width: 630px;
-    height: 309px;
+    @include size(630px, 309px);
     object-fit: $object-fit;
   }
 }
@@ -52,8 +48,7 @@
   margin-bottom: $margin-top;
 
   img {
-    width: 492px;
-    height: 387px;
+    @include size(492px, 387px);
   }
 
   ul {

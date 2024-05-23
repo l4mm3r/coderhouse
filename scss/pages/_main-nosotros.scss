@@ -4,8 +4,7 @@
 }
 
 .balsa-img {
-  width: 738px;
-  height: 416px;
+  @include size(738px, 416px);
   object-fit: $object-fit;
   border-radius: $border-radius;
   box-shadow: $box-shadow;
@@ -15,8 +14,7 @@
   padding-left: 4%;
 }
 .inauguracion-img {
-  width: 630px;
-  height: 309px;
+  @include size(630px, 309px);
   object-fit: $object-fit;
   border-radius: $border-radius;
   box-shadow: $box-shadow;
@@ -25,10 +23,10 @@
 //organizacion section
 .modelo-organizacion-container {
   img {
-    @include orgImg;
+    @extend %orgImg;
   }
   span {
-    @include orgSpan;
+    @extend %orgSpan;
   }
   h2 span {
     animation-range-start: cover 10vh;
@@ -52,8 +50,7 @@
 
 //director section
 .foto-director {
-  width: 305px;
-  height: 282px;
+  @include size(305px, 282px);
   object-fit: $object-fit;
   border-radius: $border-radius;
   box-shadow: $box-shadow;
@@ -64,7 +61,6 @@
   padding: 20px;
   margin-bottom: 250px;
   img {
-    width: 100%;
-    height: 282px;
+    @include size(100%, 282px);
   }
 }

@@ -8,22 +8,19 @@
 
 //peaje section
 .peaje-container img {
-  width: 120%;
-  max-height: 435px;
+  @include size(120%, 435px);
   object-fit: cover;
 }
 
 //hospedaje section
 .hospedajes-container {
-  width: 100%;
-  height: 100vh;
+  @include size(100%, 100vh);
   @include display(center, center, column);
-  display: flex;
 }
 
 .info-hospedajes {
   height: 400px;
-  display: flex; /* change for column in md and sm*/
+  display: flex;
   flex-wrap: nowrap;
   justify-content: start;
   input {
@@ -42,14 +39,14 @@ input {
 }
 
 .card {
-  @include cards;
+  @extend %cards;
   .row {
-    @include cardsRow;
+    @extend %cardsRow;
     .icon {
-      @include cardsIcon;
+      @extend %cardsIcon;
     }
     .description {
-      @include cardsDescription;
+      @extend %cardsDescription;
       p {
         color: $natural-400;
       }
