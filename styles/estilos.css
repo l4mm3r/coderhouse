@@ -1654,23 +1654,24 @@ input:checked + label .description {
   .socios img {
     max-height: 200px;
   }
-  .ventajas-info {
+  .ventajas-container .ventajas-info {
+    width: 90%;
     margin: auto;
   }
-  .ventajas-info h2 {
+  .ventajas-container .ventajas-info h2 {
     font-size: 24px;
   }
-  .ventajas-info h4 {
+  .ventajas-container .ventajas-info h4 {
     font-size: 20px;
   }
-  .ventajas-info p {
+  .ventajas-container .ventajas-info p {
     font-size: 16px;
   }
-  .ventajas-info,
-  .ventajas-container .instalaciones-1,
-  .ventajas-container .instalaciones-2,
-  .ventajas-container .instalaciones-3,
-  .ventajas-container .instalaciones-4 {
+  .ventajas-container .container-img {
+    width: 100%;
+    padding: 0;
+  }
+  .ventajas-container .container-img .ventajas-img img {
     width: 100%;
   }
   .organismos-container {

@@ -433,24 +433,29 @@
 
 
   //media servicios page
-  .ventajas-info {
-    margin: auto;
-    h2 {
-      font-size: $mqh2-font-size;
+  .ventajas-container{
+    .ventajas-info {
+      width: 90%;
+      margin: auto;
+      h2 {
+        font-size: $mqh2-font-size;
+      }
+      h4 {
+        font-size: $mqh4-font-size;
+      }
+      p {
+        font-size: $mqp-font-size;
+      }
     }
-    h4 {
-      font-size: $mqh4-font-size;
+    .container-img {
+      width: 100%;
+      padding: 0;
+      .ventajas-img{
+        img{
+          width: 100%;
+        }
+      }
     }
-    p {
-      font-size: $mqp-font-size;
-    }
-  }
-  .ventajas-info,
-  .ventajas-container .instalaciones-1,
-  .ventajas-container .instalaciones-2,
-  .ventajas-container .instalaciones-3,
-  .ventajas-container .instalaciones-4 {
-    width: 100%;
   }
 
   //media organismos section
