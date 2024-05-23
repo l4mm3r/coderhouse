@@ -2,3 +2,12 @@
 .info-aduana-container {
   margin-top: $margin-top;
 }
+
+.despachantes-container{
+  .despachantes-cards{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+}
+}

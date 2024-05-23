@@ -210,7 +210,19 @@
   input:checked + label {
     height: 600px;
   }
-
+  .peaje-container{
+    img{
+      filter: none;
+    }
+  }
+  //media casa de cambio
+  .despachantes-container{
+    span{
+      h2{
+        margin: auto;
+      }
+    }
+  }
   //media contacto page
   .formulario-container {
     .contacto-img {
@@ -223,7 +235,17 @@
 
 ///////////////////////////////////////////////////////////////////////
 //media global 576px
+
 @media (max-width: 576px) {
+  h2 {
+    //mover a global
+    font-size: $mqh2-font-size;
+  }
+  h4 {
+    //mover a global
+    font-size: $mqh4-font-size;
+  }
+
   //media navbar
   .sidebar {
     .offcanvas-header {
@@ -333,6 +355,9 @@
   }
 
   //media footer section
+  .footer-container{
+    margin-top: $margin-top;
+  }
   .footer-list {
     display: inline-block;
     li {
@@ -515,17 +540,16 @@
   }
 
   //media turismo page
-  h2 {
-    //mover a global
-    font-size: $mqh2-font-size;
+  .peaje-container{
+    img{
+      scale: 0.75;
+      width: 180% !important;
+    }
   }
-  h4 {
-    //mover a global
-    font-size: $mqh4-font-size;
-  }
-  p {
-    font-size: $mqp-font-size;
-  }
+
+  //media casa de cambio
+
+
   // media leyes page
   .leyes-container {
     width: 80%;

@@ -7,9 +7,13 @@
 }
 
 //peaje section
-.peaje-container img {
-  @include size(120%, 435px);
-  object-fit: cover;
+.peaje-container {
+  img {
+    @include size(1080px, 350px);
+    object-fit: cover;
+    border-radius: $border-radius;
+    filter: drop-shadow($box-shadow)
+  }
 }
 
 //hospedaje section
@@ -72,4 +76,12 @@ input {
 
 .card[for="c4"] {
   background-image: url("../assets/fotos/turismo/hotel4.jpeg");
+}
+
+//casa de cambio
+.despachantes-container {
+  span{
+    display: flex;
+    justify-content: center;
+  }
 }

@@ -1047,6 +1047,13 @@ button.learn-more:hover .button-text a {
   margin-top: 250px;
 }
 
+.despachantes-container .despachantes-cards {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+}
+
 .footer-container {
   background: #cbd2e0;
 }
@@ -1118,9 +1125,11 @@ button.learn-more:hover .button-text a {
 }
 
 .peaje-container img {
-  width: 120%;
-  height: 435px;
+  width: 1080px;
+  height: 350px;
   object-fit: cover;
+  border-radius: 15px;
+  filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.3));
 }
 
 .hospedajes-container {
@@ -1172,6 +1181,11 @@ input:checked + label .description {
 
 .card[for=c4] {
   background-image: url("../assets/fotos/turismo/hotel4.jpeg");
+}
+
+.despachantes-container span {
+  display: flex;
+  justify-content: center;
 }
 
 .footer-container {
@@ -1498,11 +1512,23 @@ input:checked + label .description {
   input:checked + label {
     height: 600px;
   }
+  .peaje-container img {
+    filter: none;
+  }
+  .despachantes-container span h2 {
+    margin: auto;
+  }
   .formulario-container .contacto-img img {
     display: none;
   }
 }
 @media (max-width: 576px) {
+  h2 {
+    font-size: 24px;
+  }
+  h4 {
+    font-size: 20px;
+  }
   .sidebar .offcanvas-header button {
     padding-right: 40px;
   }
@@ -1582,6 +1608,9 @@ input:checked + label .description {
   .slider__contents img {
     width: 300px;
     height: 200px;
+  }
+  .footer-container {
+    margin-top: 250px;
   }
   .footer-list {
     display: inline-block;
@@ -1717,14 +1746,9 @@ input:checked + label .description {
   .info-aduana-container span h2 {
     font-size: 24px;
   }
-  h2 {
-    font-size: 24px;
-  }
-  h4 {
-    font-size: 20px;
-  }
-  p {
-    font-size: 16px;
+  .peaje-container img {
+    scale: 0.75;
+    width: 180% !important;
   }
   .leyes-container {
     width: 80%;
