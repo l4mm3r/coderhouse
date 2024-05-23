@@ -739,7 +739,7 @@ button.learn-more:hover .button-text a {
   }
 }
 .footer-container {
-  background: linear-gradient(0deg, rgba(0, 0, 255, 0.356179972) 0%, rgba(255, 255, 255, 0.9304096639) 42%);
+  background: #cbd2e0;
 }
 .footer-container ul {
   text-align: center;
@@ -854,13 +854,18 @@ button.learn-more:hover .button-text a {
   padding: 20px;
   margin-bottom: 250px;
 }
+.socios p a {
+  text-decoration: none;
+  color: blue;
+}
 .socios img {
+  object-fit: cover;
   width: 100%;
   height: 282px;
 }
 
 .footer-container {
-  background: linear-gradient(0deg, rgba(0, 0, 255, 0.356179972) 0%, rgba(255, 255, 255, 0.9304096639) 42%);
+  background: #cbd2e0;
 }
 .footer-container ul {
   text-align: center;
@@ -977,7 +982,7 @@ button.learn-more:hover .button-text a {
 }
 
 .footer-container {
-  background: linear-gradient(0deg, rgba(0, 0, 255, 0.356179972) 0%, rgba(255, 255, 255, 0.9304096639) 42%);
+  background: #cbd2e0;
 }
 .footer-container ul {
   text-align: center;
@@ -1043,7 +1048,7 @@ button.learn-more:hover .button-text a {
 }
 
 .footer-container {
-  background: linear-gradient(0deg, rgba(0, 0, 255, 0.356179972) 0%, rgba(255, 255, 255, 0.9304096639) 42%);
+  background: #cbd2e0;
 }
 .footer-container ul {
   text-align: center;
@@ -1170,7 +1175,7 @@ input:checked + label .description {
 }
 
 .footer-container {
-  background: linear-gradient(0deg, rgba(0, 0, 255, 0.356179972) 0%, rgba(255, 255, 255, 0.9304096639) 42%);
+  background: #cbd2e0;
 }
 .footer-container ul {
   text-align: center;
@@ -1288,7 +1293,7 @@ input:checked + label .description {
 }
 
 .footer-container {
-  background: linear-gradient(0deg, rgba(0, 0, 255, 0.356179972) 0%, rgba(255, 255, 255, 0.9304096639) 42%);
+  background: #cbd2e0;
 }
 .footer-container ul {
   text-align: center;
@@ -1438,6 +1443,18 @@ input:checked + label .description {
   .direccion-container img {
     margin-bottom: 10px;
   }
+  .filosofia-container h4 {
+    font-size: 24px;
+  }
+  .filosofia-container p {
+    font-size: 16px;
+  }
+  .info-nosotros-container p {
+    font-size: 16px;
+  }
+  .socios p {
+    font-size: 16px;
+  }
   .ventajas-container .instalaciones-1,
   .ventajas-container .instalaciones-4 {
     width: 80%;
@@ -1482,15 +1499,6 @@ input:checked + label .description {
   }
 }
 @media (max-width: 576px) {
-  h2 {
-    font-size: 24px;
-  }
-  h3 {
-    font-size: 22px;
-  }
-  h4 {
-    font-size: 20px;
-  }
   .sidebar .offcanvas-header button {
     padding-right: 40px;
   }
@@ -1627,9 +1635,11 @@ input:checked + label .description {
   .info-nosotros-container {
     flex-direction: column;
     width: 90%;
-    justify-content: center;
   }
-  .politica-container {
+  .info-nosotros-container .recursos-container p {
+    text-align: right;
+  }
+  .info-nosotros-container .politica-container {
     margin-top: 90px;
   }
   .ventajas-info {

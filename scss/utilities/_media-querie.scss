@@ -129,6 +129,30 @@
       margin-bottom: 10px;
     }
   }
+  
+  //media filosofia section
+  .filosofia-container{
+    h4{
+      font-size: $mqh2-font-size;
+    }
+    p{
+      font-size: $mqp-font-size;
+    }
+  }
+  
+  //media recursos humanos y privacidad section
+  .info-nosotros-container{
+    p{
+      font-size: $mqp-font-size;
+    }
+  }
+
+  //media socios section
+  .socios{
+    p{
+      font-size: $mqp-font-size;
+    }
+  }
 
   //media servicios page
   .ventajas-container .instalaciones-1,
@@ -192,15 +216,6 @@
 ///////////////////////////////////////////////////////////////////////
 //media global 576px
 @media (max-width: 576px) {
-  h2 {
-    font-size: 24px;
-  }
-  h3 {
-    font-size: 22px;
-  }
-  h4 {
-    font-size: 20px;
-  }
 
   //media navbar
   .sidebar {
@@ -377,13 +392,17 @@
   .info-nosotros-container {
     flex-direction: column;
     width: 90%;
-    justify-content: center;
+    .recursos-container{
+      p{
+        text-align: right;
+      }
+    }
+    .politica-container {
+      margin-top: 90px;
+    }
   }
 
   //media politica de privacidad section
-  .politica-container {
-    margin-top: 90px;
-  }
 
   //media servicios page
   .ventajas-info {
