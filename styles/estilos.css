@@ -1278,6 +1278,9 @@ input:checked + label .description {
   border: 2px solid blue;
   transition: 0.2s;
 }
+.contacto-form input[type=file] {
+  padding-top: 9px;
+}
 .contacto-form::placeholder {
   color: rgba(169, 169, 169, 0.662745098);
 }

@@ -20,6 +20,9 @@
       border: 2px solid blue;
       transition: 0.2s;
     }
+    &[type="file"] {
+      padding-top: 9px;
+    }
   }
   &::placeholder {
     color: #a9a9a9a9;
@@ -47,9 +50,8 @@
     margin-bottom: 20px;
   }
 }
-
 .contacto-inputs {
-  @extend %formInputs
+  @extend %formInputs;
 }
 
 .contacto-img {
