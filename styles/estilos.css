@@ -1176,11 +1176,11 @@ input:checked + label .description {
 }
 
 .card[for=c3] {
-  background-image: url("../assets/fotos/turismo/hotel3.png");
+  background-image: url("../assets/fotos/turismo/hotel3.jpg");
 }
 
 .card[for=c4] {
-  background-image: url("../assets/fotos/turismo/hotel4.png");
+  background-image: url("../assets/fotos/turismo/hotel4.jpg");
 }
 
 .despachantes-container span {
