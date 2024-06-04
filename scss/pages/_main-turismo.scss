@@ -1,0 +1,87 @@
+//leyes section
+.leyes-container {
+  margin-top: $margin-top;
+}
+.texto-leyes {
+  column-count: 2;
+}
+
+//peaje section
+.peaje-container {
+  img {
+    @include size(1080px, 350px);
+    object-fit: cover;
+    border-radius: $border-radius;
+    filter: drop-shadow($box-shadow)
+  }
+}
+
+//hospedaje section
+.hospedajes-container {
+  @include size(100%, 100vh);
+  @include display(center, center, column);
+}
+
+.info-hospedajes {
+  height: 400px;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: start;
+  input {
+    display: none;
+  }
+}
+
+input {
+  &:checked + label {
+    width: 600px;
+    .description {
+      opacity: 1 !important;
+      transform: translateY(0px) !important;
+    }
+  }
+}
+
+.card {
+  @extend %cards;
+  .row {
+    @extend %cardsRow;
+    .icon {
+      @extend %cardsIcon;
+    }
+    .description {
+      @extend %cardsDescription;
+      p {
+        color: $natural-400;
+      }
+      h4 {
+        text-transform: uppercase;
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+.card[for="c1"] {
+  background-image: url("../assets/fotos/turismo/hotel1.jpeg");
+}
+
+.card[for="c2"] {
+  background-image: url("../assets/fotos/turismo/hotel2.jpeg");
+}
+
+.card[for="c3"] {
+  background-image: url("../assets/fotos/turismo/hotel3.png");
+}
+
+.card[for="c4"] {
+  background-image: url("../assets/fotos/turismo/hotel4.png");
+}
+
+//casa de cambio
+.despachantes-container {
+  span{
+    display: flex;
+    justify-content: center;
+  }
+}

@@ -1,0 +1,60 @@
+//ventajas section
+.ventajas-container {
+  margin-top: $margin-top;
+
+  .ventajas-info {
+    margin: 0px 80px;
+  }
+
+  .ventajas-img {
+    @include display(center, inherit, inherit);
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .instalaciones-1 {
+    @include size(844px, 309px);
+    object-fit: $object-fit;
+  }
+
+  .instalaciones-2 {
+    @include size(413px, 309px);
+    object-fit: $object-fit;
+  }
+
+  .instalaciones-3 {
+    @include size(413px, 309px);
+    object-fit: $object-fit;
+  }
+
+  .instalaciones-4 {
+    @include size(630px, 309px);
+    object-fit: $object-fit;
+  }
+}
+
+//organismos section
+.organismos-arg-container li,
+.organismos-br-container li {
+  list-style: none;
+}
+
+.horarios p {
+  margin-bottom: 0px;
+}
+
+//vecinal section
+.vecinal-container {
+  margin-bottom: $margin-top;
+
+  img {
+    @include size(auto, 387px);
+    filter: drop-shadow($box-shadow);
+  }
+
+  ul {
+    li {
+      list-style: none;
+    }
+  }
+}

@@ -6,128 +6,219 @@
         <title>Servicios</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="../styles/styles.css">
+        <!---Bootstrap LINK-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <!---Css LINK-->
+        <link rel="stylesheet" href="../styles/estilos.css">
+        <!---Fonts LINK-->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <!-- Etiquetas meta para SEO -->
+        <meta name="robots" content="index, follow"> <!-- Permite a los motores de búsqueda indexar y seguir los enlaces de tu página -->
+        <meta name="author" content="Eduardo Vazzoler"> <!-- Nombre del autor de la página -->
+        <meta name="keywords" content="Centro Unificado de Frontera, CUF, Aduana, Organismos de Fiscalización, Tránsito Vecinal Fronterizo, TVF, Horario de Funcionamiento, Servicios de Frontera, América Latina, Santo Tomé, São Borja, Argentina, Brasil">
+        <meta name="description" content="Descubra las ventajas del Centro Unificado de Frontera (CUF), una iniciativa reconocida por la Organización Mundial de Aduanas (OMA). Obtenga información sobre los servicios aduaneros, organismos de fiscalización, y el beneficio del Tránsito Vecinal Fronterizo (TVF). Conozca nuestras instalaciones y horario de funcionamiento las 24 horas, los 365 días del año en la frontera entre Santo Tomé - Corrientes y São Borja - RS, Argentina y Brasil.">
+        <meta name="robots" content="index, follow"> <!-- Indica a los motores de búsqueda que indexen y sigan los enlaces de tu página -->
+        <meta name="rating" content="general"> <!-- Clasificación general de la página -->
+        <meta name="distribution" content="global"> <!-- Distribución de la página -->
+        <meta name="language" content="Spanish"><!-- Idioma principal de la página -->
     </head>
 <body>
-    <header class="navBar-container">
-        <nav class="navBar">
-            <div class="logo">
-                <a href="../index.html"><img src="../assets/fotos/Home/logopng.png" alt="logo de mercovia" class="logo"></a>
+    <!---Navbar SECTION-->
+    <header class="overflow-hidden">
+        <nav class="navbar navbar-expand-lg bg-white fixed-top">
+            <div class="container">
+                <!--logo-->
+                <a class="navbar-brand" href="../index.html"><img src="../assets/fotos/Home/logopng.png" width="120px" alt="logo de la empresa"></a>
+                <!--toggle btn-->
+                <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!--sidebar-->
+                <div class="sidebar offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                    <!--sidebar header-->
+                    <div class="offcanvas-header text-black">
+                        <button type="button" class="btn-close shadow-none" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <!--sidebar body-->
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-center align-items-start flex-grow-1 pe-3">
+                            <li class="nav-item mx-2">
+                                <a class="nav-link  bold-m natural-600" href="../index.html">Home</a>
+                            </li>
+
+                            <li class="nav-item mx-2">
+                                <a class="nav-link bold-m natural-600" href="nosotros.html">Nosotros</a>
+                            </li>
+
+                            <li class="nav-item mx-2">
+                                <a class="nav-link bold-m natural-600 active" aria-current="page" href="servicios.html">Servicios</a>
+                            </li>
+
+                            <li class="nav-item mx-2">
+                                <a class="nav-link bold-m natural-600" href="aduana.html">Aduana</a>
+                            </li>
+
+                            <li class="nav-item mx-2">
+                                <a class="nav-link bold-m natural-600" href="turismo.html">Turismo</a>
+                            </li>
+
+                            <li class="nav-item mx-2">
+                                <a class="nav-link bold-m natural-600" href="contacto.html">Contacto</a>
+                            </li>
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link bold-m natural-600 " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    WebMail
+                                </a>
+                                    <ul class="dropdown-menu dropdown-menu-end">
+                                        <li><a class="dropdown-item" href="#">Clientes</a></li>
+                                        <li><a class="dropdown-item" href="#">Empleados</a></li>
+                                    </ul>
+                            </li>
+                        </ul>
+                        <div class="d-flex">
+                            <select class="form-select d-flex" aria-label="Default select example">
+                                <option selected>ES</option>
+                                <option value="1">PT</option>
+                                <option value="2">EN</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <ul>
-                <li><a href="../pages/nosotros.html">Nosotros</a></li>
-                <li><a href="../pages/servicios.html">Servicios</a></li>
-                <li><a href="../pages/aduana.html">Aduana</a></li>
-                <li><a href="../pages/turismo.html">Turismo</a></li>
-                <li><a href="../pages/contacto.html">Contacto</a></li>
-                <li><a href="#">WebMail</a></li>
-            </ul>
-            <form>
-                <select name="idioma" class="selectIdioma"> 
-                    <option value="portugues">PT</option> 
-                    <option value="espanol">ES</option> 
-                </select>
-            </form>
         </nav>
     </header>
 
-    <section class="ventajas-container">
-        <h2>Ventajas del CUF</h2>
-        <h4>Qué es el CUF?</h4>
-        <p class="body-l">Faucibus magna massa massa orci volutpat id dignissim proin. At in mauris scelerisque orci auctor blandit quam faucibus. Vel nec ac ac nisi sollicitudin. Consequat convallis volutpat tellus elementum ac.</p>
-        <p class="bold-m">Conozca nuestras instalaciones</p>
-
-        <img src="../assets/fotos/servicios/serviciopatio.jpg" class="instalaciones-1"="fotos de los banos">
-        <img src="../assets/fotos/servicios/serviciorestaurante.jpg" class="instalaciones-2"="fotos de los banos">
-        <img src="../assets/fotos/servicios/servicioservidores.jpg" class="instalaciones-3"="fotos de los banos">
-        <img src="../assets/fotos/servicios/serviciowifi.jpg" class="instalaciones-4"="fotos de los banos">
+    <!---Ventajas del CUF SECTION-->
+    <section class="ventajas-container row d-flex" id="ventajas-section">
+        <div class="ventajas-info d-flex flex-column col-lg-5 col-md-6">
+            <h2>Ventajas del CUF</h2>
+            <h4>Qué es el CUF?</h4>
+            <p class="body-l">El Centro Unificado de Frontera, fue elegido por la OMA (Organización Mundial de Aduanas), IIRSA (Iniciativa para la Integración Regional Sudamericana) en un trabajo solicitado por el BID (Banco Interamericano de Desarrollo) como la frontera que más se aproxima al ideal de América Latina.</p>
+            <p class="bold-m">Conozca nuestras instalaciones</p>
+        </div>
+        <div class="container-img row">
+            <div class="ventajas-img d-flex ">
+                <img src="../assets/fotos/servicios/serviciopatio.jpg" class="instalaciones-1" alt="foto de un patio de camiones">
+                <img src="../assets/fotos/servicios/serviciorestaurante.jpg" class="instalaciones-2" alt="foto de un restaurante">
+                <img src="../assets/fotos/servicios/servicioApp.jpg" class="instalaciones-3" alt="foto de un celular">
+                <img src="../assets/fotos/servicios/serviciowifi.jpg" class="instalaciones-4" alt="fotos de un cartel de wifi">
+            </div>
+        </div>
     </section>
 
-    <section class="organismos-container">
-        <h2>Organismos</h2>
-        <p class="body-l">Faucibus magna massa massa orci volutpat id dignissim proin. </p>
-        <div class="organismos-arg-container">
-            <ul>
+    <!---Organismos SECTION-->
+    <section class="organismos-container row d-flex" id="organismos-section">
+        <div class="organismos-info mt250 d-flex flex-column col-lg-12 align-items-center text-center">
+            <h2>Organismos</h2>
+            <p class="body-l">Organismos de Fiscalización para la liberación de cargas, personas y vehículos instalados en el CUF.</p>
+        </div>
+        <div class="listas-organismos d-flex justify-content-evenly">
+            <div class="organismos-arg-container d-flex flex-column text-center mt-4">
                 <p class="bold-m">Organismos Argentinos</p>
-                <li>Lorem ipsum dolor sit amet consectetur.</li>
-                <li>Lorem ipsum dolor sit amet consectetur.</li>
-                <li>Lorem ipsum dolor sit amet consectetur.</li>
-                <li>Lorem ipsum dolor sit amet consectetur.</li>
-                <li>Lorem ipsum dolor sit amet consectetur.</li>
-                <li>Lorem ipsum dolor sit amet consectetur.</li>
-            </ul>
-        </div>
+                <ul class="px-0">
+                    <li>Aduana Argentina</li>
+                    <li>Senasa (Areas Animal y Vegetal)</li>
+                    <li>Dirección Nacional de Migraciones</li>
+                    <li>Gendarmería Nacional</li>
+                    <li>D.N.R.P.A (Dirección Nacional de Registro de Propuedad del Automotor)</li>
+                    <li>Inal</li>
+                </ul>
+            </div>
 
-        <div class="organismos-br-container">
-            <ul>
+            <div class="organismos-br-container d-flex flex-column text-center mt-4">
                 <p class="bold-m">Organismos Brasileros</p>
-                <li>Lorem ipsum dolor sit amet consectetur.</li>
-                <li>Lorem ipsum dolor sit amet consectetur.</li>
-                <li>Lorem ipsum dolor sit amet consectetur.</li>
-                <li>Lorem ipsum dolor sit amet consectetur.</li>
-                <li>Lorem ipsum dolor sit amet consectetur.</li>
-                <li>Lorem ipsum dolor sit amet consectetur.</li>
-            </ul>
-        </div>
+                <ul class="px-0">
+                    <li>Secretaría da Receita Federal</li>
+                    <li>Policía Federal</li>
+                    <li>Ministério de Agricultura, Pecuária e Abastecimento</li>
+                    <li>Emater</li>
+                    <li>Anvisa (Agencia Nacional de Vigilancia Sanitaria)</li>
+                    <li>Acisb (Emisión de Certificados de Origen)</li>
 
-        <p class="bold-s">random text information testing</p>
-        <p class="body-xs">Lorem ipsum dolor sit amet consectetur. Et ornare non nibh neque. Tincidunt sem massa convallis amet arcu orci. Feugiat mi congue gravida pretium nibh fames eleifend.</p>
+                </ul>
+            </div>
+        </div>
+        <div class="horarios d-flex flex-column align-items-center text-center mt-4">
+            <p class="bold-s">Horario de Funcionamiento</p>
+            <p class="body-xs">EL Centro Unificado de Frontera se encuentra abierto las 24hs los 365 días del año.</p>
+        </div>
     </section>
 
-    <section class="vecinal-container">
-        <img src="../assets/fotos/servicios/tarjetatvf.png" alt="foto de la tarjeta de tvf">
-        <div class="infotvf-container">
+    <!---Transito vecinal SECTION-->
+    <section class="vecinal-container row d-flex " id="vecinal-section">
+        <img src="../assets/fotos/servicios/tarjetatvf.png" alt="foto de la tarjeta de tvf" class="d-flex col-lg-5 align-self-center mt250">
+        <div class="infotvf-container d-flex flex-column col-lg-6 col-md-11 mx-auto justify-content-center align-items-end text-end mt250">
             <h2>Tránsito Vecinal Fronterizo</h2>
-            <p class="body-l">Lorem ipsum dolor sit amet consectetur. Lorem varius purus venenatis velit ipsum. Lectus quam nisl ut tortor eget. Rutrum dolor imperdiet at id semper rutrum lectus. Vel faucibus placerat laoreet nam viverra. Congue sit morbi a blandit diam at nulla mollis. Facilisi eget praesent aliquet nunc ullamcorper. Felis ultrices massa ut cursus eu quam. Justo rhoncus amet at dictum. Vestibulum dignissim in vestibulum a. Vestibulum sed sit elit ultrices pellentesque pretium. Vel justo et diam in vestibulum turpis sem urna varius. Eget senectus pellentesque molestie sed donec amet et elit ornare.</p>
-            <p class="bold-m">Horario de atención: input data here</p>
-            <p class="bold-m">+55 4941727999</p>
+            <p class="body-l">Es un servicio para residentes de las cuidades de Santo Tomé - Corrientes y São Borja - RS, con el cual 
+                se otorga el beneficio de quedar excentos de el peaje internacional en nuestro paso fronterizo.
+            </p>
+            <p class="body-m">TEMPORALMENTE el registro para el TVF está siendo realizado de manera personal en nuestras oficinas que se encuentran al
+                lado del peaje.
+            </p>
+            <br>
+            <p class="bold-m mt-3">Requisitos</p>
+            <ul>
+                <li class="body-m">Documento de identidad.</li>
+                <li class="body-m">Comprobante de domicilio en Santo Tomé o São Borja.</li>
+                <li class="body-m">Registro del vehículo a nombre del requerente.</li>
+            </ul>
+            <p class="bold-m natural-700">Horario de atención: 08:00hs - 12:00hs y de 15:00hs - 19:00hs, de Lunes a Viernes</p>
         </div>
 
     </section>
 
-
+<!---Footer SECTION-->
     <footer class="footer-container">
-        <ul class="nosotros-footer">
-            <p>Nosotros</p>
-            <li class="list-item-footer"><a href="#">Nuestra historia</a></li>
-            <li class="list-item-footer"><a href="#">Filosfia coorporativa</a></li>
-            <li class="list-item-footer"><a href="#">Certificaciones</a></li>
-            <li class="list-item-footer"><a href="#">Socios</a></li>
-        </ul>
-        <ul class="servicios-footer">
-            <p>Servicios</p>
-            <li class="list-item-footer"><a href="#">Ventajas del CUF</a></li>
-            <li class="list-item-footer"><a href="#">Organismos</a></li>
-            <li class="list-item-footer"><a href="#">T.V.F.</a></li>
-        </ul>
-        <ul class="nosotros-footer">
-            <p>Aduana</p>
-            <li class="list-item-footer"><a href="#">Información</a></li>
-            <li class="list-item-footer"><a href="#">Filosfia coorporativa</a></li>
-            <li class="list-item-footer"><a href="#">Certificaciones</a></li>
-            <li class="list-item-footer"><a href="#">Socios</a></li>
-        </ul>
-        <ul class="nosotros-footer">
-            <p>Turismo</p>
-            <li class="list-item-footer"><a href="#">Información y leyes</a></li>
-            <li class="list-item-footer"><a href="#">Casas de cambio</a></li>
-            <li class="list-item-footer"><a href="#">Hospedajes</a></li>
-            <li class="list-item-footer"><a href="#">Peaje</a></li>
-        </ul>
-        <ul class="nosotros-footer">
-            <p>Contacto</p>
-            <li class="list-item-footer"><a href="#">Trabaje con nosotros</a></li>
-        </ul>
-        <ul class="nosotros-footer">
-            <p>WebMail</p>
-            <li class="list-item-footer"><a href="#">Acceso clientes</a></li>
-            <li class="list-item-footer"><a href="#">Acceso empleados</a></li>
-        </ul>
-        <p class="copyright">Mercovia S.A. © 2024</p>
+        <div class="footer-list">
+            <ul class="nosotros-footer">
+                <span class="list-item-footer"><a href="/pages/nosotros.html" class="natural-900"><h6 class="bold-m">Nosotros</h6></a></span>
+                <li class="list-item-footer bold-xs"><a href="/pages/nosotros.html" class="natural-600">Nuestra historia</a></li>
+                <li class="list-item-footer bold-xs"><a href="/pages/nosotros.html#organizacion-section" class="natural-600">Organograma</a></li>
+                <li class="list-item-footer bold-xs"><a href="/pages/nosotros.html#filosofia-section" class="natural-600">Filosfia coorporativa</a></li>
+                <li class="list-item-footer bold-xs"><a href="/pages/nosotros.html#recursos-section" class="natural-600">Recursos Humanos </a></li>
+                <li class="list-item-footer bold-xs"><a href="/pages/nosotros.html#socios-section" class="natural-600">Socios</a></li>
+            </ul>
+            <ul class="servicios-footer">
+                <span class="list-item-footer"><a href="/pages/servicios.html" class="natural-900"><h6 class="bold-m">Servicios</h6></a></span>
+                <li class="list-item-footer bold-xs"><a href="pages/servicios.html#ventajas-section" class="natural-600">Ventajas del CUF</a></li>
+                <li class="list-item-footer bold-xs"><a href="pages/servicios.html#organismos-section" class="natural-600">Organismos</a></li>
+                <li class="list-item-footer bold-xs"><a href="pages/servicios.html#vecinal-section" class="natural-600">T.V.F.</a></li>
+            </ul>
+            <ul class="aduana-footer">
+                <span class="list-item-footer"><a href="/pages/aduana.html" class="natural-900"><h6 class="bold-m">Aduana</h6></a></span>
+                <li class="list-item-footer bold-xs"><a href="/pages/aduana.html#procesos-section" class="natural-600">Información</a></li>
+                <li class="list-item-footer bold-xs"><a href="/pages/aduana.html#despachantes-section" class="natural-600">Despachantes</a></li>
+            </ul>
+            <ul class="turismo-footer">
+                <span class="list-item-footer"><a href="" class="natural-900"><h6 class="bold-m">Turismo</h6></a></span>
+                <li class="list-item-footer bold-xs"><a href="/pages/turismo.html#leyes-section" class="natural-600">Información y leyes</a></li>
+                <li class="list-item-footer bold-xs"><a href="/pages/turismo.html#requisitos-section" class="natural-600">Requisitos para cruzar</a></li>
+                <li class="list-item-footer bold-xs"><a href="/pages/turismo.html#peaje-section" class="natural-600">Peaje</a></li>
+                <li class="list-item-footer bold-xs"><a href="/pages/turismo.html#hospedajes-section" class="natural-600">Hospedajes</a></li>
+                <li class="list-item-footer bold-xs"><a href="/pages/turismo.html#cambios-section" class="natural-600">Casas de cambio</a></li>
+            </ul>
+            <ul class="contacto-footer">
+                <span class="list-item-footer"><a href="/pages/contacto.html" class="natural-900"><h6 class="bold-m">Contacto</h6></a></span>
+                <li class="list-item-footer bold-xs"><a href="/pages/contacto.html" class="natural-600">Trabaje con nosotros</a></li>
+            </ul>
+            <ul class="webmail-footer">
+                <span class="list-item-footer"><a href="/index.html" class="natural-900"><h6 class="bold-m">WebMail</h6></a></span>
+                <li class="list-item-footer bold-xs"><a href="https://mercovia.propulsor.net.br/login" class="natural-600">Acceso clientes</a></li>
+                <li class="list-item-footer bold-xs"><a href="https://webmail.mercovia-sa.com/webmail/login/" class="natural-600">Acceso empleados</a></li>
+            </ul>
+    </div>
+                <div class="final-line">
+                        <span class="body-xs natural-600" >BR 285 Km 551 - Sala 83</span>
+                        <span class="body-xs natural-600" >São Borja - Brasil / Santo Tomé - Argentina</span>
+                        <span class="mid-item"><a href="../index.html" class="mid-item"><img src="../assets/fotos/Home/logopng.png"  alt="logo de la empresa"></a></span>
+                        <span class="body-xs natural-600" >BR: (55) 3431-2207 / (55) 3431-2307</span>
+                        <span class="body-xs natural-600" >AR: (54) 03756 490100</span>
+                </div>
     </footer>
-        
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>    
 </body>
 </html>

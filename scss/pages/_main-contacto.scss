@@ -1,0 +1,63 @@
+.formulario-container {
+  height: 100vh;
+  @include display(space-evenly, center, inherit);
+}
+
+.contacto-form {
+  @include display(inherit, start, column);
+  gap: 20px;
+  textarea {
+    height: 140px;
+    padding-top: 15px;
+    border-radius: $border-radius;
+    &:focus {
+      border: 2px blue solid;
+      transition: 0.2s;
+    }
+  }
+  input {
+    &:focus {
+      border: 2px solid blue;
+      transition: 0.2s;
+    }
+    &[type="file"] {
+      padding-top: 9px;
+    }
+  }
+  &::placeholder {
+    color: #a9a9a9a9;
+  }
+  button {
+    @extend %formButton;
+    img {
+      width: 15px;
+    }
+  }
+}
+
+.contacto-title {
+  h2 {
+    font-weight: 600;
+    font-size: 40px;
+    margin-bottom: 5px;
+  }
+  hr {
+    @include size(120px, 5px);
+    border: none;
+    width: 120px;
+    height: 5px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+}
+.contacto-inputs {
+  @extend %formInputs;
+}
+
+.contacto-img {
+  img {
+    width: 500px;
+    border-radius: $border-radius;
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.1);
+  }
+}

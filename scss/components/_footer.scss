@@ -1,0 +1,48 @@
+.footer-container {
+  background: $natural-400;
+  ul {
+    text-align: center;
+    padding-left: 0px;
+    li {
+      list-style: none;
+      padding: 4px 0px;
+      a {
+        text-decoration: none;
+        h6 {
+          padding-bottom: 0px;
+        }
+      }
+    }
+  }
+}
+
+.footer-list {
+  display: flex;
+  justify-content: space-evenly;
+  margin: auto;
+  margin-top: 100px;
+  padding: 20px;
+  width: 100%;
+
+  span {
+    a {
+      text-decoration: none;
+    }
+  }
+}
+
+.final-line {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 40px;
+  padding-top: 0px;
+  width: 100%;
+  margin: auto;
+  span {
+    margin: 0px 40px;
+    img {
+      width: 120px;
+      height: auto;
+    }
+  }
+}

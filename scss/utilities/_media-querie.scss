@@ -1,0 +1,611 @@
+//media general 990px
+@media (max-width: 990px) {
+  //queries navbar
+  .form-select {
+    margin-top: 20px;
+    font-size: 18px;
+    width: 80px;
+  }
+
+  .offcanvas-body {
+    .navbar-nav a {
+      font-size: 26px;
+    }
+    .dropdown a {
+      padding-left: 9px;
+    }
+    .sidebar {
+      background-color: rgba(255, 255, 255, 0.837);
+      backdrop-filter: blur(10px);
+    }
+  }
+  //medias hero section
+  .hero-container {
+    margin: 120px auto;
+    text-align: end;
+    .button-primary {
+      margin-bottom: 20px;
+      align-self: flex-end;
+      width: 120px;
+    }
+  }
+
+  //media services section
+  .servicios-info {
+    width: 100%;
+    padding: 40px;
+    flex-direction: column;
+    justify-content: center;
+    .btn {
+      width: 140px;
+    }
+  }
+  .box-container {
+    width: 100%;
+    margin-right: 20px;
+  }
+
+  //media experience section
+  .experiencia-container {
+    flex-direction: column-reverse;
+    align-items: flex-end;
+    img {
+      border-radius: 0px;
+      width: 60%;
+      align-self: flex-start;
+      height: 300px;
+      border-radius: 0px 15px 15px 0px;
+      box-shadow: 0 20px 30px rgba(0, 0, 0, 0.1);
+    }
+  }
+
+  .experiencia-info {
+    padding: 40px;
+    padding-bottom: 0px;
+    text-align: end;
+    width: 80%;
+    p {
+      width: 100%;
+    }
+    .btn {
+      width: 110px;
+      align-self: flex-end;
+    }
+  }
+
+  .estadisticas-container {
+    img {
+      margin-top: -70px;
+    }
+  }
+
+  //media footer section
+  .footer-container {
+    ul {
+      padding-left: 0px;
+      li {
+        display: none;
+        a {
+          text-decoration: none;
+        }
+      }
+    }
+  }
+
+  //media finaline section
+  .final-line {
+    flex-direction: column;
+    align-items: center;
+    padding: 0 40px 40px;
+    .mid-item {
+      order: 5;
+    }
+    span {
+      img {
+        margin-top: 10px;
+        width: 100px;
+      }
+    }
+  }
+
+  //media nosotros page
+  .historia-info-1 {
+    display: inline-flex;
+    padding: 0;
+  }
+  .balsa-img {
+    width: 90%;
+  }
+  .inauguracion-img {
+    display: none;
+  }
+
+  //media organizacion section
+  .modelo-organizacion-container {
+    img {
+      scale: 1 !important;
+    }
+  } 
+
+  //media direccion section
+  .direccion-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    img {
+      margin-bottom: 10px;
+    }
+  }
+
+  //media filosofia section
+  .filosofia-container {
+    h4 {
+      font-size: $mqh2-font-size;
+    }
+    p {
+      font-size: $mqp-font-size;
+    }
+  }
+
+  //media recursos humanos y privacidad section
+  .info-nosotros-container {
+    p {
+      font-size: $mqp-font-size;
+    }
+  }
+
+  //media socios section
+  .socios {
+    p {
+      font-size: $mqp-font-size;
+    }
+  }
+
+  //media servicios page
+  .ventajas-container .instalaciones-1,
+  .ventajas-container .instalaciones-4 {
+    width: 80%;
+    max-height: 300px;
+  }
+  .ventajas-container .instalaciones-2 {
+    width: 350px;
+    max-height: 300px;
+  }
+  .ventajas-container .instalaciones-3 {
+    width: 350px;
+    max-height: 300px;
+  }
+
+  //media organismos section
+  .listas-organismos {
+    flex-direction: column;
+  }
+
+  //media transito vecinal section
+  .vecinal-container {
+    width: 90%;
+    margin: auto;
+    margin-bottom: 250px;
+    img {
+      display: none !important;
+    }
+  }
+
+  //media aduana page
+  .despachantes-cards {
+    display: flex;
+    flex-direction: column;
+  }
+
+  //media turismo page
+  .info-hospedajes {
+    flex-direction: column;
+    align-items: center;
+  }
+  .card {
+    width: 300px;
+    margin: 5px;
+  }
+  input:checked + label {
+    height: 600px;
+  }
+  .peaje-container{
+    img{
+      filter: none;
+    }
+  }
+  //media casa de cambio
+  .despachantes-container{
+    span{
+      h2{
+        margin: auto;
+      }
+    }
+  }
+  //media contacto page
+  .formulario-container {
+    .contacto-img {
+      img {
+        display: none;
+      }
+    }
+  }
+}
+
+///////////////////////////////////////////////////////////////////////
+//media global 576px
+
+@media (max-width: 576px) {
+  h2 {
+    //mover a global
+    font-size: $mqh2-font-size;
+  }
+  h4 {
+    //mover a global
+    font-size: $mqh4-font-size;
+  }
+
+  //media navbar
+  .sidebar {
+    .offcanvas-header {
+      button {
+        padding-right: 40px;
+      }
+    }
+  }
+
+  //media hero section
+  .hero-info {
+    text-align: center;
+    background: linear-gradient(
+        rgba(255, 255, 255, 1),
+        rgba(255, 255, 255, 0.5)
+      ),
+      url(/assets/fotos/Home/puenteimg.jpg);
+    min-height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+  }
+  .hero-container {
+    margin-top: 60px;
+    p {
+      font-size: $mqp-font-size;
+    }
+    h1 {
+      font-size: $mqh1-font-size;
+    }
+    .button-primary {
+      width: 110px;
+      font-size: 12px;
+      align-self: center;
+    }
+    img {
+      display: none;
+    }
+  }
+
+  //media experience section
+  .servicios-info {
+    p {
+      font-size: $mqp-font-size;
+    }
+    h3 {
+      font-size: $mqh3-font-size;
+    }
+    .btn {
+      width: 130px;
+      font-size: 12px;
+    }
+  }
+  .box-container {
+    flex-direction: column;
+    padding: 20px;
+    .box {
+      margin-bottom: 20px;
+    }
+  }
+
+  //media experiencia section
+  .experiencia-container {
+    img {
+      height: 250px;
+      width: 100%;
+    }
+  }
+  .experiencia-info {
+    width: 100%;
+    padding-bottom: 40px;
+    h3 {
+      font-size: $mqh3-font-size;
+    }
+    p {
+      font-size: $mqp-font-size;
+    }
+    .btn {
+      font-size: 12px;
+    }
+  }
+
+  //media estadisticas section
+  .estadisticas-container {
+    h3 {
+      font-size: $mqh3-font-size;
+    }
+    img {
+      height: 300px;
+    }
+  }
+
+  //media clientes section
+  .clientes-container {
+    h3 {
+      font-size: $mqh3-font-size;
+    }
+  }
+  .slider-clientes {
+    height: 500px;
+  }
+  .slider__contents img {
+    width: 300px;
+    height: 200px;
+  }
+
+  //media footer section
+  .footer-container{
+    margin-top: $margin-top;
+  }
+  .footer-list {
+    display: inline-block;
+    li {
+      display: none;
+    }
+  }
+
+  //media finaline section
+  .final-line {
+    padding: 0 20px 20px;
+    span {
+      img {
+        width: 80px;
+      }
+    }
+  }
+
+  //media nosotros page
+  .historia-container {
+    width: 80%;
+    margin: auto;
+    h2 {
+      font-size: $mqh2-font-size;
+      width: 100%;
+      margin-top: 15vh;
+    }
+    h4 {
+      font-size: $mqh4-font-size;
+    }
+    p {
+      font-size: $mqp-font-size;
+    }
+    img {
+      object-fit: cover;
+    }
+  }
+  .historia-info-2 {
+    width: 100%;
+    padding: 0px;
+  }
+
+  //media organizacion section
+  .modelo-organizacion-container {
+    h2 {
+      font-size: $mqh2-font-size;
+    }
+    h4 {
+      font-size: $mqh4-font-size;
+    }
+    p {
+      font-size: $mqp-font-size;
+      width: 80%;
+      margin: auto;
+    }
+  }
+
+  //media direccion section
+  .direccion-container{
+    img {
+      scale: 0.75;
+    }
+  }
+
+
+  //media filosofia section
+  .filosofia-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    h4{
+      font-size: $mqh4-font-size;
+    }
+    p{
+      font-size: $mqp-font-size;
+    }
+  }
+
+  //media recursos humanos section y politica
+  .info-nosotros-container {
+    flex-direction: column;
+    width: 90%;
+    .recursos-container {
+      p {
+        text-align: right;
+      }
+    }
+    .politica-container {
+      margin-top: 90px;
+    }
+  }
+
+  //media socios section
+  .socios {
+    img {
+      max-height: 200px;
+    }
+  }
+
+
+  //media servicios page
+  .ventajas-container{
+    .ventajas-info {
+      width: 90%;
+      margin: auto;
+      h2 {
+        font-size: $mqh2-font-size;
+      }
+      h4 {
+        font-size: $mqh4-font-size;
+      }
+      p {
+        font-size: $mqp-font-size;
+      }
+    }
+    .container-img {
+      width: 100%;
+      padding: 0;
+      .ventajas-img{
+        img{
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  //media organismos section
+  .organismos-container {
+    margin: 0 auto;
+    h2 {
+      font-size: $mqh2-font-size;
+    }
+    p {
+      font-size: $mqp-font-size;
+    }
+    ul {
+      li {
+        font-size: $mqp-font-size;
+      }
+    }
+    .horarios {
+      p {
+        font-size: $mqxp-font-size;
+      }
+    }
+  }
+
+  //media transito vecinal section
+  .infotvf-container {
+    h2 {
+      font-size: $mqh2-font-size;
+    }
+    p {
+      font-size: $mqp-font-size;
+      align-self: center;
+    }
+    ul {
+      padding-left: 0px;
+      li {
+        font-size: $mqp-font-size;
+      }
+    }
+  }
+
+  //media aduana page
+  .info-aduana-container {
+    width: 80%;
+    margin: auto;
+    margin-top: 15vh;
+    h2 {
+      font-size: $mqh2-font-size;
+    }
+    p {
+      font-size: $mqp-font-size;
+    }
+    span {
+      h2 {
+        font-size: $mqh2-font-size;
+      }
+    }
+  }
+
+  //media turismo page
+  .peaje-container{
+    img{
+      scale: 0.75;
+      width: 180% !important;
+    }
+  }
+
+  //media casa de cambio
+
+
+  // media leyes page
+  .leyes-container {
+    width: 80%;
+    margin: auto;
+    margin-top: 15vh;
+  }
+  .texto-leyes {
+    column-count: 1;
+  }
+  .texto-leyes p,
+  .info-requisitos p,
+  .peaje-container p {
+    font-size: $mqp-font-size;
+  }
+  .info-requisitos,
+  .peaje-container {
+    width: 80%;
+  }
+  .peaje-container img {
+    width: 150%;
+  }
+  .card {
+    width: 100px;
+    margin: 5px;
+    .row {
+      .description {
+        width: 300px;
+      }
+    }
+  }
+  input:checked + label {
+    width: 300px;
+  }
+  .casacambio-container {
+    width: 80%;
+    margin: auto;
+  }
+  .text-end {
+    text-align: center !important;
+  }
+
+  //media contacto page
+  .contacto-form {
+    width: 80%;
+    input {
+      font-size: $mqp-font-size;
+      margin: auto;
+      width: 300px;
+    }
+    textarea {
+      font-size: $mqp-font-size;
+      margin: auto;
+      width: 300px;
+    }
+    button {
+      margin-left: 10px;
+    }
+  }
+}

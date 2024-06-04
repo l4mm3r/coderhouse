@@ -2,98 +2,163 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Home</title>
+        <title>Mercovia S.A.</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="styles/styles.css">
+        <!---Bootstrap LINK-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <!---Css LINK-->
+        <link rel="stylesheet" href="styles/estilos.css">
+        <!---Fonts LINK-->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <!-- Etiquetas meta para SEO -->
+        <meta name="robots" content="index, follow"> <!-- Permite a los motores de búsqueda indexar y seguir los enlaces de tu página -->
+        <meta name="author" content="Eduardo Vazzoler"> <!-- Nombre del autor de la página -->
+        <meta name="keywords" content="mercado, aduanas, fronteras, comercio, Brasil, Argentina"> <!-- Palabras clave relacionadas con el contenido de tu página -->
+        <meta name="description" content="Mercovia S.A. es un centro unificado de frontera que facilita los trámites migratorios, aduaneros y de seguridad entre Brasil y Argentina. Promovemos la integración regional y el comercio, ofreciendo servicios eficientes y seguros. Con 26 años de experiencia, nos comprometemos a proporcionar la mejor experiencia posible a nuestros usuarios.">
+        <meta name="robots" content="index, follow"> <!-- Indica a los motores de búsqueda que indexen y sigan los enlaces de tu página -->
+        <meta name="rating" content="general"> <!-- Clasificación general de la página -->
+        <meta name="distribution" content="global"> <!-- Distribución de la página -->
+        <meta name="language" content="Spanish"><!-- Idioma principal de la página -->
     </head>
     <body>
 
         <!---NAVBAR-->
-        <header class="navbar-container">
-            <nav class="navbar">
-                <div class="logo">
-                    <a href="../index.html"><img src="assets/fotos/Home/logopng.png" alt="logo de mercovia" class="logo"></a>
+        <header class="overflow-hidden">
+            <nav class="navbar navbar-expand-lg bg-white fixed-top">
+                <div class="container">
+                    <!--logo-->
+                    <a class="navbar-brand" href="index.html"><img src="assets/fotos/Home/logopng.png" width="120px" alt="logo de la empresa"></a>
+                    <!--toggle btn-->
+                    <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <!--sidebar-->
+                    <div class="sidebar offcanvas offcanvas-end bg-white" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                        <!--sidebar header-->
+                        <div class="offcanvas-header text-black">
+                            <button type="button" class="btn-close shadow-none" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                        <!--sidebar body-->
+                        <div class="offcanvas-body">
+                            <ul class="navbar-nav justify-content-center align-items-start flex-grow-1 pe-3">
+                                <li class="nav-item mx-2">
+                                    <a class="nav-link active bold-m natural-600" aria-current="page" aria-selected="true"href="#">Home</a>
+                                </li>
+
+                                <li class="nav-item mx-2">
+                                    <a class="nav-link bold-m natural-600" href="pages/nosotros.html">Nosotros</a>
+                                </li>
+
+                                <li class="nav-item mx-2">
+                                    <a class="nav-link bold-m natural-600" href="pages/servicios.html">Servicios</a>
+                                </li>
+
+                                <li class="nav-item mx-2">
+                                    <a class="nav-link bold-m natural-600" href="pages/aduana.html">Aduana</a>
+                                </li>
+
+                                <li class="nav-item mx-2">
+                                    <a class="nav-link bold-m natural-600" href="pages/turismo.html">Turismo</a>
+                                </li>
+
+                                <li class="nav-item mx-2">
+                                    <a class="nav-link bold-m natural-600" href="pages/contacto.html">Contacto</a>
+                                </li>
+
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link bold-m natural-600 " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        WebMail
+                                    </a>
+                                        <ul class="dropdown-menu dropdown-menu-end">
+                                            <li><a class="dropdown-item" href="https://mercovia.propulsor.net.br/login">Clientes</a></li>
+                                            <li><a class="dropdown-item" href="https://webmail.mercovia-sa.com/webmail/login/">Empleados</a></li>
+                                        </ul>
+                                </li>
+                            </ul>
+                            <div class="d-flex">
+                                <select class="form-select d-flex" aria-label="Default select example">
+                                    <option selected>ES</option>
+                                    <option value="1">PT</option>
+                                    <option value="2">EN</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <ul>
-                    <li><a href="pages/nosotros.html" class="natural-600">Nosotros</a></li>
-                    <li><a href="pages/servicios.html" class="natural-600">Servicios</a></li>
-                    <li><a href="pages/aduana.html" class="natural-600">Aduana</a></li>
-                    <li><a href="pages/turismo.html" class="natural-600">Turismo</a></li>
-                    <li><a href="pages/contacto.html" class="natural-600">Contacto</a></li>
-                    <li><a href="pages/webmail.html" class="natural-600">WebMail</a></li>
-                </ul>
-                <form>
-                    <select name="idioma" class="selectIdioma"> 
-                        <option value="portugues">PT</option> 
-                        <option value="espanol">ES</option> 
-                    </select>
-                </form>
             </nav>
         </header>
         
         <!---HERO SECTION-->
         <main>
-            <section class="hero-container">
-                <div class="hero-info">
+            <section class="hero-container row d-flex justify-content-center col-lg-11 col-md-11">
+                <div class="hero-info d-flex flex-column justify-content-center col-xxl-5 col-lg-5 col-sm-11 ">
                     <h1 class="heading-xxl">Primer Centro Unificado de Frontera</h1>
-                    <p class="body-l natural-700">Facilitando los trámites migratorios, aduaneros y de seguridad en la 
+                    <p class="body-l $natural-700 col-xxl-9 pt-3">Facilitando los trámites migratorios, aduaneros y de seguridad en la 
                     zona limitrofe entre Brasil y Argentina, promoviendo la integración regional y el comercio.</p>
-                    <a href="pages/nosotros.html" class="btn-medium">Conocenos</a>
+                    <button class="button-primary col-lg-3 col-md-2">
+                        <span class="button-text"><a href="pages/nosotros.html">Conocenos</a></span>
+                        <div class="fill-container"></div>
+                    </button>
                 </div>
-                    <img src="assets/fotos/home/heroimg.jpg" alt="Imagen de un puente" class="heroimg">
+                <img src="assets/fotos/Home/puenteimg.jpg" alt="Imagen de un puente" class="heroimg h-100 px-0 col-xxl-6 col-lg-5 col-sm-11">
             </section>
         </main> 
 
         <!---SERVICIOS-->
-            <section class="servicios-container">
-                <div class="servicios-info">
-                    <h3 class="natural-900">Nuestros servicios</h3>
-                    <p class="body-l natural-700">Lorem ipsum dolor sit amet consectetur. Condimentum mi nulla scelerisque a auctor cras.
-                    Sed eu sit orci ligula. Id mattis ante bibendum dui nunc. Egestas lacinia faucibus est tellus nascetur
-                    ullamcorper diam molestie.</p>
-                    <a href="pages/servicios.html" class="btn-small">Más servicios</a>
-                </div>
+        <section class="servicios-container row mx-0">
+            <div class="servicios-info col-lg-12 col-sm-12">
+                <h3 class="$natural-900">Nuestros servicios</h3>
+                <p class="body-l $natural-700">La estructura del Centro Unificado de Fronteras es un modelo de gestión planeado para recibir diferentes tipos de cargas, dentro de las normas de calidad y seguridad, de forma que el flujo de las operaciones sea funcional y práctica.
+                </p>
 
-                    <div class="box-container">
-                        <div class="box">
-                            <img class="serviciosImg" src="assets/fotos/home/servicio1.jpg" alt="Foto de una oficina">
-                        </div>
-                        <div class="box">
-                            <img class="serviciosImg" src="assets/fotos/home/servicio2.jpg" alt="Foto de un patio de camiones">
-                        </div>
-                        <div class="box">
-                            <img class="serviciosImg" src="assets/fotos/home/servicio3.jpg" alt="Foto de dos manos estrechandose">
-                        </div>
+                <!--seconday button -->
+                <div id="container">
+                    <button class="learn-more">
+                        <span class="circle" aria-hidden="true">
+                            <span class="icon arrow"></span>
+                        </span>
+                        <span class="button-text"><a href="pages/servicios.html">Más servicios</a></span>
+                    </button>
+                </div>
+            </div>
+
+                <div class="box-container col-md-6">
+                    <div class="box">
+                        <img class="serviciosImg" src="assets/fotos/Home/servicio1.jpg" alt="Foto de una oficina">
                     </div>
-                
-            </section>  
+                    <div class="box">
+                        <img class="serviciosImg" src="assets/fotos/Home/servicio2.jpg" alt="Foto de un patio de camiones">
+                    </div>
+                    <div class="box">
+                        <img class="serviciosImg" src="assets/fotos/Home/servicio3.jpg" alt="Foto de dos manos estrechandose">
+                    </div>
+                </div>
+        </section> 
         
         <!---EXPERIENCIA-->
         <section class="experiencia-container">
             <div class="experiencia-info">
-                    <h3 class="natural-900">Años de experiencia</h3>
-                    <p class="body-l natural-700">Lorem ipsum dolor sit amet consectetur. Vitae enim sem leo enim rhoncus egestas. Dictum leo et enim risus sit quam.
-                        Lorem ipsum dolor sit amet consectetur. Vitae enim sem leo enim rhoncus egestas. Dictum leo et enim risus sit quam.</p>
-                    <a href="pages/nosotros.html">Leer más</a>
+                    <h3 class="$natural-900">Años de experiencia</h3>
+                    <p class="body-l natural-700 ">Con 26 años de experiencia a nuestras espaldas, hemos perfeccionado nuestros servicios para ofrecer un paso fronterizo seguro, eficiente y confiable para millones de personas y mercancías. Nuestro compromiso con la calidad y la innovación nos ha permitido adaptarnos a los desafíos cambiantes, siempre con el objetivo de brindar la mejor experiencia posible a nuestros usuarios.</p>
             </div>
-            <img src="assets/fotos/home/experiencia.jpg" alt="un mensaje en el suelo">
+            <img src="assets/fotos/Home/yearsofexperience.png" alt="foto del puente con el numero 26">
         </section>
         
 
         <!---ESTADISTICAS-->
         <div class="estadisticas-container">
-            <h3 class="natural-900">Estadisticas 2023</h3>
-            <img src="assets/fotos/home/estadisticas.jpg" alt="imagen con estadisticas correspondientes al año 2023">
+            <h3 class="$natural-900">Estadisticas 2023</h3>
+            <img src="assets/fotos/Home/estadisticas 2023.png" alt="imagen con estadisticas correspondientes al año 2023">
         </div>
 
 
         <!---COMENTARIOS CLIENTES-->
         <section class="clientes-container">
-            <h3>Comentarios de clientes</h3>
+            <h3 class="$natural-900">Comentarios de clientes</h3>
             <div class="slider-clientes">
                 <input type="radio" name="slider" title="slide1" checked="checked" class="slider__nav"/>
                 <input type="radio" name="slider" title="slide2" class="slider__nav"/>
@@ -101,24 +166,24 @@
                 <input type="radio" name="slider" title="slide4" class="slider__nav"/>
                 <div class="slider__inner">
                     <div class="slider__contents"><i class="slider__image"></i>
-                        <img src="assets/fotos/Home/cliente1.jpg" alt="foto cliente en la playa">
-                        <h5 class="slider__caption">Cliente 1</h2>
-                        <p class="slider__txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. At cupiditate omnis possimus illo quos, corporis minima!</p>
+                        <img src="assets/fotos/Home/clientetoyo.png" alt="logo empresa toyota">
+                        <h5 class="slider__caption">TOYOTA</h2>
+                        <p class="slider__txt">"Su compromiso con la seguridad y la eficiencia es admirable. ¡Gracias por mantener nuestras conexiones internacionales sin problemas."</p>
                     </div>
                     <div class="slider__contents"><i class="slider__image"></i>
-                        <img src="assets/fotos/Home/cliente2.jpg" alt="foto cliente con anteojos sonriendo">
-                        <h5 class="slider__caption">cliente 2</h2>
-                        <p class="slider__txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. At cupiditate omnis possimus illo quos, corporis minima!</p>
+                        <img src="assets/fotos/Home/clienteunilev.png" alt="logo empresa unilever">
+                        <h5 class="slider__caption">UNILEVER</h2>
+                        <p class="slider__txt">"Su enfoque centrado en el cliente y su alta seguridad son dignos de elogio. ¡Gracias por su compromiso con la excelencia!"</p>
                     </div>
                     <div class="slider__contents"><i class="slider__image"></i>
-                        <img src="assets/fotos/Home/cliente3.jpg" alt="foto cliente en la playa">
-                        <h5 class="slider__caption">cliente 3</h2>
-                        <p class="slider__txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. At cupiditate omnis possimus illo quos, corporis minima!</p>
+                        <img src="assets/fotos/Home/clienteveloce.jpg" alt="logo empresa veloce">
+                        <h5 class="slider__caption">VELOCE LOGISTICA</h2>
+                        <p class="slider__txt">"Su respuesta rápida a las necesidades de los clientes es digna de elogio. ¡Sigamos trabajando juntos para mantener este estándar excepcional!</p>
                     </div>
                     <div class="slider__contents"><i class="slider__image"></i>
-                        <img src="assets/fotos/Home/cliente4.jpeg" alt="foto cliente en la playa">
-                        <h5 class="slider__caption">cliente 4</h2>
-                        <p class="slider__txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. At cupiditate omnis possimus illo quos, corporis minima!</p>
+                        <img src="assets/fotos/Home/clientepeugeot.png" alt="logo empresa peugeot">
+                        <h5 class="slider__caption">PEUGEOT</h2>
+                        <p class="slider__txt">"Su compromiso con la seguridad y la eficiencia es notable. ¡Gracias por mantener nuestras conexiones internacionales seguras y fluidas!"</p>
                     </div>
                 </div>
             </div>
@@ -127,49 +192,53 @@
 
         <!---FOOTER-->
         <footer class="footer-container">
-            <ul class="nosotros-footer">
-                <h6 class="natural-900">Nosotros</h6>
-                <li class="list-item-footer bold-xs"><a href="#" class="natural-600">Nuestra historia</a></li>
-                <li class="list-item-footer bold-xs"><a href="#" class="natural-600">Filosfia coorporativa</a></li>
-                <li class="list-item-footer bold-xs"><a href="#" class="natural-600">Certificaciones</a></li>
-                <li class="list-item-footer bold-xs"><a href="#" class="natural-600">Socios</a></li>
-            </ul>
-            <ul class="servicios-footer">
-                <h6 class="natural-900">Servicios</h6>
-                <li class="list-item-footer bold-xs"><a href="#" class="natural-600">Ventajas del CUF</a></li>
-                <li class="list-item-footer bold-xs"><a href="#" class="natural-600">Organismos</a></li>
-                <li class="list-item-footer bold-xs"><a href="#" class="natural-600">T.V.F.</a></li>
-            </ul>
-            <ul class="nosotros-footer">
-                <h6 class="natural-900">Aduana</h6>
-                <li class="list-item-footer bold-xs"><a href="#" class="natural-600">Información</a></li>
-                <li class="list-item-footer bold-xs"><a href="#" class="natural-600">Filosfia coorporativa</a></li>
-                <li class="list-item-footer bold-xs"><a href="#" class="natural-600">Certificaciones</a></li>
-                <li class="list-item-footer bold-xs"><a href="#" class="natural-600">Socios</a></li>
-            </ul>
-            <ul class="nosotros-footer">
-                <h6 class="natural-900">Turismo</h6>
-                <li class="list-item-footer bold-xs"><a href="#" class="natural-600">Información y leyes</a></li>
-                <li class="list-item-footer bold-xs"><a href="#" class="natural-600">Casas de cambio</a></li>
-                <li class="list-item-footer bold-xs"><a href="#" class="natural-600">Hospedajes</a></li>
-                <li class="list-item-footer bold-xs"><a href="#" class="natural-600">Peaje</a></li>
-            </ul>
-            <ul class="nosotros-footer">
-                <h6>Contacto</h6>
-                <li class="list-item-footer"><a href="#" class="natural-600">Trabaje con nosotros</a></li>
-            </ul>
-            <ul class="nosotros-footer">
-                <h6>WebMail</h6>
-                <li class="list-item-footer"><a href="#" class="natural-600">Acceso clientes</a></li>
-                <li class="list-item-footer"><a href="#" class="natural-600">Acceso empleados</a></li>
-            </ul>
+            <div class="footer-list">
+                    <ul class="nosotros-footer">
+                        <span class="list-item-footer"><a href="./pages/nosotros.html" class="natural-900"><h6 class="bold-m">Nosotros</h6></a></span>
+                        <li class="list-item-footer bold-xs"><a href="./pages/nosotros.html#historia-section" class="natural-600">Nuestra historia</a></li>
+                        <li class="list-item-footer bold-xs"><a href="./pages/nosotros.html#organizacion-section" class="natural-600">Organograma</a></li>
+                        <li class="list-item-footer bold-xs"><a href="./pages/nosotros.html#filosofia-section" class="natural-600">Filosfia coorporativa</a></li>
+                        <li class="list-item-footer bold-xs"><a href="./pages/nosotros.html#recursos-section" class="natural-600">Recursos Humanos </a></li>
+                        <li class="list-item-footer bold-xs"><a href="./pages/nosotros.html#socios-section" class="natural-600">Socios</a></li>
+                    </ul>
+                    <ul class="servicios-footer">
+                        <span class="list-item-footer"><a href="./pages/servicios.html" class="natural-900"><h6 class="bold-m">Servicios</h6></a></span>
+                        <li class="list-item-footer bold-xs"><a href="./pages/servicios.html#ventajas-section" class="natural-600">Ventajas del CUF</a></li>
+                        <li class="list-item-footer bold-xs"><a href="./pages/servicios.html#organismos-section" class="natural-600">Organismos</a></li>
+                        <li class="list-item-footer bold-xs"><a href="./pages/servicios.html#vecinal-section" class="natural-600">T.V.F.</a></li>
+                    </ul>
+                    <ul class="aduana-footer">
+                        <span class="list-item-footer"><a href="./pages/aduana.html" class="natural-900"><h6 class="bold-m">Aduana</h6></a></span>
+                        <li class="list-item-footer bold-xs"><a href="./pages/aduana.html#procesos-section" class="natural-600">Información</a></li>
+                        <li class="list-item-footer bold-xs"><a href="./pages/aduana.html#despachantes-section" class="natural-600">Despachantes</a></li>
+                    </ul>
+                    <ul class="turismo-footer">
+                        <span class="list-item-footer"><a href="./pages/turismo.html" class="natural-900"><h6 class="bold-m">Turismo</h6></a></span>
+                        <li class="list-item-footer bold-xs"><a href="./pages/turismo.html#leyes-section" class="natural-600">Información y leyes</a></li>
+                        <li class="list-item-footer bold-xs"><a href="./pages/turismo.html#requisitos-section" class="natural-600">Requisitos para cruzar</a></li>
+                        <li class="list-item-footer bold-xs"><a href="./pages/turismo.html#peaje-section" class="natural-600">Peaje</a></li>
+                        <li class="list-item-footer bold-xs"><a href="./pages/turismo.html#hospedajes-section" class="natural-600">Hospedajes</a></li>
+                        <li class="list-item-footer bold-xs"><a href="./pages/turismo.html#cambios-section" class="natural-600">Casas de cambio</a></li>
+                    </ul>
+                    <ul class="contacto-footer">
+                        <span class="list-item-footer"><a href="./pages/contacto.html" class="natural-900"><h6 class="bold-m">Contacto</h6></a></span>
+                        <li class="list-item-footer bold-xs"><a href="./pages/contacto.html" class="natural-600">Trabaje con nosotros</a></li>
+                    </ul>
+                    <ul class="webmail-footer">
+                        <span class="list-item-footer"><a href="./index.html" class="natural-900"><h6 class="bold-m">WebMail</h6></a></span>
+                        <li class="list-item-footer bold-xs"><a href="https://mercovia.propulsor.net.br/login" class="natural-600">Acceso clientes</a></li>
+                        <li class="list-item-footer bold-xs"><a href="https://webmail.mercovia-sa.com/webmail/login/" class="natural-600">Acceso empleados</a></li>
+                    </ul>
+            </div>
+                    <div class="final-line">
+                            <span class="body-xs natural-700" >BR 285 Km 551 - Sala 83</span>
+                            <span class="body-xs natural-700" >São Borja - Brasil / Santo Tomé - Argentina</span>
+                            <span class="mid-item"><a href="index.html" class="mid-item"><img src="assets/fotos/Home/logopng.png"  alt="logo de la empresa"></a></span>
+                            <span class="body-xs natural-700" >BR: (55) 3431-2207 / (55) 3431-2307</span>
+                            <span class="body-xs natural-700" >AR: (54) 03756 490100</span>
+                    </div>
         </footer>
-        <div class="final-line">
-            <span class="body-xs natural-600">BR 285 Km 551 - Sala 83</span>
-            <span class="body-xs natural-600">São Borja - Brasil / Santo Tomé - Argentina</span>
-            <span class="body-xs natural-600">BR: (55) 3431-2207 / (55) 3431-2307</span>
-            <span class="body-xs natural-600">AR: (54) 03756 490100</span>
-        </div>
-            
+    
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     </body>
 </html>

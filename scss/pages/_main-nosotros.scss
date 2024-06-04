@@ -1,0 +1,73 @@
+//history section
+.historia-container {
+  margin-top: $margin-top;
+}
+
+.balsa-img {
+  @include size(738px, 416px);
+  object-fit: $object-fit;
+  border-radius: $border-radius;
+  box-shadow: $box-shadow;
+}
+
+.historia-info-2 {
+  padding-left: 4%;
+}
+.inauguracion-img {
+  @include size(630px, 309px);
+  object-fit: $object-fit;
+  border-radius: $border-radius;
+  box-shadow: $box-shadow;
+}
+
+//organizacion section
+.modelo-organizacion-container {
+  img {
+    @extend %orgImg;
+  }
+  span {
+    @extend %orgSpan;
+  }
+  h2 span {
+    animation-range-start: cover 10vh;
+    animation-range-end: cover 60vh;
+  }
+  h4 span {
+    animation-range-start: cover 20vh;
+    animation-range-end: cover 60vh;
+  }
+  p span {
+    animation-range-start: cover 37vh;
+    animation-range-end: cover 65vh;
+  }
+}
+
+@keyframes scroll-reveal {
+  to {
+    background-size: 100% 100%;
+  }
+}
+
+//director section
+.foto-director {
+  @include size(305px, 282px);
+  object-fit: $object-fit;
+  border-radius: $border-radius;
+  box-shadow: $box-shadow;
+}
+
+//socios section
+.socios {
+  padding: 20px;
+  margin-bottom: 250px;
+  p {
+    a {
+      text-decoration: none;
+      color: blue;
+    }
+  }
+  img {
+    object-fit: $object-fit;
+    @include size(100%, 282px);
+  }
+}
