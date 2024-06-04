@@ -1537,7 +1537,7 @@ input:checked + label .description {
   }
   .hero-info {
     text-align: center;
-    background: linear-gradient(rgb(255, 255, 255), rgba(255, 255, 255, 0.5)), url("/coderhouse/assets/fotos/Home/heroimg.jpg");
+    background: linear-gradient(rgb(255, 255, 255), rgba(255, 255, 255, 0.5)), url(/assets/fotos/Home/puenteimg.jpg);
     min-height: 100%;
     background-attachment: fixed;
     background-position: center;
