@@ -722,7 +722,7 @@ button.learn-more:hover .button-text a {
 }
 
 .slider__txt {
-  color: #718096;
+  color: #4a5468;
   margin-bottom: 3rem;
   max-width: 300px;
 }
@@ -1424,10 +1424,10 @@ input:checked + label .description {
   .footer-container ul {
     padding-left: 0px;
   }
-  .footer-container ul li {
+  .footer-container ul li:not(:first-child) {
     display: none;
   }
-  .footer-container ul li a {
+  .footer-container ul li:not(:first-child) a {
     text-decoration: none;
   }
   .final-line {
@@ -1618,7 +1618,7 @@ input:checked + label .description {
   .footer-list {
     display: inline-block;
   }
-  .footer-list li {
+  .footer-list li:not(:first-child) {
     display: none;
   }
   .final-line {

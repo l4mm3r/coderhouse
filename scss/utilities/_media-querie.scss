@@ -83,8 +83,8 @@
   .footer-container {
     ul {
       padding-left: 0px;
-      li {
-        display: none;
+      li:not(:first-child) {
+        display: none; 
         a {
           text-decoration: none;
         }
@@ -360,7 +360,7 @@
   }
   .footer-list {
     display: inline-block;
-    li {
+    li:not(:first-child) {
       display: none;
     }
   }
